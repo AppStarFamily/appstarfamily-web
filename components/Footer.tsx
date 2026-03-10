@@ -14,6 +14,7 @@ export default function Footer() {
               width={28}
               height={28}
               className="h-7 w-auto"
+              placeholder="empty"
             />
             <span className="font-jakarta font-semibold text-white text-sm">
               App Star Family

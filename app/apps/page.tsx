@@ -16,7 +16,9 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
 }
 
-const categories = ['All', 'Health', 'Music', 'Pregnancy', 'Productivity', 'Fun', 'Education']
+// Derive categories dynamically from the data
+const allCategories = Array.from(new Set(apps.map(a => a.category)))
+const categories = ['All', ...allCategories.map(c => c.charAt(0).toUpperCase() + c.slice(1))]
 
 const liveCount = apps.filter((a) => a.status === 'live').length
 const comingSoonCount = apps.filter((a) => a.status === 'coming-soon').length
@@ -47,7 +49,7 @@ export default function AppsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            12 iOS apps across health, music, pregnancy, productivity and more.
+            iOS apps across health, pregnancy, productivity, education and more.
             Built by one developer and five AI agents from South East Asia.
           </motion.p>
           <motion.p
