@@ -18,6 +18,18 @@ export const metadata: Metadata = {
     template: '%s | App Star Family',
   },
   description: 'AI-powered iOS app studio from South East Asia. 12 apps, 5 autonomous AI agents, infinite ambition. Home of the Pruttius Empire.',
+  icons: {
+    icon: [
+      { url: '/images/logo.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '64x64', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '128x128', type: 'image/png' },
+      { url: '/images/logo.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/logo.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/images/logo.png',
+  },
   openGraph: {
     siteName: 'App Star Family',
     images: ['/images/dream_team.png'],
