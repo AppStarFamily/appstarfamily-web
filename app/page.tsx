@@ -27,18 +27,20 @@ const staggerFast = {
 }
 
 /* ── Per-agent accent palette ── */
-const agentAccents: Record<string, { color: string; glow: string; border: string; dim: string }> = {
-  pruttius:    { color: '#C9922A', glow: 'rgba(201,146,42,0.22)',  border: 'rgba(201,146,42,0.35)',  dim: 'rgba(201,146,42,0.05)' },
-  scriptor:    { color: '#D4A843', glow: 'rgba(212,168,67,0.2)',   border: 'rgba(212,168,67,0.3)',   dim: 'rgba(212,168,67,0.04)' },
-  crescentius: { color: '#60A5FA', glow: 'rgba(96,165,250,0.2)',   border: 'rgba(96,165,250,0.3)',   dim: 'rgba(96,165,250,0.05)' },
-  socialis:    { color: '#FB923C', glow: 'rgba(251,146,60,0.2)',   border: 'rgba(251,146,60,0.3)',   dim: 'rgba(251,146,60,0.04)' },
-  fabricius:   { color: '#F97316', glow: 'rgba(249,115,22,0.2)',   border: 'rgba(249,115,22,0.3)',   dim: 'rgba(249,115,22,0.04)' },
+const agentAccents: Record<string, { color: string; glow: string; border: string; dim: string; topGlow: string }> = {
+  pruttius:    { color: '#C9922A', glow: 'rgba(201,146,42,0.22)',  border: 'rgba(201,146,42,0.35)',  dim: 'rgba(201,146,42,0.05)', topGlow: 'rgba(201,146,42,0.15)' },
+  scriptor:    { color: '#D4A843', glow: 'rgba(212,168,67,0.2)',   border: 'rgba(212,168,67,0.3)',   dim: 'rgba(212,168,67,0.04)', topGlow: 'rgba(212,168,67,0.12)' },
+  crescentius: { color: '#60A5FA', glow: 'rgba(96,165,250,0.22)',  border: 'rgba(96,165,250,0.32)',  dim: 'rgba(96,165,250,0.05)', topGlow: 'rgba(96,165,250,0.14)' },
+  socialis:    { color: '#FB923C', glow: 'rgba(251,146,60,0.22)',  border: 'rgba(251,146,60,0.32)',  dim: 'rgba(251,146,60,0.05)', topGlow: 'rgba(251,146,60,0.13)' },
+  fabricius:   { color: '#F97316', glow: 'rgba(249,115,22,0.22)',  border: 'rgba(249,115,22,0.32)',  dim: 'rgba(249,115,22,0.05)', topGlow: 'rgba(249,115,22,0.13)' },
 }
 
 /* ── Data ── */
 const emperor = agents.find(a => a.isCEO)!
 const specialists = agents.filter(a => !a.isCEO)
 const featuredApps = apps.filter(a => a.featured)
+const heroApp = featuredApps[0]
+const gridApps = featuredApps.slice(1)
 
 const commandMetrics: { label: string; value: string; sub: string; accent: string }[] = [
   { label: 'Agents Online',   value: '5',     sub: 'Active',    accent: '#4ade80' },
@@ -87,7 +89,7 @@ function HeroSection() {
 
       {/* Sacred spotlight — gold radial behind logo */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 55% 45% at 50% 40%, rgba(201,146,42,0.1) 0%, transparent 70%)'
+        background: 'radial-gradient(ellipse 55% 45% at 50% 40%, rgba(201,146,42,0.11) 0%, transparent 70%)'
       }} />
       {/* Subtle cyan counter-glow */}
       <div className="absolute inset-0 pointer-events-none" style={{
@@ -109,18 +111,25 @@ function HeroSection() {
         </motion.div>
 
         {/* Logo — sacred imperial insignia */}
-        <motion.div variants={fadeUp} className="mb-8">
-          <Image
-            src="/images/logo.png"
-            alt="App Star Family"
-            width={192}
-            height={192}
-            className="animate-float"
-            style={{
-              filter: 'drop-shadow(0 0 56px rgba(201,146,42,0.4)) drop-shadow(0 0 120px rgba(201,146,42,0.15))'
-            }}
-            priority
-          />
+        <motion.div variants={fadeUp} className="mb-8 flex justify-center">
+          <div className="relative">
+            {/* Gold halo behind logo to mask any PNG background */}
+            <div className="absolute inset-0 pointer-events-none" style={{
+              background: 'radial-gradient(circle at center, rgba(201,146,42,0.35) 0%, rgba(201,146,42,0.12) 45%, transparent 72%)',
+              transform: 'scale(1.6)',
+              filter: 'blur(16px)',
+              borderRadius: '50%',
+            }} />
+            <Image
+              src="/images/logo.png"
+              alt="App Star Family"
+              width={192}
+              height={192}
+              className="animate-float relative z-10"
+              placeholder="empty"
+              priority
+            />
+          </div>
         </motion.div>
 
         {/* Headline */}
@@ -283,6 +292,7 @@ function EmperorSection() {
               alt={emperor.name}
               fill
               className="object-cover object-top"
+              placeholder="empty"
             />
             <div className="absolute inset-0" style={{
               background: 'linear-gradient(to right, transparent 55%, rgba(6,9,26,1) 100%)'
@@ -396,7 +406,7 @@ function CouncilSection() {
             Meet Your Agents
           </motion.h2>
           <motion.p variants={fadeUp} className="text-[#8B8FA8] text-base max-w-md mx-auto">
-            Four specialist AI agents. Each with a domain, a name, and a mission.
+            Five specialist AI agents. Each with a domain, a name, and a mission.
           </motion.p>
         </motion.div>
 
@@ -416,19 +426,27 @@ function CouncilSection() {
                   style={{
                     background: `linear-gradient(180deg, ${accent.dim} 0%, rgba(5,9,20,0.97) 100%)`,
                     border: `1px solid ${accent.border}`,
-                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    boxShadow: `0 4px 20px rgba(0,0,0,0.35), inset 0 1px 0 ${accent.topGlow}`,
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
                   }}
                   onMouseEnter={e => {
                     const el = e.currentTarget as HTMLElement
-                    el.style.transform = 'translateY(-7px)'
-                    el.style.boxShadow = `0 12px 48px ${accent.glow}, 0 0 80px ${accent.glow}`
+                    el.style.transform = 'translateY(-8px)'
+                    el.style.boxShadow = `0 20px 56px ${accent.glow}, 0 0 80px ${accent.glow}, inset 0 1px 0 ${accent.topGlow}`
+                    el.style.borderColor = accent.color
                   }}
                   onMouseLeave={e => {
                     const el = e.currentTarget as HTMLElement
                     el.style.transform = ''
-                    el.style.boxShadow = ''
+                    el.style.boxShadow = `0 4px 20px rgba(0,0,0,0.35), inset 0 1px 0 ${accent.topGlow}`
+                    el.style.borderColor = accent.border
                   }}
                 >
+                  {/* Top edge highlight */}
+                  <div className="absolute top-0 inset-x-0 h-px pointer-events-none" style={{
+                    background: `linear-gradient(90deg, transparent, ${accent.topGlow}, transparent)`
+                  }} />
+
                   {/* Portrait */}
                   <div className="relative h-[300px] overflow-hidden">
                     <Image
@@ -436,12 +454,13 @@ function CouncilSection() {
                       alt={agent.name}
                       fill
                       className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      placeholder="empty"
                     />
                     <div className="absolute inset-0" style={{
                       background: `linear-gradient(to bottom, transparent 45%, rgba(5,9,20,0.98) 100%)`
                     }} />
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" style={{
-                      background: `radial-gradient(ellipse at center top, ${accent.glow} 0%, transparent 55%)`
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" style={{
+                      background: `radial-gradient(ellipse at center top, ${accent.glow} 0%, transparent 60%)`
                     }} />
                   </div>
 
@@ -554,6 +573,7 @@ function CommandSection() {
                   background: 'rgba(0,229,255,0.025)',
                   border: '1px solid rgba(0,229,255,0.1)',
                   backdropFilter: 'blur(8px)',
+                  boxShadow: 'inset 0 1px 0 rgba(0,229,255,0.06)',
                 }}
               >
                 {/* Corner accent lines */}
@@ -593,6 +613,8 @@ function CommandSection() {
    SECTION 6 — PORTFOLIO
 ══════════════════════════════════════════════════════════ */
 function PortfolioSection() {
+  const liveCount = apps.filter(a => a.status === 'live').length
+
   return (
     <section
       className="relative py-28 sm:py-36 overflow-hidden"
@@ -622,14 +644,28 @@ function PortfolioSection() {
             className="font-jakarta font-bold text-gold-light mb-4 tracking-tight"
             style={{ fontSize: 'clamp(32px, 5vw, 58px)' }}
           >
-            12 Apps. Built to Ship.
+            Built to Ship.
           </motion.h2>
           <motion.p variants={fadeUp} className="text-[#8B8FA8] text-base max-w-xl mx-auto">
-            Across health, music, pregnancy, productivity, and more. Each one shipped with speed,
-            taste, and ambition.
+            {liveCount} apps live across health, music, pregnancy, productivity, and more.
+            Each one shipped with speed, taste, and ambition.
           </motion.p>
         </motion.div>
 
+        {/* Hero app — full width featured showcase */}
+        {heroApp && (
+          <motion.div
+            className="mb-6"
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-60px' }}
+          >
+            <AppCard app={heroApp} variant="hero" />
+          </motion.div>
+        )}
+
+        {/* Grid — remaining featured apps */}
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
           variants={staggerFast}
@@ -637,7 +673,7 @@ function PortfolioSection() {
           whileInView="visible"
           viewport={{ once: true, margin: '-60px' }}
         >
-          {featuredApps.map(app => (
+          {gridApps.map(app => (
             <motion.div key={app.slug} variants={fadeUp}>
               <AppCard app={app} variant="featured" />
             </motion.div>
@@ -649,7 +685,7 @@ function PortfolioSection() {
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
         >
           <Link href="/apps" className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors text-sm font-medium">
-            View all 12 apps →
+            View all {apps.length} apps →
           </Link>
         </motion.div>
 
@@ -722,6 +758,7 @@ function PhilosophySection() {
                   style={{
                     background: 'rgba(201,146,42,0.04)',
                     border: '1px solid rgba(201,146,42,0.14)',
+                    boxShadow: 'inset 0 1px 0 rgba(201,146,42,0.08)',
                   }}
                 >
                   <div className="text-2xl mb-3 text-gold">{p.icon}</div>
@@ -750,8 +787,9 @@ function ClosingSection() {
       style={{ background: 'linear-gradient(175deg, #060C18 0%, #030810 55%, #010407 100%)' }}
     >
       <StarField />
+      {/* Strong gold ambient for this section */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 55% 55% at 50% 50%, rgba(201,146,42,0.08) 0%, transparent 65%)'
+        background: 'radial-gradient(ellipse 60% 60% at 50% 45%, rgba(201,146,42,0.11) 0%, transparent 65%)'
       }} />
       <div className="absolute inset-0 pointer-events-none" style={{
         background: 'radial-gradient(ellipse 35% 35% at 72% 28%, rgba(0,229,255,0.04) 0%, transparent 55%)'
@@ -764,15 +802,25 @@ function ClosingSection() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <motion.div variants={fadeUp} className="mb-10">
-          <Image
-            src="/images/logo.png"
-            alt="App Star Family"
-            width={192}
-            height={192}
-            className="mx-auto"
-            style={{ filter: 'drop-shadow(0 0 56px rgba(201,146,42,0.4)) drop-shadow(0 0 120px rgba(201,146,42,0.15))' }}
-          />
+        {/* Logo — fix: use separate glow div to avoid yellow square from PNG background */}
+        <motion.div variants={fadeUp} className="mb-10 flex justify-center">
+          <div className="relative inline-flex items-center justify-center" style={{ width: 192, height: 192 }}>
+            {/* Warm halo behind logo — masks any PNG background artifact */}
+            <div className="absolute inset-0 pointer-events-none" style={{
+              background: 'radial-gradient(circle at center, rgba(201,146,42,0.4) 0%, rgba(201,146,42,0.15) 40%, transparent 70%)',
+              transform: 'scale(1.5)',
+              filter: 'blur(18px)',
+              borderRadius: '50%',
+            }} />
+            <Image
+              src="/images/logo.png"
+              alt="App Star Family"
+              width={192}
+              height={192}
+              placeholder="empty"
+              className="animate-float relative z-10"
+            />
+          </div>
         </motion.div>
 
         <motion.h2
