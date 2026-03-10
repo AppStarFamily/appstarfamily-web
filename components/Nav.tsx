@@ -23,15 +23,15 @@ export default function Nav() {
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5">
             <Image
               src="/images/logo.png"
               alt="App Star Family"
-              width={64}
-              height={64}
-              className="h-16 w-auto"
+              width={32}
+              height={32}
+              className="h-8 w-auto"
             />
             <span className="font-jakarta font-semibold text-white text-sm tracking-wide">
               App Star Family
