@@ -713,7 +713,7 @@ function CommandSection() {
             Empire Command Center
           </motion.h2>
           <motion.p variants={fadeUp} className="text-[#5A6070] text-sm uppercase tracking-[0.2em]">
-            Intelligence updated 08:00 daily &nbsp;·&nbsp; Bali Operations
+            Intelligence updated 08:00 daily &nbsp;·&nbsp; SEA Operations
           </motion.p>
         </motion.div>
 
