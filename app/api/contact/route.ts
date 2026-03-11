@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 import { NextResponse } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+export const dynamic = 'force-dynamic'
 
 function escapeHtml(str: string) {
   return str
@@ -20,6 +20,8 @@ export async function POST(req: Request) {
     if (!name || !email || !message) {
       return NextResponse.json({ error: 'Missing required fields.' }, { status: 400 })
     }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
 
     const { error } = await resend.emails.send({
       from: 'Imperial Comms <noreply@appstarfamily.net>',
