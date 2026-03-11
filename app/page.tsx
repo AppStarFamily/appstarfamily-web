@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import StarField from '@/components/StarField'
 import AppCard from '@/components/AppCard'
-import IPhoneMockup from '@/components/IPhoneMockup'
+import FeaturedAppShowcase from '@/components/FeaturedAppShowcase'
 import { apps } from '@/data/apps'
 import { agents } from '@/data/agents'
 
@@ -611,12 +611,9 @@ function CommandSection() {
 }
 
 /* ══════════════════════════════════════════════════════════
-   SECTION 6 — PORTFOLIO (CINEMATIC PRODUCT SHOWCASE)
+   SECTION 6 — PORTFOLIO (CINEMATIC INTERACTIVE SHOWCASE)
 ══════════════════════════════════════════════════════════ */
 function PortfolioSection() {
-  const liveCount = apps.filter(a => a.status === 'live').length
-  const screenshots = heroApp?.screenshots ?? []
-
   return (
     <section
       className="relative py-24 sm:py-32 overflow-hidden"
@@ -681,7 +678,7 @@ function PortfolioSection() {
           </motion.div>
         </motion.div>
 
-        {/* ── FEATURED APP — PouchOut (iPhone mockup showcase) ─── */}
+        {/* ── Featured App — interactive carousel showcase ──────── */}
         {heroApp && (
           <motion.div
             className="mb-8"
@@ -690,184 +687,7 @@ function PortfolioSection() {
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.8, ease: 'easeOut' as const }}
           >
-            {/* Outer panel */}
-            <div
-              className="relative rounded-3xl overflow-hidden"
-              style={{
-                background: 'linear-gradient(135deg, rgba(201,146,42,0.08) 0%, rgba(6,10,24,0.98) 45%, rgba(4,8,20,0.99) 100%)',
-                border: '1px solid rgba(201,146,42,0.28)',
-                boxShadow: '0 8px 60px rgba(0,0,0,0.6), inset 0 1px 0 rgba(201,146,42,0.12)',
-              }}
-            >
-              {/* Corner accents */}
-              <div className="absolute top-0 left-0 w-28 h-px bg-gradient-to-r from-gold/60 to-transparent pointer-events-none" />
-              <div className="absolute top-0 left-0 w-px h-28 bg-gradient-to-b from-gold/60 to-transparent pointer-events-none" />
-              <div className="absolute bottom-0 right-0 w-20 h-px bg-gradient-to-l from-gold/18 to-transparent pointer-events-none" />
-              <div className="absolute bottom-0 right-0 w-px h-20 bg-gradient-to-t from-gold/18 to-transparent pointer-events-none" />
-              {/* Top edge shimmer */}
-              <div className="absolute top-0 inset-x-0 h-px pointer-events-none" style={{
-                background: 'linear-gradient(90deg, transparent, rgba(201,146,42,0.5) 35%, rgba(201,146,42,0.3) 65%, transparent)'
-              }} />
-
-              <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 p-8 sm:p-12 lg:p-14">
-
-                {/* ── Left: iPhone Stack ───────────────────────── */}
-                <motion.div
-                  className="relative flex-shrink-0"
-                  whileHover="hover"
-                  initial="rest"
-                  style={{ width: 330, height: 520 }}
-                >
-                  {/* Warm gold halo under the phones */}
-                  <div className="absolute pointer-events-none" style={{
-                    bottom: -30,
-                    left: '50%',
-                    transform: 'translateX(-50%)',
-                    width: 280,
-                    height: 140,
-                    background: 'radial-gradient(ellipse at top, rgba(201,146,42,0.3) 0%, transparent 70%)',
-                    filter: 'blur(24px)',
-                    zIndex: 0,
-                  }} />
-
-                  {/* Back phone — screenshot 4 */}
-                  {screenshots[3] && (
-                    <motion.div
-                      variants={{
-                        rest:  { rotate: 10,  x: 130, y: 48, opacity: 0.38, filter: 'blur(2px)',   scale: 0.79 },
-                        hover: { rotate: 14,  x: 162, y: 32, opacity: 0.55, filter: 'blur(1px)',   scale: 0.81 },
-                      }}
-                      transition={{ duration: 0.45, ease: 'easeOut' as const }}
-                      style={{ position: 'absolute', left: 0, top: 0, zIndex: 1, transformOrigin: 'bottom center' }}
-                    >
-                      <IPhoneMockup screenshot={screenshots[3]} alt="PouchOut screen 4" width={210} />
-                    </motion.div>
-                  )}
-
-                  {/* Mid phone — screenshot 3 */}
-                  {screenshots[2] && (
-                    <motion.div
-                      variants={{
-                        rest:  { rotate: 5.5, x: 72,  y: 26, opacity: 0.62, filter: 'blur(0.8px)', scale: 0.88 },
-                        hover: { rotate: 8,   x: 90,  y: 14, opacity: 0.8,  filter: 'blur(0.3px)', scale: 0.9  },
-                      }}
-                      transition={{ duration: 0.45, ease: 'easeOut' as const }}
-                      style={{ position: 'absolute', left: 0, top: 0, zIndex: 2, transformOrigin: 'bottom center' }}
-                    >
-                      <IPhoneMockup screenshot={screenshots[2]} alt="PouchOut screen 3" width={225} />
-                    </motion.div>
-                  )}
-
-                  {/* Front phone — screenshot 1 (MAIN) */}
-                  <motion.div
-                    variants={{
-                      rest:  { rotate: 0, x: 0, y: 0,   scale: 1 },
-                      hover: { rotate: -1.5, x: -6, y: -12, scale: 1.02 },
-                    }}
-                    transition={{ duration: 0.45, ease: 'easeOut' as const }}
-                    style={{ position: 'absolute', left: 0, top: 0, zIndex: 3 }}
-                  >
-                    <IPhoneMockup screenshot={screenshots[0]} alt="PouchOut screen 1" width={244} />
-                  </motion.div>
-                </motion.div>
-
-                {/* ── Right: App info panel ────────────────────── */}
-                <motion.div
-                  className="flex-1 text-left"
-                  variants={stagger}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  {/* Icon + badges row */}
-                  <motion.div variants={fadeUp} className="flex items-center gap-4 mb-6">
-                    <div className="relative flex-shrink-0">
-                      <div className="absolute inset-0 blur-xl opacity-70" style={{
-                        background: 'rgba(201,146,42,0.5)',
-                        borderRadius: 18,
-                        transform: 'scale(0.85) translateY(4px)',
-                      }} />
-                      <Image
-                        src={heroApp.icon}
-                        alt={heroApp.name}
-                        width={72}
-                        height={72}
-                        className="rounded-2xl relative z-10"
-                        placeholder="empty"
-                      />
-                    </div>
-                    <div>
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="category-pill">{heroApp.category}</span>
-                        <span className="status-live">Live</span>
-                      </div>
-                      {heroApp.markets && heroApp.markets.length > 0 && heroApp.markets[0] !== 'Global' && (
-                        <p className="text-[11px] text-[#4B5060] uppercase tracking-wider font-medium mt-1.5">
-                          {heroApp.markets.slice(0, 5).join(' · ')}
-                        </p>
-                      )}
-                    </div>
-                  </motion.div>
-
-                  {/* App name */}
-                  <motion.h3
-                    variants={fadeUp}
-                    className="font-jakarta font-bold text-white leading-tight mb-3"
-                    style={{ fontSize: 'clamp(26px, 4vw, 42px)' }}
-                  >
-                    PouchOut
-                    <span className="text-gold/60 font-light"> — Quit Zyn</span>
-                  </motion.h3>
-
-                  {/* Tagline */}
-                  <motion.p variants={fadeUp} className="text-[#C0B8A8] text-base sm:text-lg leading-relaxed mb-4">
-                    {heroApp.tagline}
-                  </motion.p>
-
-                  {/* Gold divider */}
-                  <motion.div variants={fadeUp} className="h-px mb-6 max-w-xs" style={{
-                    background: 'linear-gradient(to right, rgba(201,146,42,0.4), transparent)'
-                  }} />
-
-                  {/* Description */}
-                  <motion.p variants={fadeUp} className="text-[#6E7480] text-sm leading-relaxed mb-8 max-w-md">
-                    {heroApp.description}
-                  </motion.p>
-
-                  {/* CTA buttons */}
-                  <motion.div variants={fadeUp} className="flex flex-wrap items-center gap-3">
-                    {heroApp.appStoreUrl && (
-                      <a
-                        href={heroApp.appStoreUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-primary"
-                      >
-                        App Store ↗
-                      </a>
-                    )}
-                    {heroApp.websiteUrl && (
-                      <a
-                        href={heroApp.websiteUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn-secondary"
-                      >
-                        Website ↗
-                      </a>
-                    )}
-                  </motion.div>
-
-                  {/* Screenshot hint */}
-                  {screenshots.length > 1 && (
-                    <motion.p variants={fadeUp} className="mt-6 text-[11px] text-[#3B404E] uppercase tracking-widest">
-                      {screenshots.length} screens · Hover to explore
-                    </motion.p>
-                  )}
-                </motion.div>
-
-              </div>
-            </div>
+            <FeaturedAppShowcase app={heroApp} />
           </motion.div>
         )}
 
