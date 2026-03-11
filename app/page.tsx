@@ -373,8 +373,8 @@ function EmperorSection() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.9, ease: 'easeOut' as const }}
           >
-            {/* Slow-zoom wrapper */}
-            <div className="absolute inset-0 animate-portrait-zoom" style={{ transformOrigin: 'center center' }}>
+            {/* Slow-zoom wrapper — anchor top so the face doesn't drift up/down */}
+            <div className="absolute inset-0 animate-portrait-zoom" style={{ transformOrigin: 'top center' }}>
               <Image
                 src={emperor.portrait}
                 alt={emperor.name}
