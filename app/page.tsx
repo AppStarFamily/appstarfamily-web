@@ -382,44 +382,47 @@ function EmperorSection() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 1.6, ease: 'easeOut' as const }}
           >
-            {/* ─ Z-layer 1: Portrait image + aura (drift together as one unit) ─
-                 Outer motion.div: 15s subtle vertical drift (1-3px)
-                 PruttiusAmbienceBg INSIDE so aura moves with portrait
-                 Inner div: 12s slow scale zoom anchored to top         */}
-            <motion.div
-              className="absolute inset-0"
-              animate={{ y: [0, -3, 0] }}
-              transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' as const }}
-            >
-              {/* Aura inside drift wrapper — stays locked to portrait position */}
-              <PruttiusAmbienceBg />
+            {/* Overflow clip — separate from blur entrance to avoid filter/stacking issues.
+                 Clips zoom bleed (scale 1.04) and drift (±3px) to portrait bounds. */}
+            <div className="absolute inset-0 overflow-hidden">
 
-              <div
-                className="absolute inset-0 animate-portrait-zoom"
-                style={{ transformOrigin: 'top center' }}
+              {/* ─ Drift wrapper: image + aura move together ─ */}
+              <motion.div
+                className="absolute inset-[-6px]"
+                animate={{ y: [0, -3, 0] }}
+                transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' as const }}
               >
-                <Image
-                  src={emperor.portrait}
-                  alt={emperor.name}
-                  fill
-                  className="object-cover object-top"
-                  placeholder="empty"
-                  priority
-                />
-              </div>
-            </motion.div>
+                {/* Aura locked to portrait — drifts with image */}
+                <PruttiusAmbienceBg />
 
-            {/* ─ Z-layer 2: Gradient overlays ─ */}
-            {/* Right-side fade into copy panel */}
-            <div className="absolute inset-0 pointer-events-none" style={{
-              background: 'linear-gradient(to right, transparent 50%, rgba(4,11,22,1) 100%)'
-            }} />
-            {/* Bottom fade */}
-            <div className="absolute inset-0 pointer-events-none" style={{
-              background: 'linear-gradient(to top, rgba(4,10,20,1) 0%, transparent 30%)'
-            }} />
+                <div
+                  className="absolute inset-0 animate-portrait-zoom"
+                  style={{ transformOrigin: 'top center' }}
+                >
+                  <Image
+                    src={emperor.portrait}
+                    alt={emperor.name}
+                    fill
+                    className="object-cover object-top"
+                    placeholder="empty"
+                    priority
+                  />
+                </div>
+              </motion.div>
 
-            {/* ─ Z-layer 3: Light rays, staff glow, dust — IN FRONT ─ */}
+              {/* ─ Gradient overlays — fixed within clip, cover any drift/zoom edge ─ */}
+              {/* Right-side fade into copy panel */}
+              <div className="absolute inset-0 pointer-events-none" style={{
+                background: 'linear-gradient(to right, transparent 50%, rgba(4,11,22,1) 100%)'
+              }} />
+              {/* Bottom fade */}
+              <div className="absolute inset-0 pointer-events-none" style={{
+                background: 'linear-gradient(to top, rgba(4,10,20,1) 0%, transparent 30%)'
+              }} />
+
+            </div>
+
+            {/* ─ Light rays, staff glow, dust — outside clip so they can bleed naturally ─ */}
             <PruttiusAmbienceFg />
           </motion.div>
 
