@@ -77,6 +77,37 @@ function ScriptorAmbience() {
 function CrescentiusAmbience() {
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden>
+      {/* Glowing wolf eyes — positioned at Crescentius's eye locations */}
+      {[
+        { left: '35%', top: '37%' },
+        { left: '61%', top: '37%' },
+      ].map((pos, i) => (
+        <motion.div
+          key={`eye-${i}`}
+          className="absolute rounded-full"
+          style={{
+            width: 7,
+            height: 7,
+            left: pos.left,
+            top: pos.top,
+            transform: 'translate(-50%, -50%)',
+            background:
+              'radial-gradient(circle, rgba(96,165,250,1) 0%, rgba(96,165,250,0.55) 45%, transparent 75%)',
+            boxShadow:
+              '0 0 6px 2px rgba(96,165,250,0.7), 0 0 14px 4px rgba(96,165,250,0.35)',
+          }}
+          animate={{
+            opacity: [0.55, 1, 0.55],
+            scale: [0.88, 1.18, 0.88],
+          }}
+          transition={{
+            duration: 2.6,
+            repeat: Infinity,
+            delay: i * 0.18,
+            ease: 'easeInOut',
+          }}
+        />
+      ))}
       {/* SVG graph line — draws itself on loop */}
       <svg
         className="absolute inset-0 w-full h-full"
