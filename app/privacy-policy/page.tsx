@@ -40,7 +40,7 @@ const sections = [
   {
     title: 'Third-Party Services',
     content: [
-      'Our apps may use third-party services such as Apple's App Store, RevenueCat for subscription management, and analytics providers. These services have their own privacy policies.',
+      "Our apps may use third-party services such as Apple's App Store, RevenueCat for subscription management, and analytics providers. These services have their own privacy policies.",
     ],
   },
   {
