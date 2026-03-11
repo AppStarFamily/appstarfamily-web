@@ -28,7 +28,7 @@ export default function Footer() {
             <Link href="/blog" className="hover:text-gold-light transition-colors">Blog</Link>
             <Link href="/privacy-policy.html" className="hover:text-gold-light transition-colors">Privacy Policy</Link>
             <Link href="/terms-of-use.html" className="hover:text-gold-light transition-colors">Terms of Use</Link>
-            <Link href="/contact.html" className="hover:text-gold-light transition-colors">Contact</Link>
+            <Link href="/contact" className="hover:text-gold-light transition-colors">Contact</Link>
           </div>
 
           {/* Twitter */}
