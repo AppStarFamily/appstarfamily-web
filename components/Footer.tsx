@@ -26,8 +26,8 @@ export default function Footer() {
             <Link href="/apps" className="hover:text-gold-light transition-colors">Apps</Link>
             <Link href="/empire" className="hover:text-gold-light transition-colors">Empire</Link>
             <Link href="/blog" className="hover:text-gold-light transition-colors">Blog</Link>
-            <Link href="/privacy-policy.html" className="hover:text-gold-light transition-colors">Privacy Policy</Link>
-            <Link href="/terms-of-use.html" className="hover:text-gold-light transition-colors">Terms of Use</Link>
+            <Link href="/privacy-policy" className="hover:text-gold-light transition-colors">Privacy Policy</Link>
+            <Link href="/terms-of-use" className="hover:text-gold-light transition-colors">Terms of Use</Link>
             <Link href="/contact" className="hover:text-gold-light transition-colors">Contact</Link>
           </div>
 
