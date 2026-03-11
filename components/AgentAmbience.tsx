@@ -244,46 +244,116 @@ function FabriciusAmbience() {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   PRUTTIUS MAXIMUS  —  Lobster · CEO · gold #C9922A
-   Imperial radial aura + halo ring + rising dust motes.
-   NO overflow:hidden so the glow isn't clipped.
+   PRUTTIUS MAXIMUS  —  BACKGROUND LAYER  (renders BEHIND portrait)
+   Halo circle correctly positioned behind the crown, NOT the face.
+   The circle is 78% of container width, centered at 50% / 30%
+   so its top edge is slightly above the portrait frame — making the
+   lower arc disappear behind the emperor just like religious icon art.
 ───────────────────────────────────────────────────────────── */
-export function PruttiusAmbience() {
+export function PruttiusAmbienceBg() {
   return (
     <div className="absolute inset-0 pointer-events-none" aria-hidden>
 
-      {/* ── 1. Warm golden aura — large radial behind the portrait ── */}
+      {/* ── 1. Deep golden aura — enormous soft radial behind him ──── */}
       <motion.div
         className="absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse 80% 70% at 50% 25%, rgba(201,146,42,0.18) 0%, rgba(201,146,42,0.07) 45%, transparent 72%)',
+            'radial-gradient(ellipse 90% 80% at 50% 18%, rgba(201,146,42,0.22) 0%, rgba(201,146,42,0.08) 48%, transparent 75%)',
         }}
-        animate={{ opacity: [0.6, 1, 0.6] }}
-        transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+        animate={{ opacity: [0.55, 1, 0.55] }}
+        transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
       />
 
-      {/* ── 2. Imperial halo ring — more opaque & glowing ─────────── */}
+      {/* ── 2. Primary imperial halo ring — behind the crown ─────────
+           width: 78% of container, aspectRatio 1:1 → perfect circle
+           top: -4%  means the ring starts slightly ABOVE the image edge
+           left: 11% → horizontally centred (11 + 39 = 50%)
+           This places the circle centre at ≈ (50%, 33%) of the portrait
+           which aligns with the crown at the top of the painting.
+      ────────────────────────────────────────────────────────────── */}
       <motion.div
         className="absolute"
         style={{
-          top: '5%',
-          left: '12%',
-          right: '12%',
-          bottom: '22%',
+          width: '78%',
+          aspectRatio: '1 / 1',
+          top: '-4%',
+          left: '11%',
           borderRadius: '50%',
-          border: '1.5px solid rgba(201,146,42,0.4)',
+          border: '1.5px solid rgba(201,146,42,0.48)',
         }}
         animate={{
-          scale: [1, 1.04, 1],
-          opacity: [0.55, 1, 0.55],
+          opacity: [0.5, 1, 0.5],
           boxShadow: [
-            '0 0 20px rgba(201,146,42,0.08), inset 0 0 20px rgba(201,146,42,0.04)',
-            '0 0 55px rgba(201,146,42,0.28), inset 0 0 35px rgba(201,146,42,0.12)',
-            '0 0 20px rgba(201,146,42,0.08), inset 0 0 20px rgba(201,146,42,0.04)',
+            '0 0 28px rgba(201,146,42,0.10), inset 0 0 28px rgba(201,146,42,0.05)',
+            '0 0 65px rgba(201,146,42,0.32), inset 0 0 45px rgba(201,146,42,0.16)',
+            '0 0 28px rgba(201,146,42,0.10), inset 0 0 28px rgba(201,146,42,0.05)',
           ],
         }}
-        transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+        transition={{ duration: 7, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
+      {/* ── 3. Outer secondary ring — wider, very faint, slower ──────── */}
+      <motion.div
+        className="absolute"
+        style={{
+          width: '93%',
+          aspectRatio: '1 / 1',
+          top: '-9%',
+          left: '3.5%',
+          borderRadius: '50%',
+          border: '1px solid rgba(201,146,42,0.18)',
+        }}
+        animate={{ opacity: [0.15, 0.42, 0.15] }}
+        transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut', delay: 2 }}
+      />
+
+    </div>
+  )
+}
+
+/* ─────────────────────────────────────────────────────────────
+   PRUTTIUS MAXIMUS  —  FOREGROUND LAYER  (renders IN FRONT of portrait)
+   Light rays, staff glow, dust particles — layered over the image
+   for the cinematic temple / sacred painting atmosphere.
+───────────────────────────────────────────────────────────── */
+export function PruttiusAmbienceFg() {
+  return (
+    <div className="absolute inset-0 pointer-events-none" aria-hidden>
+
+      {/* ── 1. Heavenly light rays from above ─────────────────────────
+           Three descending radial gradients anchored to the top edge.
+           The painting already has painted-in light — these subtly
+           reinforce it.
+      ────────────────────────────────────────────────────────────── */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background: [
+            'radial-gradient(ellipse 22% 62% at 50% 0%, rgba(255,215,80,0.07) 0%, transparent 100%)',
+            'radial-gradient(ellipse 12% 42% at 30% 0%, rgba(255,215,80,0.04) 0%, transparent 100%)',
+            'radial-gradient(ellipse 12% 42% at 70% 0%, rgba(255,215,80,0.04) 0%, transparent 100%)',
+          ].join(', '),
+        }}
+        animate={{ opacity: [0.5, 1, 0.5] }}
+        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+      />
+
+      {/* ── 2. Staff / sceptre golden energy point ────────────────────
+           The eagle-topped sceptre sits at roughly (17%, 63%) in the image
+      ────────────────────────────────────────────────────────────── */}
+      <motion.div
+        className="absolute rounded-full"
+        style={{
+          width: 30,
+          height: 30,
+          left: '17%',
+          top: '62%',
+          background: 'radial-gradient(circle, rgba(201,146,42,0.80) 0%, rgba(201,146,42,0.25) 40%, transparent 70%)',
+          filter: 'blur(4px)',
+        }}
+        animate={{ opacity: [0.2, 0.65, 0.2], scale: [0.85, 1.25, 0.85] }}
+        transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
       />
 
       {/* ── 3. Rising golden dust motes ────────────────────────────── */}
@@ -296,14 +366,14 @@ export function PruttiusAmbience() {
             height: 2.5,
             background: '#E0A830',
             boxShadow: '0 0 4px rgba(224,168,48,0.8)',
-            left: `${16 + i * 15}%`,
-            bottom: '18%',
+            left: `${14 + i * 16}%`,
+            bottom: '16%',
             opacity: 0,
           }}
           animate={{
-            y: [0, -60, -120],
+            y: [0, -65, -130],
             x: [0, i % 2 === 0 ? 10 : -10, 0],
-            opacity: [0, 0.75, 0],
+            opacity: [0, 0.80, 0],
           }}
           transition={{
             duration: 4.2 + i * 0.55,
@@ -314,6 +384,19 @@ export function PruttiusAmbience() {
         />
       ))}
     </div>
+  )
+}
+
+/* ─────────────────────────────────────────────────────────────
+   COMBINED — keeps backwards-compat; not used in EmperorSection
+   (which uses Bg+Fg split directly for correct z-layering)
+───────────────────────────────────────────────────────────── */
+export function PruttiusAmbience() {
+  return (
+    <>
+      <PruttiusAmbienceBg />
+      <PruttiusAmbienceFg />
+    </>
   )
 }
 

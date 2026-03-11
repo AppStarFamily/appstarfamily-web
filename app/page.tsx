@@ -7,7 +7,7 @@ import Link from 'next/link'
 import StarField from '@/components/StarField'
 import AppCard from '@/components/AppCard'
 import FeaturedAppShowcase from '@/components/FeaturedAppShowcase'
-import AgentAmbience, { PruttiusAmbience } from '@/components/AgentAmbience'
+import AgentAmbience, { PruttiusAmbienceBg, PruttiusAmbienceFg } from '@/components/AgentAmbience'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import { apps } from '@/data/apps'
 import { agents } from '@/data/agents'
@@ -350,56 +350,89 @@ function ManifestoSection() {
 
 /* ══════════════════════════════════════════════════════════
    SECTION 3 — THE EMPEROR
+   Cinematic improvements:
+   - Halo positioned BEHIND crown (not the face) via z-layering
+   - PruttiusAmbienceBg renders before portrait image
+   - PruttiusAmbienceFg renders after (light rays, staff glow, dust)
+   - Nested motion.div for vertical drift (15s) + CSS zoom (12s)
+   - Portrait entrance: blur-to-sharp sharpen-in
+   - Copy panel: faint marble texture background
+   - Button: glow + lift on hover
 ══════════════════════════════════════════════════════════ */
 function EmperorSection() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #050B18 0%, #06091A 100%)' }}
+      style={{ background: 'linear-gradient(180deg, #040B16 0%, #060A1A 100%)' }}
     >
-      {/* Warm gold atmospheric — emanates from portrait */}
+      {/* Wide gold atmospheric emanating from portrait side */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 55% 80% at 25% 50%, rgba(201,146,42,0.07) 0%, transparent 60%)'
+        background: 'radial-gradient(ellipse 60% 90% at 22% 50%, rgba(201,146,42,0.08) 0%, transparent 65%)'
       }} />
 
       <div className="relative max-w-7xl mx-auto">
-        <div className="flex flex-col lg:flex-row min-h-[680px]">
+        {/* lg:min-h so mobile flex-col doesn't add dead space */}
+        <div className="flex flex-col lg:flex-row lg:min-h-[680px]">
 
-          {/* Portrait */}
+          {/* ── PORTRAIT COLUMN ──────────────────────────────────────── */}
           <motion.div
-            className="relative lg:w-[45%] min-h-[420px] lg:min-h-0"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
-            transition={{ duration: 0.9, ease: 'easeOut' as const }}
+            className="relative lg:w-[45%] min-h-[480px] lg:min-h-0"
+            initial={{ opacity: 0, filter: 'blur(6px)' }}
+            whileInView={{ opacity: 1, filter: 'blur(0px)' }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 1.6, ease: 'easeOut' as const }}
           >
-            {/* Slow-zoom wrapper — anchor top so the face doesn't drift up/down */}
-            <div className="absolute inset-0 animate-portrait-zoom" style={{ transformOrigin: 'top center' }}>
-              <Image
-                src={emperor.portrait}
-                alt={emperor.name}
-                fill
-                className="object-cover object-top"
-                placeholder="empty"
-              />
-            </div>
-            <div className="absolute inset-0" style={{
-              background: 'linear-gradient(to right, transparent 55%, rgba(6,9,26,1) 100%)'
+            {/* ─ Z-layer 0: Halo rings + aura — rendered BEHIND portrait ─ */}
+            <PruttiusAmbienceBg />
+
+            {/* ─ Z-layer 1: Portrait image ─
+                 Outer motion.div: 15s subtle vertical drift (1-3px)
+                 Inner div: 12s slow scale zoom anchored to top        */}
+            <motion.div
+              className="absolute inset-0"
+              animate={{ y: [0, -3, 0] }}
+              transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' as const }}
+            >
+              <div
+                className="absolute inset-0 animate-portrait-zoom"
+                style={{ transformOrigin: 'top center' }}
+              >
+                <Image
+                  src={emperor.portrait}
+                  alt={emperor.name}
+                  fill
+                  className="object-cover object-top"
+                  placeholder="empty"
+                  priority
+                />
+              </div>
+            </motion.div>
+
+            {/* ─ Z-layer 2: Gradient overlays ─ */}
+            {/* Right-side fade into copy panel */}
+            <div className="absolute inset-0 pointer-events-none" style={{
+              background: 'linear-gradient(to right, transparent 50%, rgba(4,11,22,1) 100%)'
             }} />
-            <div className="absolute inset-0" style={{
-              background: 'linear-gradient(to top, rgba(5,11,24,1) 0%, transparent 35%)'
+            {/* Bottom fade */}
+            <div className="absolute inset-0 pointer-events-none" style={{
+              background: 'linear-gradient(to top, rgba(4,10,20,1) 0%, transparent 30%)'
             }} />
-            {/* Pruttius ambient: golden halo + dust motes */}
-            <PruttiusAmbience />
+
+            {/* ─ Z-layer 3: Light rays, staff glow, dust — IN FRONT ─ */}
+            <PruttiusAmbienceFg />
           </motion.div>
 
-          {/* Copy */}
+          {/* ── COPY COLUMN ──────────────────────────────────────────── */}
           <motion.div
             className="relative lg:w-[55%] flex flex-col justify-center px-8 sm:px-12 lg:px-16 xl:px-20 py-16 lg:py-28"
             variants={stagger}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
+            style={{
+              /* Faint marble-warmth texture behind copy */
+              background: 'radial-gradient(ellipse 90% 70% at 15% 50%, rgba(201,146,42,0.028) 0%, transparent 65%)',
+            }}
           >
             <motion.div variants={fadeUp} className="mb-5">
               <span className="overline-chip">
@@ -443,8 +476,20 @@ function EmperorSection() {
               {emperor.bio}
             </motion.p>
 
+            {/* Button — glow lift on hover */}
             <motion.div variants={fadeUp}>
-              <Link href="/empire" className="btn-primary inline-flex">Enter the Throne Room</Link>
+              <motion.div
+                className="inline-block"
+                whileHover={{
+                  y: -4,
+                  filter: 'drop-shadow(0 8px 28px rgba(201,146,42,0.55))',
+                }}
+                transition={{ duration: 0.22, ease: 'easeOut' as const }}
+              >
+                <Link href="/empire" className="btn-primary inline-flex">
+                  Enter the Throne Room
+                </Link>
+              </motion.div>
             </motion.div>
 
             {/* Watermark */}
