@@ -165,6 +165,17 @@ body::before {
   box-shadow: 0 0 24px rgba(0,229,255,0.2);
 }
 
+/* ── Contact form input ── */
+.form-input {
+  @apply w-full rounded-xl px-4 py-3 text-sm text-white outline-none transition-all duration-200;
+  background: transparent;
+  border: 1px solid rgba(201,146,42,0.2);
+  color: #E8E0D0;
+}
+.form-input::placeholder { color: #3A3E50; }
+.form-input:focus { border-color: rgba(201,146,42,0.52); box-shadow: 0 0 0 3px rgba(201,146,42,0.07); }
+.form-input option { background: #040914; color: #E8E0D0; }
+
 /* ── Glass panel ── */
 .glass-panel {
   background: rgba(255,255,255,0.025);
