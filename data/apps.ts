@@ -10,6 +10,7 @@ export type App = {
   icon: string
   featured: boolean
   markets?: string[]
+  screenshots?: string[]   // paths relative to /public
 }
 
 export const apps: App[] = [
@@ -25,6 +26,12 @@ export const apps: App[] = [
     icon: '/images/apps/pouchout.webp',
     featured: true,
     markets: ['USA', 'Sweden', 'Norway', 'Poland', 'Germany', 'Italy', 'Estonia'],
+    screenshots: [
+      '/images/screenshots/pouchout/1en.webp',
+      '/images/screenshots/pouchout/2en.webp',
+      '/images/screenshots/pouchout/3en.webp',
+      '/images/screenshots/pouchout/4en.webp',
+    ],
   },
   {
     slug: 'hypnobirthing',
