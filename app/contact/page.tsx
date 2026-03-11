@@ -53,6 +53,7 @@ export default function ContactPage() {
   })
   const [sending, setSending] = useState(false)
   const [sent, setSent]       = useState(false)
+  const [error, setError]     = useState<string | null>(null)
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -60,19 +61,31 @@ export default function ContactPage() {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }))
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     setSending(true)
-    const subject = encodeURIComponent(`[${form.topic}] Message from ${form.name}`)
-    const body = encodeURIComponent(
-      `Name: ${form.name}\nEmail: ${form.email}\nTopic: ${form.topic}\n\nMessage:\n${form.message}`
-    )
-    window.location.href = `mailto:info@appstarfamily.net?subject=${subject}&body=${body}`
-    setTimeout(() => { setSending(false); setSent(true) }, 800)
+    setError(null)
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      })
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        throw new Error(data.error || 'Something went wrong. Please try again.')
+      }
+      setSent(true)
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+    } finally {
+      setSending(false)
+    }
   }
 
   function resetForm() {
     setSent(false)
+    setError(null)
     setForm({ name: '', email: '', topic: 'General Inquiry', message: '' })
   }
 
@@ -440,6 +453,12 @@ export default function ContactPage() {
                       >
                         {sending ? 'Transmitting…' : 'Send Message to the Empire'}
                       </motion.button>
+
+                      {error && (
+                        <p className="text-center text-xs" style={{ color: '#F87171' }}>
+                          {error}
+                        </p>
+                      )}
 
                       <p className="text-center text-[10px] uppercase tracking-wider" style={{ color: '#3A3E50' }}>
                         Average response time: 24 hours
