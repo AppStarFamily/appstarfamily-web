@@ -11,6 +11,7 @@ export default function Nav() {
     { href: '/apps', label: 'Apps' },
     { href: '/empire', label: 'Empire' },
     { href: '/blog', label: 'Blog' },
+    { href: '/contact', label: 'Contact' },
   ]
 
   return (
