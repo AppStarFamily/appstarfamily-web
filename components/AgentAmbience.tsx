@@ -245,55 +245,70 @@ function FabriciusAmbience() {
 
 /* ─────────────────────────────────────────────────────────────
    PRUTTIUS MAXIMUS  —  Lobster · CEO · gold #C9922A
-   Imperial halo ring + rising dust motes (for Emperor portrait)
+   Imperial radial aura + halo ring + rising dust motes.
+   NO overflow:hidden so the glow isn't clipped.
 ───────────────────────────────────────────────────────────── */
 export function PruttiusAmbience() {
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden>
-      {/* Pulsing imperial halo ring */}
+    <div className="absolute inset-0 pointer-events-none" aria-hidden>
+
+      {/* ── 1. Warm golden aura — large radial behind the portrait ── */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse 80% 70% at 50% 25%, rgba(201,146,42,0.18) 0%, rgba(201,146,42,0.07) 45%, transparent 72%)',
+        }}
+        animate={{ opacity: [0.6, 1, 0.6] }}
+        transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
+      />
+
+      {/* ── 2. Imperial halo ring — more opaque & glowing ─────────── */}
       <motion.div
         className="absolute"
         style={{
-          top: '4%',
-          left: '15%',
-          right: '15%',
-          bottom: '20%',
+          top: '5%',
+          left: '12%',
+          right: '12%',
+          bottom: '22%',
           borderRadius: '50%',
-          border: '1px solid rgba(201,146,42,0.18)',
+          border: '1.5px solid rgba(201,146,42,0.4)',
         }}
         animate={{
           scale: [1, 1.04, 1],
-          opacity: [0.35, 0.65, 0.35],
+          opacity: [0.55, 1, 0.55],
           boxShadow: [
-            '0 0 18px rgba(201,146,42,0.04)',
-            '0 0 40px rgba(201,146,42,0.14)',
-            '0 0 18px rgba(201,146,42,0.04)',
+            '0 0 20px rgba(201,146,42,0.08), inset 0 0 20px rgba(201,146,42,0.04)',
+            '0 0 55px rgba(201,146,42,0.28), inset 0 0 35px rgba(201,146,42,0.12)',
+            '0 0 20px rgba(201,146,42,0.08), inset 0 0 20px rgba(201,146,42,0.04)',
           ],
         }}
         transition={{ duration: 4.5, repeat: Infinity, ease: 'easeInOut' }}
       />
-      {/* Rising golden dust motes */}
+
+      {/* ── 3. Rising golden dust motes ────────────────────────────── */}
       {[0, 1, 2, 3, 4].map(i => (
         <motion.div
           key={i}
           className="absolute rounded-full"
           style={{
-            width: 2,
-            height: 2,
-            background: '#C9922A',
-            left: `${18 + i * 14}%`,
-            bottom: '15%',
+            width: 2.5,
+            height: 2.5,
+            background: '#E0A830',
+            boxShadow: '0 0 4px rgba(224,168,48,0.8)',
+            left: `${16 + i * 15}%`,
+            bottom: '18%',
             opacity: 0,
           }}
           animate={{
-            y: [0, -55, -110],
-            x: [0, i % 2 === 0 ? 8 : -8, 0],
-            opacity: [0, 0.55, 0],
+            y: [0, -60, -120],
+            x: [0, i % 2 === 0 ? 10 : -10, 0],
+            opacity: [0, 0.75, 0],
           }}
           transition={{
-            duration: 4 + i * 0.6,
+            duration: 4.2 + i * 0.55,
             repeat: Infinity,
-            delay: i * 0.9,
+            delay: i * 0.85,
             ease: 'easeOut',
           }}
         />
