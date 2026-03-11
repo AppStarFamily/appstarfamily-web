@@ -382,17 +382,18 @@ function EmperorSection() {
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 1.6, ease: 'easeOut' as const }}
           >
-            {/* ─ Z-layer 0: Halo rings + aura — rendered BEHIND portrait ─ */}
-            <PruttiusAmbienceBg />
-
-            {/* ─ Z-layer 1: Portrait image ─
+            {/* ─ Z-layer 1: Portrait image + aura (drift together as one unit) ─
                  Outer motion.div: 15s subtle vertical drift (1-3px)
-                 Inner div: 12s slow scale zoom anchored to top        */}
+                 PruttiusAmbienceBg INSIDE so aura moves with portrait
+                 Inner div: 12s slow scale zoom anchored to top         */}
             <motion.div
               className="absolute inset-0"
               animate={{ y: [0, -3, 0] }}
               transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' as const }}
             >
+              {/* Aura inside drift wrapper — stays locked to portrait position */}
+              <PruttiusAmbienceBg />
+
               <div
                 className="absolute inset-0 animate-portrait-zoom"
                 style={{ transformOrigin: 'top center' }}
@@ -585,11 +586,10 @@ function CouncilSection() {
 
                   {/* Portrait */}
                   <div className="relative h-[300px] overflow-hidden">
-                    {/* Slow-zoom wrapper (12 s ambient breathe) */}
-                    <motion.div
-                      className="absolute inset-0"
-                      animate={{ scale: [1, 1.04, 1] }}
-                      transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+                    {/* Slow-zoom wrapper (12 s ambient breathe) — pure CSS for instant image paint */}
+                    <div
+                      className="absolute inset-0 animate-portrait-zoom"
+                      style={{ transformOrigin: 'top center' }}
                     >
                       <Image
                         src={agent.portrait}
@@ -598,7 +598,7 @@ function CouncilSection() {
                         className="object-cover object-top"
                         placeholder="empty"
                       />
-                    </motion.div>
+                    </div>
                     {/* Bottom gradient fade */}
                     <div className="absolute inset-0 pointer-events-none" style={{
                       background: `linear-gradient(to bottom, transparent 45%, rgba(5,9,20,0.98) 100%)`
