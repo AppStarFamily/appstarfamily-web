@@ -1,18 +1,24 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 import StarField from '@/components/StarField'
 import AppCard from '@/components/AppCard'
 import FeaturedAppShowcase from '@/components/FeaturedAppShowcase'
+import AgentAmbience, { PruttiusAmbience } from '@/components/AgentAmbience'
+import AnimatedCounter from '@/components/AnimatedCounter'
 import { apps } from '@/data/apps'
 import { agents } from '@/data/agents'
 
 /* ── Animation primitives ── */
 const fadeUp = {
-  hidden: { opacity: 0, y: 32 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' as const } },
+  hidden: { opacity: 0, y: 36, scale: 0.97 },
+  visible: {
+    opacity: 1, y: 0, scale: 1,
+    transition: { duration: 0.75, ease: [0.25, 0.46, 0.45, 0.94] as const },
+  },
 }
 const fadeIn = {
   hidden: { opacity: 0 },
@@ -20,11 +26,11 @@ const fadeIn = {
 }
 const stagger = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } },
+  visible: { transition: { staggerChildren: 0.12 } },
 }
 const staggerFast = {
   hidden: {},
-  visible: { transition: { staggerChildren: 0.07 } },
+  visible: { transition: { staggerChildren: 0.08 } },
 }
 
 /* ── Per-agent accent palette ── */
@@ -43,14 +49,24 @@ const featuredApps = apps.filter(a => a.featured)
 const heroApp = featuredApps[0]
 const gridApps = featuredApps.slice(1)
 
-const commandMetrics: { label: string; value: string; sub: string; accent: string }[] = [
-  { label: 'Agents Online',   value: '5',     sub: 'Active',    accent: '#4ade80' },
-  { label: 'Apps Deployed',   value: '12',    sub: '9 Live',    accent: '#C9922A' },
-  { label: 'Markets Reached', value: '7',     sub: 'Countries', accent: '#00E5FF' },
-  { label: 'Languages',       value: '9',     sub: 'Localised', accent: '#60A5FA' },
-  { label: 'Last Brief',      value: '08:00', sub: 'Daily',     accent: '#C9922A' },
-  { label: 'Status',          value: 'Live',  sub: 'Building',  accent: '#4ade80' },
+const commandMetrics: {
+  label: string; value: string; numericTarget: number | null; sub: string; accent: string
+}[] = [
+  { label: 'Agents Online',   value: '5',     numericTarget: 5,    sub: 'Active',    accent: '#4ade80' },
+  { label: 'Apps Deployed',   value: '12',    numericTarget: 12,   sub: '9 Live',    accent: '#C9922A' },
+  { label: 'Markets Reached', value: '7',     numericTarget: 7,    sub: 'Countries', accent: '#00E5FF' },
+  { label: 'Languages',       value: '9',     numericTarget: 9,    sub: 'Localised', accent: '#60A5FA' },
+  { label: 'Last Brief',      value: '08:00', numericTarget: null, sub: 'Daily',     accent: '#C9922A' },
+  { label: 'Status',          value: 'LIVE',  numericTarget: null, sub: 'Building',  accent: '#4ade80' },
 ]
+
+const agentActivities: Record<string, { activity: string; progress: number }> = {
+  pruttius:    { activity: 'Commanding',  progress: 95 },
+  scriptor:    { activity: 'Publishing',  progress: 72 },
+  crescentius: { activity: 'Analysing',   progress: 85 },
+  socialis:    { activity: 'Posting',     progress: 68 },
+  fabricius:   { activity: 'Building',    progress: 91 },
+}
 
 const principles = [
   { icon: '⚡', title: 'AI-Powered',   desc: 'Five specialist agents working in parallel — content, growth, social, code — around the clock.' },
@@ -78,25 +94,94 @@ export default function HomePage() {
 }
 
 /* ══════════════════════════════════════════════════════════
-   SECTION 1 — HERO
+   SECTION 1 — HERO  (4-layer parallax)
+   Layer 1: Star field         — slowest  (y += 20% on scroll)
+   Layer 2: Empire nebula      — medium   (y += 12%)
+   Layer 3: Sacred halo        — faster   (y +=  7%)
+   Layer 4: Content            — no parallax
 ══════════════════════════════════════════════════════════ */
 function HeroSection() {
+  const sectionRef = useRef<HTMLElement>(null)
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  })
+
+  // Positive y = layer drifts DOWN within section as user scrolls → appears to move up SLOWER than content
+  const starY   = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
+  const nebulaY = useTransform(scrollYProgress, [0, 1], ['0%', '12%'])
+  const haloY   = useTransform(scrollYProgress, [0, 1], ['0%', '7%'])
+
   return (
     <section
+      ref={sectionRef}
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
       style={{ background: 'linear-gradient(175deg, #010507 0%, #030916 55%, #060D20 100%)' }}
     >
-      <StarField />
+      {/* ── Layer 1: Star field — slowest parallax ────────────── */}
+      <motion.div
+        className="absolute pointer-events-none"
+        style={{ y: starY, top: '-8%', left: 0, right: 0, bottom: '-8%' }}
+      >
+        <StarField />
+      </motion.div>
 
-      {/* Sacred spotlight — gold radial behind logo */}
-      <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 55% 45% at 50% 40%, rgba(201,146,42,0.11) 0%, transparent 70%)'
-      }} />
-      {/* Subtle cyan counter-glow */}
-      <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 40% 35% at 80% 70%, rgba(0,229,255,0.04) 0%, transparent 60%)'
-      }} />
+      {/* ── Layer 2: Empire nebula / atmospheric painting ─────── */}
+      <motion.div
+        className="absolute inset-0 pointer-events-none"
+        style={{ y: nebulaY }}
+      >
+        {/* Horizon band — warm gold at mid-section */}
+        <div style={{
+          position: 'absolute', top: '35%', left: 0, right: 0, height: '30%',
+          background: 'linear-gradient(to bottom, transparent, rgba(201,146,42,0.042) 35%, rgba(201,146,42,0.058) 52%, rgba(201,146,42,0.028) 72%, transparent)',
+          filter: 'blur(28px)',
+        }} />
+        {/* Left gold nebula cloud */}
+        <div style={{
+          position: 'absolute', top: '12%', left: 0, width: '45%', height: '50%',
+          background: 'radial-gradient(ellipse at 18% 45%, rgba(201,146,42,0.048) 0%, transparent 68%)',
+          filter: 'blur(55px)',
+        }} />
+        {/* Right cyan nebula */}
+        <div style={{
+          position: 'absolute', top: '8%', right: 0, width: '38%', height: '40%',
+          background: 'radial-gradient(ellipse at 70% 30%, rgba(0,229,255,0.022) 0%, transparent 68%)',
+          filter: 'blur(48px)',
+        }} />
+        {/* Lower gold wisp */}
+        <div style={{
+          position: 'absolute', bottom: '22%', left: '22%', width: '48%', height: '28%',
+          background: 'radial-gradient(ellipse, rgba(201,146,42,0.032) 0%, transparent 65%)',
+          filter: 'blur(65px)',
+        }} />
+      </motion.div>
 
+      {/* ── Layer 3: Sacred halo behind logo — faster ─────────── */}
+      <motion.div
+        className="absolute inset-0 pointer-events-none flex items-center justify-center"
+        style={{ y: haloY }}
+      >
+        {/* Primary gold sacred halo */}
+        <div style={{
+          width: '58vmin', height: '58vmin',
+          background: 'radial-gradient(circle, rgba(201,146,42,0.12) 0%, rgba(201,146,42,0.05) 38%, transparent 70%)',
+          filter: 'blur(6px)',
+          borderRadius: '50%',
+          marginTop: '-8vmin', // align with logo vertical position
+        }} />
+        {/* Subtle cyan accent counter-glow */}
+        <div style={{
+          position: 'absolute',
+          width: '40vmin', height: '40vmin',
+          top: '55%', right: '15%',
+          background: 'radial-gradient(ellipse, rgba(0,229,255,0.038) 0%, transparent 65%)',
+          filter: 'blur(30px)',
+          borderRadius: '50%',
+        }} />
+      </motion.div>
+
+      {/* ── Layer 4: Content — normal scroll ──────────────────── */}
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6 max-w-5xl mx-auto"
         variants={stagger}
@@ -114,7 +199,7 @@ function HeroSection() {
         {/* Logo — sacred imperial insignia */}
         <motion.div variants={fadeUp} className="mb-8 flex justify-center">
           <div className="relative">
-            {/* Gold halo behind logo to mask any PNG background */}
+            {/* Gold halo behind logo */}
             <div className="absolute inset-0 pointer-events-none" style={{
               background: 'radial-gradient(circle at center, rgba(201,146,42,0.35) 0%, rgba(201,146,42,0.12) 45%, transparent 72%)',
               transform: 'scale(1.6)',
@@ -164,7 +249,7 @@ function HeroSection() {
         </motion.div>
       </motion.div>
 
-      {/* Premium scroll indicator */}
+      {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
         <motion.div
           className="w-6 h-9 rounded-full flex justify-center pt-1.5"
@@ -288,19 +373,24 @@ function EmperorSection() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.9, ease: 'easeOut' as const }}
           >
-            <Image
-              src={emperor.portrait}
-              alt={emperor.name}
-              fill
-              className="object-cover object-top"
-              placeholder="empty"
-            />
+            {/* Slow-zoom wrapper */}
+            <div className="absolute inset-0 animate-portrait-zoom" style={{ transformOrigin: 'center center' }}>
+              <Image
+                src={emperor.portrait}
+                alt={emperor.name}
+                fill
+                className="object-cover object-top"
+                placeholder="empty"
+              />
+            </div>
             <div className="absolute inset-0" style={{
               background: 'linear-gradient(to right, transparent 55%, rgba(6,9,26,1) 100%)'
             }} />
             <div className="absolute inset-0" style={{
               background: 'linear-gradient(to top, rgba(5,11,24,1) 0%, transparent 35%)'
             }} />
+            {/* Pruttius ambient: golden halo + dust motes */}
+            <PruttiusAmbience />
           </motion.div>
 
           {/* Copy */}
@@ -450,19 +540,30 @@ function CouncilSection() {
 
                   {/* Portrait */}
                   <div className="relative h-[300px] overflow-hidden">
-                    <Image
-                      src={agent.portrait}
-                      alt={agent.name}
-                      fill
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                      placeholder="empty"
-                    />
-                    <div className="absolute inset-0" style={{
+                    {/* Slow-zoom wrapper (12 s ambient breathe) */}
+                    <motion.div
+                      className="absolute inset-0"
+                      animate={{ scale: [1, 1.04, 1] }}
+                      transition={{ duration: 12, repeat: Infinity, ease: 'easeInOut' }}
+                    >
+                      <Image
+                        src={agent.portrait}
+                        alt={agent.name}
+                        fill
+                        className="object-cover object-top"
+                        placeholder="empty"
+                      />
+                    </motion.div>
+                    {/* Bottom gradient fade */}
+                    <div className="absolute inset-0 pointer-events-none" style={{
                       background: `linear-gradient(to bottom, transparent 45%, rgba(5,9,20,0.98) 100%)`
                     }} />
-                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" style={{
+                    {/* Hover glow overlay */}
+                    <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" style={{
                       background: `radial-gradient(ellipse at center top, ${accent.glow} 0%, transparent 60%)`
                     }} />
+                    {/* Per-agent ambient overlay */}
+                    <AgentAmbience agentId={agent.id} />
                   </div>
 
                   {/* Info */}
@@ -509,25 +610,34 @@ function CouncilSection() {
 }
 
 /* ══════════════════════════════════════════════════════════
-   SECTION 5 — COMMAND CENTER
+   SECTION 5 — EMPIRE COMMAND CENTER
+   Full mission-control redesign: animated counters,
+   agent status bars, grid-pattern background, live indicators
 ══════════════════════════════════════════════════════════ */
 function CommandSection() {
+  const allAgents = agents // CEO + specialists, ordered as in data
+
   return (
     <section
-      className="relative py-28 sm:py-36 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #03080F 0%, #050C17 100%)' }}
+      className="relative py-28 sm:py-36 overflow-hidden command-grid-bg"
+      style={{ background: 'linear-gradient(180deg, #02060E 0%, #04090F 100%)' }}
     >
-      {/* Cyan atmosphere */}
+      {/* Cyan core atmosphere */}
       <div className="absolute inset-0 pointer-events-none" style={{
-        background: 'radial-gradient(ellipse 65% 55% at 50% 50%, rgba(0,229,255,0.04) 0%, transparent 70%)'
+        background: 'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(0,229,255,0.038) 0%, transparent 72%)'
       }} />
-      {/* Subtle scan lines */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.018]" style={{
+      {/* Gold corner accent */}
+      <div className="absolute inset-0 pointer-events-none" style={{
+        background: 'radial-gradient(ellipse 45% 40% at 0% 100%, rgba(201,146,42,0.04) 0%, transparent 60%)'
+      }} />
+      {/* Subtle horizontal scan lines */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.016]" style={{
         backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,229,255,1) 3px, rgba(0,229,255,1) 4px)',
       }} />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
+        {/* ── Header ─────────────────────────────────────────────── */}
         <motion.div
           className="text-center mb-14"
           variants={stagger}
@@ -540,61 +650,171 @@ function CommandSection() {
               <motion.span
                 className="w-1.5 h-1.5 rounded-full inline-block flex-shrink-0"
                 style={{ background: '#4ade80', boxShadow: '0 0 6px rgba(74,222,128,0.8)' }}
-                animate={{ opacity: [1, 0.3, 1] }}
+                animate={{ opacity: [1, 0.25, 1] }}
                 transition={{ repeat: Infinity, duration: 1.4 }}
               />
               Live Status
             </span>
           </motion.div>
+
           <motion.h2
             variants={fadeUp}
             className="font-jakarta font-bold text-white mb-4 tracking-tight"
-            style={{ fontSize: 'clamp(28px, 4vw, 50px)' }}
+            style={{ fontSize: 'clamp(28px, 4vw, 52px)' }}
           >
-            The Empire is Operational.
+            Empire Command Center
           </motion.h2>
-          <motion.p variants={fadeUp} className="text-[#8B8FA8] text-base">
-            Real-time status of the Pruttius Empire. Updated 08:00 daily.
+          <motion.p variants={fadeUp} className="text-[#5A6070] text-sm uppercase tracking-[0.2em]">
+            Intelligence updated 08:00 daily &nbsp;·&nbsp; Bali Operations
           </motion.p>
         </motion.div>
 
-        {/* Command grid */}
+        {/* ── Outer dashboard frame ──────────────────────────────── */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-12"
-          variants={staggerFast}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          className="relative rounded-2xl overflow-hidden"
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-60px' }}
+          transition={{ duration: 0.8, ease: 'easeOut' as const }}
+          style={{
+            border: '1px solid rgba(0,229,255,0.14)',
+            background: 'rgba(0,229,255,0.018)',
+            backdropFilter: 'blur(10px)',
+            boxShadow: '0 0 80px rgba(0,229,255,0.04), inset 0 1px 0 rgba(0,229,255,0.08)',
+          }}
         >
-          {commandMetrics.map(m => (
-            <motion.div key={m.label} variants={fadeUp}>
-              <div
-                className="relative rounded-xl p-6 text-center overflow-hidden"
-                style={{
-                  background: 'rgba(0,229,255,0.025)',
-                  border: '1px solid rgba(0,229,255,0.1)',
-                  backdropFilter: 'blur(8px)',
-                  boxShadow: 'inset 0 1px 0 rgba(0,229,255,0.06)',
-                }}
+          {/* Top bar */}
+          <div
+            className="flex items-center justify-between px-6 py-3 border-b"
+            style={{ borderColor: 'rgba(0,229,255,0.1)', background: 'rgba(0,229,255,0.03)' }}
+          >
+            <div className="flex items-center gap-2.5">
+              <motion.span
+                className="w-2 h-2 rounded-full"
+                style={{ background: '#4ade80', boxShadow: '0 0 8px rgba(74,222,128,0.9)' }}
+                animate={{ opacity: [1, 0.2, 1], scale: [1, 0.85, 1] }}
+                transition={{ repeat: Infinity, duration: 1.6 }}
+              />
+              <span className="text-[10px] uppercase tracking-[0.25em] font-semibold" style={{ color: 'rgba(0,229,255,0.65)' }}>
+                PRUTTIUS EMPIRE · OPERATIONAL
+              </span>
+            </div>
+            <span className="text-[10px] font-mono" style={{ color: 'rgba(0,229,255,0.28)' }}>
+              SYS_UPTIME: 99.9%
+            </span>
+          </div>
+
+          {/* ── Metric grid ─────────────────────────────────────── */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-px p-px" style={{ background: 'rgba(0,229,255,0.06)' }}>
+            {commandMetrics.map((m, idx) => (
+              <motion.div
+                key={m.label}
+                className="relative p-6 text-center overflow-hidden"
+                style={{ background: 'rgba(2,6,14,0.9)' }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.07, ease: 'easeOut' as const }}
               >
                 {/* Corner accent lines */}
-                <div className="absolute top-0 left-0 w-12 h-px" style={{ background: `linear-gradient(to right, ${m.accent}, transparent)` }} />
-                <div className="absolute top-0 left-0 w-px h-12" style={{ background: `linear-gradient(to bottom, ${m.accent}, transparent)` }} />
+                <div className="absolute top-0 left-0 w-10 h-px" style={{ background: `linear-gradient(to right, ${m.accent}, transparent)` }} />
+                <div className="absolute top-0 left-0 w-px h-10" style={{ background: `linear-gradient(to bottom, ${m.accent}, transparent)` }} />
+
+                {/* Value */}
                 <div
-                  className="font-bold mb-1.5 leading-none"
-                  style={{ color: m.accent, fontSize: 'clamp(24px, 3.5vw, 40px)' }}
+                  className="font-jakarta font-bold mb-2 leading-none"
+                  style={{ color: m.accent, fontSize: 'clamp(26px, 3.5vw, 42px)' }}
                 >
-                  {m.value}
+                  {m.numericTarget !== null ? (
+                    <AnimatedCounter target={m.numericTarget} delay={idx * 70} />
+                  ) : m.label === 'Status' ? (
+                    <span className="inline-flex items-center justify-center gap-1.5">
+                      <motion.span
+                        className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                        style={{ background: m.accent, boxShadow: `0 0 10px ${m.accent}` }}
+                        animate={{ opacity: [1, 0.2, 1], scale: [1, 0.75, 1] }}
+                        transition={{ repeat: Infinity, duration: 1.4 }}
+                      />
+                      {m.value}
+                    </span>
+                  ) : (
+                    m.value
+                  )}
                 </div>
-                <div className="text-white text-xs font-semibold mb-1 uppercase tracking-wider">{m.label}</div>
-                <div className="text-[#5A5E70] text-xs">{m.sub}</div>
-              </div>
-            </motion.div>
-          ))}
+
+                <div className="text-white text-[11px] font-semibold mb-1 uppercase tracking-widest">{m.label}</div>
+                <div className="text-[#384050] text-[10px] uppercase tracking-wider">{m.sub}</div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* ── Agent status board ──────────────────────────────── */}
+          <div className="px-6 pt-6 pb-5" style={{ borderTop: '1px solid rgba(0,229,255,0.08)' }}>
+            <div className="flex items-center gap-2 mb-5">
+              <span
+                className="text-[10px] uppercase tracking-[0.28em] font-semibold"
+                style={{ color: 'rgba(0,229,255,0.4)' }}
+              >
+                Agent Status
+              </span>
+              <div className="flex-1 h-px" style={{ background: 'rgba(0,229,255,0.07)' }} />
+            </div>
+
+            <div className="space-y-3.5">
+              {allAgents.map((agent, i) => {
+                const accent = agentAccents[agent.id] ?? agentAccents.pruttius
+                const act = agentActivities[agent.id] ?? { activity: 'Active', progress: 80 }
+                return (
+                  <motion.div
+                    key={agent.id}
+                    className="flex items-center gap-3"
+                    initial={{ opacity: 0, x: -16 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.45, delay: 0.2 + i * 0.08, ease: 'easeOut' as const }}
+                  >
+                    {/* Emoji + name */}
+                    <span className="text-base flex-shrink-0 w-5 text-center">{agent.emoji}</span>
+                    <span
+                      className="font-jakarta font-semibold text-xs flex-shrink-0 w-28 truncate"
+                      style={{ color: accent.color }}
+                    >
+                      {agent.name}
+                    </span>
+
+                    {/* Progress bar */}
+                    <div className="flex-1 h-1 rounded-full overflow-hidden" style={{ background: 'rgba(255,255,255,0.045)' }}>
+                      <motion.div
+                        className="h-full rounded-full"
+                        style={{
+                          background: `linear-gradient(to right, ${accent.color}, ${accent.color}cc)`,
+                          boxShadow: `0 0 8px ${accent.glow}`,
+                        }}
+                        initial={{ width: '0%' }}
+                        whileInView={{ width: `${act.progress}%` }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 1.3,
+                          delay: 0.35 + i * 0.1,
+                          ease: [0.25, 0.46, 0.45, 0.94] as const,
+                        }}
+                      />
+                    </div>
+
+                    {/* Activity label */}
+                    <span className="text-[10px] font-mono flex-shrink-0 w-20 text-right uppercase tracking-wider" style={{ color: '#384050' }}>
+                      {act.activity}
+                    </span>
+                  </motion.div>
+                )
+              })}
+            </div>
+          </div>
         </motion.div>
 
+        {/* ── Quote ──────────────────────────────────────────────── */}
         <motion.p
-          className="text-center font-jakarta italic text-gold text-lg sm:text-xl"
+          className="text-center font-jakarta italic text-gold text-lg sm:text-xl mt-12"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
