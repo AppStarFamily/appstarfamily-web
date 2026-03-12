@@ -59,11 +59,11 @@ export default function EmpirePage() {
           viewport={{ once: true }}
         >
           <motion.h2 variants={itemVariants} className="font-jakarta text-gold-light text-3xl sm:text-4xl font-bold mb-6">
-            Five agents. One mission.
+            Seven agents. One mission.
           </motion.h2>
           <motion.p variants={itemVariants} className="text-[#8B8FA8] text-base leading-relaxed">
             The Pruttius Empire is not a metaphor. It is a real multi-agent AI system
-            built to run the content, growth, social, and development operations of
+            built to run the content, growth, social, development, design, and translation operations of
             App Star Family &mdash; autonomously, around the clock, from a dedicated Ubuntu VPS.
             Each agent has a name, a role, a portrait, and a workspace directory.
             They report to Pruttius Maximus, who reports to JJ, who is usually on a beach.

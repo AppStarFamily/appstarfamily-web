@@ -12,6 +12,8 @@ const accentColors: Record<string, { color: string; border: string; glow: string
   crescentius: { color: '#60A5FA', border: 'rgba(96,165,250,0.32)', glow: 'rgba(96,165,250,0.18)', dim: 'rgba(96,165,250,0.05)' },
   socialis:    { color: '#FB923C', border: 'rgba(251,146,60,0.32)', glow: 'rgba(251,146,60,0.18)', dim: 'rgba(251,146,60,0.05)' },
   fabricius:   { color: '#F97316', border: 'rgba(249,115,22,0.32)', glow: 'rgba(249,115,22,0.18)', dim: 'rgba(249,115,22,0.05)' },
+  designius:   { color: '#34D399', border: 'rgba(52,211,153,0.32)',  glow: 'rgba(52,211,153,0.18)',  dim: 'rgba(52,211,153,0.05)' },
+  translatius: { color: '#A78BFA', border: 'rgba(167,139,250,0.32)', glow: 'rgba(167,139,250,0.18)', dim: 'rgba(167,139,250,0.05)' },
 }
 
 export default function AgentCard({ agent, variant = 'specialist' }: AgentCardProps) {
