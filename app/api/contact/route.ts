@@ -34,18 +34,42 @@ export async function POST(req: Request) {
       replyTo: email,
       subject: `[${topic}] Message from ${escapeHtml(name)}`,
       html: `
-        <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px;">
-          <h2 style="color:#C9922A;margin-bottom:16px;">New Imperial Communication</h2>
-          <table style="width:100%;border-collapse:collapse;">
-            <tr><td style="padding:8px 0;color:#888;width:80px;vertical-align:top;">Name</td><td style="padding:8px 0;color:#eee;">${escapeHtml(name)}</td></tr>
-            <tr><td style="padding:8px 0;color:#888;vertical-align:top;">Email</td><td style="padding:8px 0;color:#eee;">${escapeHtml(email)}</td></tr>
-            <tr><td style="padding:8px 0;color:#888;vertical-align:top;">Topic</td><td style="padding:8px 0;color:#eee;">${escapeHtml(topic)}</td></tr>
-          </table>
-          <hr style="border:none;border-top:1px solid #333;margin:16px 0;">
-          <p style="color:#888;margin-bottom:8px;">Message:</p>
-          <p style="color:#eee;line-height:1.6;">${escapeHtml(message)}</p>
-          <hr style="border:none;border-top:1px solid #333;margin-top:24px;">
-          <p style="color:#555;font-size:12px;">Sent via appstarfamily.net contact form</p>
+        <div style="background:#0a0f1e;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
+          <div style="max-width:560px;margin:0 auto;">
+
+            <!-- Header -->
+            <div style="border-bottom:1px solid #1e2a40;padding-bottom:24px;margin-bottom:28px;">
+              <p style="margin:0 0 6px;font-size:11px;letter-spacing:3px;color:#C9922A;text-transform:uppercase;">AppStar Family · Imperial Comms</p>
+              <h1 style="margin:0;font-size:22px;font-weight:600;color:#F0E8D8;">New Incoming Message</h1>
+            </div>
+
+            <!-- Topic badge -->
+            <div style="margin-bottom:24px;">
+              <span style="display:inline-block;background:#1a1f30;border:1px solid #C9922A44;color:#C9922A;font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:4px;">${escapeHtml(topic)}</span>
+            </div>
+
+            <!-- Fields -->
+            <table style="width:100%;border-collapse:collapse;margin-bottom:28px;">
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #1e2a40;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#5a6a88;width:90px;vertical-align:middle;">From</td>
+                <td style="padding:12px 0;border-bottom:1px solid #1e2a40;font-size:15px;color:#F0E8D8;font-weight:500;vertical-align:middle;">${escapeHtml(name)}</td>
+              </tr>
+              <tr>
+                <td style="padding:12px 0;border-bottom:1px solid #1e2a40;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#5a6a88;vertical-align:middle;">Reply to</td>
+                <td style="padding:12px 0;border-bottom:1px solid #1e2a40;vertical-align:middle;"><a href="mailto:${escapeHtml(email)}" style="color:#C9922A;font-size:15px;text-decoration:none;">${escapeHtml(email)}</a></td>
+              </tr>
+            </table>
+
+            <!-- Message body -->
+            <div style="background:#0d1425;border:1px solid #1e2a40;border-left:3px solid #C9922A;border-radius:6px;padding:20px 22px;margin-bottom:32px;">
+              <p style="margin:0 0 10px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#5a6a88;">Message</p>
+              <p style="margin:0;font-size:15px;line-height:1.7;color:#D0C8B8;">${escapeHtml(message)}</p>
+            </div>
+
+            <!-- Footer -->
+            <p style="margin:0;font-size:11px;color:#2a3448;text-align:center;">Sent via <a href="https://appstarfamily.net/contact" style="color:#3a4a60;text-decoration:none;">appstarfamily.net</a> contact form</p>
+
+          </div>
         </div>
       `,
     })
