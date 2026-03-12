@@ -274,6 +274,190 @@ function FabriciusAmbience() {
 }
 
 /* ─────────────────────────────────────────────────────────────
+   DESIGNIUS  —  Chameleon · Visual Creative · emerald #34D399
+   Iridescent colour-cycling aura + rising paint drops + design glyphs
+───────────────────────────────────────────────────────────── */
+const PAINT_DROPS = [
+  '#34D399', '#F59E0B', '#F87171', '#60A5FA', '#A78BFA', '#FB923C',
+]
+const DESIGN_GLYPHS = ['◉', '⬟', '▲', '◈']
+
+function DesigniusAmbience() {
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden>
+      {/* Iridescent colour-cycling glow — the chameleon's shifting skin */}
+      <motion.div
+        className="absolute inset-0"
+        animate={{
+          background: [
+            'radial-gradient(ellipse 80% 60% at 50% 20%, rgba(52,211,153,0.20) 0%, transparent 65%)',
+            'radial-gradient(ellipse 80% 60% at 50% 20%, rgba(96,165,250,0.17) 0%, transparent 65%)',
+            'radial-gradient(ellipse 80% 60% at 50% 20%, rgba(167,139,250,0.17) 0%, transparent 65%)',
+            'radial-gradient(ellipse 80% 60% at 50% 20%, rgba(251,146,60,0.14) 0%, transparent 65%)',
+            'radial-gradient(ellipse 80% 60% at 50% 20%, rgba(52,211,153,0.20) 0%, transparent 65%)',
+          ],
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+      />
+      {/* Rising paint drops — multi-colour palette splatters */}
+      {PAINT_DROPS.map((color, i) => (
+        <motion.div
+          key={i}
+          className="absolute rounded-full"
+          style={{
+            width: 5,
+            height: 5,
+            background: color,
+            boxShadow: `0 0 6px 2px ${color}99`,
+            left: `${10 + i * 14}%`,
+            bottom: '18%',
+            opacity: 0,
+          }}
+          animate={{
+            y: [0, -30, -65],
+            x: [0, i % 2 === 0 ? 6 : -6, 0],
+            opacity: [0, 0.9, 0],
+            scale: [0.6, 1.3, 0.4],
+          }}
+          transition={{
+            duration: 2.6 + i * 0.4,
+            repeat: Infinity,
+            delay: i * 0.55,
+            ease: 'easeOut',
+          }}
+        />
+      ))}
+      {/* Floating design glyphs */}
+      {DESIGN_GLYPHS.map((glyph, i) => (
+        <motion.span
+          key={`g-${i}`}
+          className="absolute select-none"
+          style={{
+            fontSize: 10,
+            color: '#34D399',
+            textShadow: '0 0 8px rgba(52,211,153,0.9)',
+            left: `${18 + i * 18}%`,
+            bottom: '32%',
+            opacity: 0,
+          }}
+          animate={{ y: [0, -22, -48], opacity: [0, 0.72, 0] }}
+          transition={{
+            duration: 3.2 + i * 0.5,
+            repeat: Infinity,
+            delay: i * 0.9 + 0.3,
+            ease: 'easeOut',
+          }}
+        >
+          {glyph}
+        </motion.span>
+      ))}
+    </div>
+  )
+}
+
+/* ─────────────────────────────────────────────────────────────
+   TRANSLATIUS  —  Owl · Multilingual Scholar · violet #A78BFA
+   Glowing amber eyes + dual candlelight flicker + floating lang chars
+───────────────────────────────────────────────────────────── */
+const LANG_CHARS = ['ä', 'ñ', 'å', '日', 'α', 'ę']
+
+function TranslatiusAmbience() {
+  return (
+    <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden>
+      {/* Glowing amber owl eyes */}
+      {[
+        { left: '37%', top: '34%' },
+        { left: '58%', top: '34%' },
+      ].map((pos, i) => (
+        <motion.div
+          key={`eye-${i}`}
+          className="absolute rounded-full"
+          style={{
+            width: 8,
+            height: 8,
+            left: pos.left,
+            top: pos.top,
+            transform: 'translate(-50%, -50%)',
+            background:
+              'radial-gradient(circle, rgba(251,191,36,1) 0%, rgba(251,146,60,0.6) 45%, transparent 75%)',
+            boxShadow:
+              '0 0 8px 3px rgba(251,191,36,0.65), 0 0 18px 6px rgba(251,146,60,0.28)',
+          }}
+          animate={{ opacity: [0.65, 1, 0.65], scale: [0.88, 1.14, 0.88] }}
+          transition={{
+            duration: 3.2,
+            repeat: Infinity,
+            delay: i * 0.22,
+            ease: 'easeInOut',
+          }}
+        />
+      ))}
+      {/* Candlelight — left candle flicker */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse at 8% 72%, rgba(251,191,36,0.28) 0%, transparent 42%)',
+        }}
+        animate={{ opacity: [0.5, 0.95, 0.52, 0.84, 0.38, 0.78, 0.5] }}
+        transition={{
+          duration: 4.8,
+          repeat: Infinity,
+          times: [0, 0.12, 0.3, 0.5, 0.65, 0.82, 1],
+          ease: 'easeInOut',
+        }}
+      />
+      {/* Candlelight — right candle counter-flicker */}
+      <motion.div
+        className="absolute inset-0"
+        style={{
+          background:
+            'radial-gradient(ellipse at 90% 78%, rgba(251,191,36,0.22) 0%, transparent 38%)',
+        }}
+        animate={{ opacity: [0.38, 0.82, 0.28, 0.70, 0.38] }}
+        transition={{ duration: 6.2, repeat: Infinity, ease: 'easeInOut', delay: 0.8 }}
+      />
+      {/* Floating multilingual characters */}
+      {LANG_CHARS.map((char, i) => (
+        <motion.span
+          key={i}
+          className="absolute select-none font-serif"
+          style={{
+            fontSize: 12,
+            color: '#A78BFA',
+            textShadow: '0 0 8px rgba(167,139,250,0.9)',
+            left: `${8 + i * 15}%`,
+            bottom: '20%',
+            opacity: 0,
+          }}
+          animate={{ y: [0, -26, -55], opacity: [0, 0.82, 0] }}
+          transition={{
+            duration: 3.0 + i * 0.5,
+            repeat: Infinity,
+            delay: i * 0.7,
+            ease: 'easeOut',
+          }}
+        >
+          {char}
+        </motion.span>
+      ))}
+      {/* Violet scholarly glow pulse */}
+      <motion.div
+        className="absolute inset-0"
+        animate={{
+          background: [
+            'radial-gradient(ellipse 70% 50% at 50% 30%, rgba(167,139,250,0) 0%, transparent 70%)',
+            'radial-gradient(ellipse 70% 50% at 50% 30%, rgba(167,139,250,0.17) 0%, transparent 70%)',
+            'radial-gradient(ellipse 70% 50% at 50% 30%, rgba(167,139,250,0) 0%, transparent 70%)',
+          ],
+        }}
+        transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 1.5 }}
+      />
+    </div>
+  )
+}
+
+/* ─────────────────────────────────────────────────────────────
    PRUTTIUS MAXIMUS  —  BACKGROUND LAYER  (renders BEHIND portrait)
    Golden aura only — halo rings removed per user feedback.
 ───────────────────────────────────────────────────────────── */
@@ -383,6 +567,8 @@ export default function AgentAmbience({ agentId }: { agentId: string }) {
     case 'crescentius': return <CrescentiusAmbience />
     case 'socialis':    return <SocialisAmbience />
     case 'fabricius':   return <FabriciusAmbience />
+    case 'designius':   return <DesigniusAmbience />
+    case 'translatius': return <TranslatiusAmbience />
     case 'pruttius':    return <PruttiusAmbience />
     default:            return null
   }
