@@ -50,7 +50,7 @@ export default function AppsPage() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             iOS apps across health, pregnancy, productivity, education and more.
-            Built by one developer and five AI agents from South East Asia.
+            Built by one developer and seven AI agents from South East Asia.
           </motion.p>
           <motion.p
             className="text-xs text-[#5A5E70] uppercase tracking-widest"
