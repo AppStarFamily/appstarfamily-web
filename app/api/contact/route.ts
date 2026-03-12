@@ -14,6 +14,11 @@ function escapeHtml(str: string) {
 }
 
 export async function POST(req: Request) {
+  if (!process.env.RESEND_API_KEY) {
+    console.error('[contact] RESEND_API_KEY is not set')
+    return NextResponse.json({ error: 'Email service not configured.' }, { status: 500 })
+  }
+
   try {
     const { name, email, topic, message } = await req.json()
 
@@ -23,7 +28,7 @@ export async function POST(req: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY)
 
-    const { error } = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: 'Imperial Comms <noreply@appstarfamily.net>',
       to: ['info@appstarfamily.net'],
       replyTo: email,
@@ -46,13 +51,15 @@ export async function POST(req: Request) {
     })
 
     if (error) {
-      console.error('[contact] Resend error:', error)
-      return NextResponse.json({ error: 'Failed to send message.' }, { status: 500 })
+      console.error('[contact] Resend API error:', JSON.stringify(error))
+      return NextResponse.json({ error: `Send failed: ${error.message}` }, { status: 500 })
     }
 
+    console.log('[contact] Email sent, id:', data?.id)
     return NextResponse.json({ ok: true })
   } catch (err) {
-    console.error('[contact] Unexpected error:', err)
-    return NextResponse.json({ error: 'Unexpected error.' }, { status: 500 })
+    const msg = err instanceof Error ? err.message : String(err)
+    console.error('[contact] Unexpected error:', msg)
+    return NextResponse.json({ error: `Unexpected error: ${msg}` }, { status: 500 })
   }
 }
