@@ -54,7 +54,7 @@ const gridApps = featuredApps.slice(1)
 const commandMetrics: {
   label: string; value: string; numericTarget: number | null; sub: string; accent: string
 }[] = [
-  { label: 'Agents Online',   value: '5',     numericTarget: 5,    sub: 'Active',    accent: '#4ade80' },
+  { label: 'Agents Online',   value: '7',     numericTarget: 7,    sub: 'Active',    accent: '#4ade80' },
   { label: 'Apps Deployed',   value: '12',    numericTarget: 12,   sub: '9 Live',    accent: '#C9922A' },
   { label: 'Markets Reached', value: '7',     numericTarget: 7,    sub: 'Countries', accent: '#00E5FF' },
   { label: 'Languages',       value: '9',     numericTarget: 9,    sub: 'Localised', accent: '#60A5FA' },
@@ -71,7 +71,7 @@ const agentActivities: Record<string, { activity: string; progress: number }> = 
 }
 
 const principles = [
-  { icon: '⚡', title: 'AI-Powered',   desc: 'Five specialist agents working in parallel — content, growth, social, code — around the clock.' },
+  { icon: '⚡', title: 'AI-Powered',   desc: 'Seven specialist agents working in parallel — content, growth, social, code, design, translation — around the clock.' },
   { icon: '◆',  title: 'Taste-Led',    desc: 'Premium product design guided by real users, not trend decks or agency templates.' },
   { icon: '→',  title: 'Ships Fast',   desc: 'From idea to live App Store listing in weeks. Velocity is a product feature.' },
   { icon: '◉',  title: 'Built Global', desc: '9 languages. 7 markets. Localised for discovery and conversion from day one.' },
@@ -299,7 +299,7 @@ function ManifestoSection() {
             className="font-jakarta font-bold text-white mb-8 leading-[1.05] tracking-tight"
             style={{ fontSize: 'clamp(38px, 6vw, 76px)' }}
           >
-            Five agents.<br />
+            Seven agents.<br />
             <span className="text-gold-light">One mission.</span>
           </motion.h2>
 
@@ -308,8 +308,8 @@ function ManifestoSection() {
             className="text-[#8B8FA8] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto mb-16"
           >
             The Pruttius Empire is not a metaphor. It is a real multi-agent AI system built to run
-            the content, growth, social, and development operations of App Star Family —
-            autonomously, around the clock, from a dedicated Ubuntu VPS. Five specialist agents report
+            the content, growth, social, development, design, and translation operations of App Star Family —
+            autonomously, around the clock, from a dedicated Ubuntu VPS. Seven specialist agents report
             to one emperor, who reports to JJ, who is usually on a beach.
           </motion.p>
 
@@ -320,7 +320,7 @@ function ManifestoSection() {
           >
             {[
               { num: '12', label: 'Apps' },
-              { num: '5',  label: 'AI Agents' },
+              { num: '7',  label: 'AI Agents' },
               { num: '9',  label: 'Languages' },
               { num: '7',  label: 'Markets' },
               { num: '1',  label: 'Motto' },
@@ -931,7 +931,7 @@ function PortfolioSection() {
           <motion.div variants={fadeUp} className="flex flex-wrap justify-center items-center gap-0">
             {[
               { num: '12', label: 'Apps' },
-              { num: '5',  label: 'AI Agents' },
+              { num: '7',  label: 'AI Agents' },
               { num: '9',  label: 'Languages' },
               { num: '7',  label: 'Markets' },
             ].map((stat, i, arr) => (

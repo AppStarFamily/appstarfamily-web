@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: 'App Star Family — Home of the Pruttius Empire',
     template: '%s | App Star Family',
   },
-  description: 'AI-powered iOS app studio from South East Asia. 12 apps, 5 autonomous AI agents, infinite ambition. Home of the Pruttius Empire.',
+  description: 'AI-powered iOS app studio from South East Asia. 12 apps, 7 autonomous AI agents, infinite ambition. Home of the Pruttius Empire.',
   icons: {
     icon: [
       { url: '/images/logo.png', sizes: '32x32', type: 'image/png' },
