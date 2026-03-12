@@ -40,6 +40,8 @@ const agentAccents: Record<string, { color: string; glow: string; border: string
   crescentius: { color: '#60A5FA', glow: 'rgba(96,165,250,0.22)',  border: 'rgba(96,165,250,0.32)',  dim: 'rgba(96,165,250,0.05)', topGlow: 'rgba(96,165,250,0.14)' },
   socialis:    { color: '#FB923C', glow: 'rgba(251,146,60,0.22)',  border: 'rgba(251,146,60,0.32)',  dim: 'rgba(251,146,60,0.05)', topGlow: 'rgba(251,146,60,0.13)' },
   fabricius:   { color: '#F97316', glow: 'rgba(249,115,22,0.22)',  border: 'rgba(249,115,22,0.32)',  dim: 'rgba(249,115,22,0.05)', topGlow: 'rgba(249,115,22,0.13)' },
+  designius:   { color: '#34D399', glow: 'rgba(52,211,153,0.22)',  border: 'rgba(52,211,153,0.32)',  dim: 'rgba(52,211,153,0.05)', topGlow: 'rgba(52,211,153,0.13)' },
+  translatius: { color: '#A78BFA', glow: 'rgba(167,139,250,0.22)', border: 'rgba(167,139,250,0.32)', dim: 'rgba(167,139,250,0.05)', topGlow: 'rgba(167,139,250,0.13)' },
 }
 
 /* ── Data ── */
@@ -546,7 +548,7 @@ function CouncilSection() {
             Meet Your Agents
           </motion.h2>
           <motion.p variants={fadeUp} className="text-[#8B8FA8] text-base max-w-md mx-auto">
-            Five specialist AI agents. Each with a domain, a name, and a mission.
+            Seven specialist AI agents. Each with a domain, a name, and a mission.
           </motion.p>
         </motion.div>
 
