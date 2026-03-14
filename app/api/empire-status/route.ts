@@ -2,18 +2,14 @@ import { NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic'
 
+const STATUS_URL = 'http://100.103.172.60:7823/empire-status'
+const STATUS_TOKEN = '733aca2e27413d1ce72ab711fd890a83abb9fe56e17575fa835cd55ae61a3609'
+
 export async function GET() {
-  const statusUrl = process.env.EMPIRE_STATUS_URL
-  const statusToken = process.env.EMPIRE_STATUS_TOKEN
-
-  if (!statusUrl) {
-    return NextResponse.json({ error: 'EMPIRE_STATUS_URL not configured' }, { status: 500 })
-  }
-
   try {
-    const res = await fetch(statusUrl, {
+    const res = await fetch(STATUS_URL, {
       headers: {
-        'X-Empire-Token': statusToken ?? '',
+        'X-Empire-Token': STATUS_TOKEN,
         'Content-Type': 'application/json',
       },
       cache: 'no-store',
