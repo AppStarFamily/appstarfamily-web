@@ -21,7 +21,8 @@ interface Lesson {
   date: string
   agent: string
   severity: 'HIGH' | 'MEDIUM'
-  text: string
+  text?: string
+  lesson?: string
 }
 
 interface EmpireStatus {
@@ -48,12 +49,12 @@ const AGENTS = [
 ]
 
 const CRONS = [
-  { id: 'morning-brief', label: 'Empire Morning Brief', time: '00:00 UTC daily', script: 'tiktok-trends.py', apps: 'All apps' },
-  { id: 'reddit-warmup', label: 'Reddit Warmup', time: '01:00 UTC daily', script: 'reddit-cookie-warmup.py', apps: 'Hypnobirthing+' },
-  { id: 'blog-publish', label: 'Blog Publish', time: '00:00 UTC daily', script: 'publish-blog.py', apps: 'PouchOut + Lyrical' },
-  { id: 'keyword-analysis', label: 'Keyword Analysis', time: '01:00 UTC Sunday', script: 'competitor-keyword-analysis.py', apps: 'PouchOut' },
-  { id: 'evening-digest', label: 'Evening Digest', time: '13:00 UTC daily', script: 'empire-evening-digest.py', apps: 'Empire' },
-  { id: 'morning-mandate', label: 'Morning Mandate', time: '22:00 UTC daily', script: 'morning-mandate.py', apps: 'All agents' },
+  { id: 'morning-brief', label: 'Empire Morning Brief', time: '00:00 UTC daily', baliTime: '08:00 Bali', script: 'tiktok-trends.py', apps: 'All apps' },
+  { id: 'reddit-warmup', label: 'Reddit Warmup', time: '01:00 UTC daily', baliTime: '09:00 Bali', script: 'reddit-cookie-warmup.py', apps: 'Hypnobirthing+' },
+  { id: 'blog-publish', label: 'Blog Publish', time: '00:00 UTC daily', baliTime: '08:00 Bali', script: 'publish-blog.py', apps: 'PouchOut + Lyrical' },
+  { id: 'keyword-analysis', label: 'Keyword Analysis', time: '01:00 UTC Sunday', baliTime: '09:00 Bali (Sun)', script: 'competitor-keyword-analysis.py', apps: 'PouchOut' },
+  { id: 'evening-digest', label: 'Evening Digest', time: '13:00 UTC daily', baliTime: '21:00 Bali', script: 'empire-evening-digest.py', apps: 'Empire' },
+  { id: 'morning-mandate', label: 'Morning Mandate', time: '22:00 UTC daily', baliTime: '06:00 Bali', script: 'morning-mandate.py', apps: 'All agents' },
 ]
 
 const APPS = [
@@ -486,7 +487,10 @@ function CronsTab({ crons }: { crons: Record<string, CronLiveData> }) {
             <div style={{ flex: 1, minWidth: '200px' }}>
               <div style={{ color: '#E5E7EB', fontWeight: '600', fontSize: '15px', marginBottom: '6px' }}>{cron.label}</div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' }}>
-                <span style={{ color: '#6B7280', fontSize: '12px' }}>🕐 {cron.time}</span>
+                <span style={{ color: '#6B7280', fontSize: '12px' }}>
+                  🕐 {cron.time}
+                  <span style={{ display: 'block', color: '#4B5563', fontSize: '11px', marginTop: '2px' }}>{cron.baliTime}</span>
+                </span>
                 <span style={{ color: '#6B7280', fontSize: '12px', fontFamily: 'monospace' }}>📜 {cron.script}</span>
                 <span style={{ color: '#6B7280', fontSize: '12px' }}>📱 {cron.apps}</span>
               </div>
@@ -610,7 +614,7 @@ function LessonsTab({ lessons }: { lessons: Lesson[] }) {
             <div style={{ color: '#C9A84C', fontSize: '12px', fontWeight: '600', marginBottom: '4px' }}>
               {lesson.agent}
             </div>
-            <div style={{ color: '#D1D5DB', fontSize: '14px', lineHeight: '1.5' }}>{lesson.text}</div>
+            <div style={{ color: '#D1D5DB', fontSize: '14px', lineHeight: '1.5' }}>{lesson.lesson ?? lesson.text}</div>
           </div>
         </div>
       ))}
