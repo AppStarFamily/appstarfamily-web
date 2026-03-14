@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic'
 
-const STATUS_URL = 'http://100.103.172.60:7823/empire-status?token=733aca2e27413d1ce72ab711fd890a83abb9fe56e17575fa835cd55ae61a3609'
+const STATUS_URL = 'https://fioricet-solving-governments-bundle.trycloudflare.com/empire-status?token=733aca2e27413d1ce72ab711fd890a83abb9fe56e17575fa835cd55ae61a3609'
 
 export async function GET() {
   try {
