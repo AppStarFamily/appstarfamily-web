@@ -53,6 +53,7 @@ const CRONS = [
   { id: 'blog-publish', label: 'Blog Publish', time: '00:00 UTC daily', script: 'publish-blog.py', apps: 'PouchOut + Lyrical' },
   { id: 'keyword-analysis', label: 'Keyword Analysis', time: '01:00 UTC Sunday', script: 'competitor-keyword-analysis.py', apps: 'PouchOut' },
   { id: 'evening-digest', label: 'Evening Digest', time: '13:00 UTC daily', script: 'empire-evening-digest.py', apps: 'Empire' },
+  { id: 'morning-mandate', label: 'Morning Mandate', time: '22:00 UTC daily', script: 'morning-mandate.py', apps: 'All agents' },
 ]
 
 const APPS = [
