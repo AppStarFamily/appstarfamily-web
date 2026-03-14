@@ -1,19 +1,23 @@
+import bcrypt from 'bcryptjs'
 import { NextRequest, NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic'
+
+// bcrypt hash of "EmpireAdmin2026" (cost factor 12)
+const PASSWORD_HASH = '$2b$12$tO8UnIXzeglzGm/LqNTxBuS8PLiodPukAygb94/HmH0Dzg2T1El.y'
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const { password } = body
 
-    // TEMP DEBUG — remove after confirming env var is correct
-    const envPwd = process.env.EMPIRE_PASSWORD ?? ''
-    console.log('[empire-auth] EMPIRE_PASSWORD first 3 chars:', JSON.stringify(envPwd.slice(0, 3)))
-    console.log('[empire-auth] EMPIRE_PASSWORD length:', envPwd.length)
-    console.log('[empire-auth] submitted password length:', password?.length ?? 0)
+    if (!password || typeof password !== 'string') {
+      return NextResponse.json({ success: false }, { status: 400 })
+    }
 
-    if (password !== envPwd) {
+    const match = await bcrypt.compare(password, PASSWORD_HASH)
+
+    if (!match) {
       return NextResponse.json({ success: false }, { status: 401 })
     }
 
