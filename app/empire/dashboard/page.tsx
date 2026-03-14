@@ -1,16 +1,12 @@
 import EmpireDashboard from './EmpireDashboard'
 
-async function getEmpireStatus() {
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : 'http://localhost:3000'
+const STATUS_URL = 'https://learn-maui-roommate-license.trycloudflare.com/empire-status?token=733aca2e27413d1ce72ab711fd890a83abb9fe56e17575fa835cd55ae61a3609'
 
+async function getEmpireStatus() {
   try {
-    const res = await fetch(`${baseUrl}/api/empire-status`, {
-      cache: 'no-store',
-    })
+    const res = await fetch(STATUS_URL, { cache: 'no-store' })
     if (!res.ok) {
-      return { error: `Status ${res.status}`, agents: {}, crons: {}, lessons: [] }
+      return { error: `Upstream returned ${res.status}`, agents: {}, crons: {}, lessons: [] }
     }
     return res.json()
   } catch (err) {
