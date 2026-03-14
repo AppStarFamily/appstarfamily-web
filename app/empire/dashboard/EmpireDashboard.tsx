@@ -55,6 +55,7 @@ const CRONS = [
   { id: 'keyword-analysis', label: 'Keyword Analysis', time: '01:00 UTC Sunday', baliTime: '09:00 Bali (Sun)', script: 'competitor-keyword-analysis.py', apps: 'PouchOut' },
   { id: 'evening-digest', label: 'Evening Digest', time: '13:00 UTC daily', baliTime: '21:00 Bali', script: 'empire-evening-digest.py', apps: 'Empire' },
   { id: 'morning-mandate', label: 'Morning Mandate', time: '22:00 UTC daily', baliTime: '06:00 Bali', script: 'morning-mandate.py', apps: 'All agents' },
+  { id: 'dna-backup', label: 'DNA Backup', time: '01:30 UTC Sunday', baliTime: '09:30 Bali (Sun)', script: 'empire-dna-backup.sh', apps: 'All agents' },
 ]
 
 const APPS = [
