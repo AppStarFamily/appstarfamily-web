@@ -2,16 +2,11 @@ import { NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic'
 
-const STATUS_URL = 'https://learn-maui-roommate-license.trycloudflare.com/empire-status'
-const STATUS_TOKEN = '733aca2e27413d1ce72ab711fd890a83abb9fe56e17575fa835cd55ae61a3609'
+const STATUS_URL = 'https://learn-maui-roommate-license.trycloudflare.com/empire-status?token=733aca2e27413d1ce72ab711fd890a83abb9fe56e17575fa835cd55ae61a3609'
 
 export async function GET() {
   try {
     const res = await fetch(STATUS_URL, {
-      headers: {
-        'X-Empire-Token': STATUS_TOKEN,
-        'Content-Type': 'application/json',
-      },
       cache: 'no-store',
     })
 
