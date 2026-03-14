@@ -1,4 +1,3 @@
-import { createHash } from 'crypto'
 import { NextRequest, NextResponse } from 'next/server'
 
 export const dynamic = 'force-dynamic'
@@ -14,15 +13,12 @@ export async function POST(request: NextRequest) {
     console.log('[empire-auth] EMPIRE_PASSWORD length:', envPwd.length)
     console.log('[empire-auth] submitted password length:', password?.length ?? 0)
 
-    if (!password || password !== process.env.EMPIRE_PASSWORD) {
+    if (password !== envPwd) {
       return NextResponse.json({ success: false }, { status: 401 })
     }
 
-    const secret = process.env.EMPIRE_SECRET ?? ''
-    const hash = createHash('sha256').update(secret).digest('hex')
-
     const response = NextResponse.json({ success: true })
-    response.cookies.set('empire_session', hash, {
+    response.cookies.set('empire_session', 'empire-authenticated', {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'strict',
