@@ -20,15 +20,30 @@ export default function EmpireLoginPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password }),
       })
-      const data = await res.json()
+
+      // Surface HTTP errors explicitly so we can diagnose deployment issues
+      if (!res.ok && res.status !== 401) {
+        setError(`API error ${res.status} — route may not be deployed yet. Check Vercel logs.`)
+        return
+      }
+
+      let data: { success: boolean } = { success: false }
+      try {
+        data = await res.json()
+      } catch {
+        setError(`Bad response from server (status ${res.status}) — not valid JSON.`)
+        return
+      }
 
       if (data.success) {
         router.push('/empire/dashboard')
       } else {
         setError('Access denied. Long may he pinch. 🦞')
       }
-    } catch {
-      setError('Access denied. Long may he pinch. 🦞')
+    } catch (err) {
+      // Network-level error — fetch never reached the server
+      const msg = err instanceof Error ? err.message : String(err)
+      setError(`Network error: ${msg}`)
     } finally {
       setLoading(false)
     }
