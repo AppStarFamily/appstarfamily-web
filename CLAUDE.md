@@ -1,3 +1,5 @@
+## Research Reports Gold Standard
+
 # THE APPSTARFAMILY RESEARCH REPORT GOLD STANDARD
 *Compiled by JJ · March 2026 · Long may he pinch. 👑🦞*
 
@@ -64,9 +66,6 @@ Every volume/CPC estimate must include a confidence band:
 
 Every report must contain the following sections in this order. Sections may be expanded but never removed.
 
-**Web/content reports:** 13 sections (0–13), 7 SVGs
-**App reports:** 14 sections (0–13 + Section 2b), 8 SVGs — see Part 4B
-
 ---
 
 ### Section 0 — Front Matter (MDX Frontmatter)
@@ -106,19 +105,6 @@ author: "Scriptor"
 
 ---
 
-### Section 2b — App Store Competitive Analysis *(App reports only — insert between Section 2 and Section 3)*
-
-See Part 4B for full requirements.
-
-**What it contains:**
-- Top 5-8 App Store competitors (researched via Brave Search site:apps.apple.com queries)
-- For each competitor: name, developer, rating, review count, monetization model, positioning hook, top weakness
-- **Infographic: App Store Landscape SVG** (see Part 4B for spec)
-- Top 5-8 web competitors (separate list from App Store — note any overlap)
-- Combined gap analysis: where App Store landscape is weak vs web landscape
-
----
-
 ### Section 3 — Deep Dive on the Dominant Competitor
 
 **What it contains:**
@@ -155,7 +141,6 @@ See Part 4B for full requirements.
   - Tier 1: Win within 30-60 days (low competition, first-mover available)
   - Tier 2: Win in 60-90 days (medium competition, differentiation needed)
   - Tier 3: Long-term authority plays (90+ days, strong competition)
-- *(App reports only)* **ASO Keyword Opportunities subsection** — see Part 4B
 - Volume confidence methodology note
 
 ---
@@ -287,7 +272,7 @@ Every SVG infographic must follow these rules:
 
 ### The 7 Standard Infographics (web reports) or 8 (app reports)
 
-Every report includes SVGs 1–7. App reports additionally require SVG 8 — see Part 4B.
+Every report includes these 7 SVGs. Topic-specific infographics may be added but these 7 are always present. App reports add a mandatory 8th SVG — see Part 4B.
 
 ---
 
@@ -379,7 +364,7 @@ Every report includes SVGs 1–7. App reports additionally require SVG 8 — see
 
 ## PART 4B — APP REPORTS ADDENDUM
 
-*Applies when the report subject is an iOS app. These requirements are in addition to the full standard above — not instead of it.*
+When the report subject is an iOS app, these additional requirements apply on top of the standard gold standard.
 
 ---
 
@@ -387,53 +372,28 @@ Every report includes SVGs 1–7. App reports additionally require SVG 8 — see
 
 Insert between Section 2 (Market Landscape) and Section 3 (Competitor Deep Dive).
 
-**App Store research method:**
-- Search Brave: `"[topic] app site:apps.apple.com"`
-- Search Brave: `"best [topic] app 2025"` and `"best [topic] app 2026"` (roundup lists)
-- Fetch our own app's App Store page and record current state
-- For each competitor record:
-  - App name + developer
-  - Rating + number of ratings
-  - Monetization model (free / freemium / paid / subscription)
-  - First line of their description (their positioning hook)
-  - Top 3 inferred App Store keywords (from title, subtitle, description)
-  - Key weakness (thin reviews, old screenshots, poor ratings, no recent updates)
-
-**Web competitor landscape** (now explicitly separated from App Store):
-- Top 5-8 web competitors — content sites, SaaS tools, blogs dominating the SERPs
-- These are separate from App Store competitors — note any overlap
-
-**Combined gap analysis (required):**
-- Where the App Store landscape is weak vs the web landscape
-- Example: "App Store has strong incumbents but zero content SEO — web search is uncontested"
-- Example: "Web has strong content players but their apps are poorly rated — App Store quality gap exists"
-- This combined gap is often the most valuable strategic insight in the whole report
+**Contains:**
+- Top 5-8 App Store competitors researched via Brave Search (`site:apps.apple.com` queries)
+- For each: app name, developer, rating, review count, monetization model, positioning hook, top weakness
+- Top 5-8 web competitors (separate list — some may overlap)
+- Combined gap analysis: where App Store landscape is weak vs web landscape
 
 ---
 
-### SVG 8: App Store Landscape *(app reports only)*
+### Extra SVG 8: App Store Landscape
 
 **Filename:** `[topic]-appstore-landscape.svg`
-**Purpose:** Show the App Store competitive landscape at a glance
 **Format:** Table, 6-8 rows (one per competitor)
 **Columns:** App Name | Rating | Reviews | Model | Positioning Hook | Weakness
-**Color coding:**
-- Green row = weak competitor (low ratings, few reviews, poor positioning) = opportunity
-- Amber row = medium competitor
-- Red row = strong incumbent (high ratings, many reviews, strong brand)
+**Color coding:** Green row = weak competitor (opportunity) · Amber = medium · Red = strong incumbent
 **Header:** "[Topic] — App Store Landscape"
 **Footer:** Standard Scriptor footer
 
 ---
 
-### ASO Keyword Opportunities *(added to Section 5 for app reports)*
+### ASO Keyword Opportunities
 
-Add as a subsection inside Section 5 (Keyword Deep Dive).
-
-**What it contains:**
-- Keywords appearing in competitor app titles and subtitles (their top ASO bets)
-- Web search volume as proxy for App Store intent
-- Keywords competitors are NOT targeting in their metadata (ASO gaps)
+Add as a subsection inside Section 5 (Keyword Deep Dive) for app reports.
 
 **Format:** Table — Keyword | Web Volume | In Competitor Title? | In Competitor Subtitle? | ASO Opportunity
 
@@ -441,22 +401,19 @@ Add as a subsection inside Section 5 (Keyword Deep Dive).
 
 ### App Report Quality Checklist Additions
 
-Before pushing, also verify:
-- [ ] Our own app's App Store page fetched and reviewed
-- [ ] Top 5+ App Store competitors researched via Brave Search (site:apps.apple.com)
-- [ ] Each competitor has rating, review count, and monetization model recorded
-- [ ] `[topic]-appstore-landscape.svg` created and saved to correct path
+- [ ] App Store landscape researched via Brave Search
+- [ ] Top 5+ competitors have ratings, review counts, monetization recorded
+- [ ] `[topic]-appstore-landscape.svg` created and saved
 - [ ] ASO keyword opportunities subsection present in Section 5
-- [ ] Combined gap analysis (App Store vs web) present in Section 2b
+- [ ] Combined gap analysis present in Section 2b
+- [ ] Our own app's App Store page fetched and reviewed
 
 ---
 
-### App Report Summary
+### Summary
 
-| Report type | Sections | SVGs |
-|-------------|----------|------|
-| Web / content market | 13 (0–13) | 7 |
-| iOS app | 14 (0–13 + 2b) | 8 |
+- **Web/content reports:** 13 sections, 7 SVGs
+- **App reports:** 14 sections, 8 SVGs
 
 ---
 
@@ -483,7 +440,6 @@ public/
       [topic]-act-now.svg
       [topic]-content-calendar.svg
       [topic]-positioning-matrix.svg
-      [topic]-appstore-landscape.svg  ← app reports only
 ```
 
 **Naming convention:** All lowercase, hyphens only, no spaces. Topic slug matches the URL.
@@ -534,7 +490,7 @@ When a new report is added, the hub card must be added at the same time as the r
 |------|-------|--------|------|
 | thailand | Thailand Expat SEO Research Report | Live | March 2026 |
 | pouchout | PouchOut Market Research Report | Coming Soon | — |
-| hypnoflow | HypnoFlow SEO & App Store Report | Coming Soon | — |
+| hypnoflow | HypnoFlow SEO Report | Coming Soon | — |
 | hypnobirthing | HypnoBirthing+ Report | Coming Soon | — |
 
 ---
@@ -589,8 +545,8 @@ Before pushing, Scriptor must verify every item:
 - [ ] Competitor analysis based on live fetched content, not memory
 
 **Report structure:**
-- [ ] All sections present (13 for web reports, 14 for app reports)
-- [ ] All SVGs created and saved to correct path (7 for web, 8 for app)
+- [ ] All 13 sections present
+- [ ] All 7 standard SVGs created and saved to correct path
 - [ ] All SVG references in MDX use correct image syntax
 - [ ] No inline HTML or SVG in MDX content
 - [ ] Hub card added to `/reports` page
@@ -605,14 +561,6 @@ Before pushing, Scriptor must verify every item:
 - [ ] Branch named `scriptor/[topic]-report`
 - [ ] Commit message follows format above
 - [ ] Preview URL posted to Pruttius via Telegram
-
-**App reports only:**
-- [ ] Our own app's App Store page fetched and reviewed
-- [ ] Top 5+ App Store competitors researched via Brave Search
-- [ ] Each competitor has rating, review count, and monetization recorded
-- [ ] `[topic]-appstore-landscape.svg` created and saved
-- [ ] ASO keyword opportunities subsection present in Section 5
-- [ ] Combined gap analysis present in Section 2b
 
 ---
 
@@ -634,7 +582,7 @@ Long may he pinch. 👑🦞
 
 ---
 
-*Document version: 2.0*
-*Created: March 2026 · Updated: March 2026 (App Reports Addendum)*
+*Document version: 1.0*
+*Created: March 2026*
 *Author: JJ + Claude*
 *For: The Pruttius Empire*
