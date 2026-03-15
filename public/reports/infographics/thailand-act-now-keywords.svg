@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 556" width="960" height="556">
+  <rect width="960" height="556" fill="#0A0F1E"/>
+
+  <!-- Title -->
+  <text x="24" y="37" font-family="'Inter', system-ui, sans-serif" font-size="16" font-weight="700" fill="#C9A84C" letter-spacing="0.02em">Act On These First — Low Competition, High Volume</text>
+  <text x="24" y="56" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">Keywords combining meaningful volume with weak or fragmented competition · Publish these in Month 1</text>
+
+  <!-- Separator -->
+  <line x1="24" y1="68" x2="936" y2="68" stroke="#1F2937" stroke-width="1"/>
+
+  <!-- === CARD 1: DTV visa Thailand 2026 (left, row 1) === -->
+  <rect x="24" y="78" width="440" height="144" rx="8" fill="#111827" stroke="#34D39933" stroke-width="1"/>
+  <rect x="24" y="78" width="5" height="144" rx="4" fill="#34D399"/>
+  <!-- Rank badge -->
+  <rect x="36" y="90" width="20" height="18" rx="3" fill="#34D39922"/>
+  <text x="46" y="103" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">1</text>
+  <!-- Keyword -->
+  <text x="62" y="103" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#C9A84C">DTV visa Thailand 2026</text>
+  <!-- Stats -->
+  <text x="36" y="126" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#34D399">12,400/mo</text>
+  <text x="118" y="126" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">  ·  $1.85 CPC</text>
+  <!-- Divider -->
+  <line x1="36" y1="136" x2="452" y2="136" stroke="#1F2937" stroke-width="1"/>
+  <!-- Currently ranking -->
+  <text x="36" y="152" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#6B7280">#1 now: </text>
+  <text x="78" y="152" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#7EC8E3">ThaiEmbassy.com</text>
+  <!-- Why we win -->
+  <text x="36" y="170" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">No practical guide exists. Fragmented SERP.</text>
+  <text x="36" y="185" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">Single comprehensive guide wins immediately.</text>
+
+  <!-- === CARD 2: Thailand LTR visa (right, row 1) === -->
+  <rect x="480" y="78" width="440" height="144" rx="8" fill="#111827" stroke="#34D39933" stroke-width="1"/>
+  <rect x="480" y="78" width="5" height="144" rx="4" fill="#34D399"/>
+  <!-- Rank badge -->
+  <rect x="492" y="90" width="20" height="18" rx="3" fill="#34D39922"/>
+  <text x="502" y="103" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">2</text>
+  <!-- Keyword -->
+  <text x="518" y="103" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#C9A84C">Thailand LTR visa</text>
+  <!-- Stats -->
+  <text x="492" y="126" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#34D399">7,200/mo</text>
+  <text x="566" y="126" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">  ·  $1.65 CPC</text>
+  <!-- Divider -->
+  <line x1="492" y1="136" x2="908" y2="136" stroke="#1F2937" stroke-width="1"/>
+  <!-- Currently ranking -->
+  <text x="492" y="152" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#6B7280">#1 now: </text>
+  <text x="534" y="152" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#7EC8E3">ltr.boi.go.th (official BOI)</text>
+  <!-- Why we win -->
+  <text x="492" y="170" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">Official site confusing. 7,200 searches/mo</text>
+  <text x="492" y="185" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">with no clear guide. Straightforward win.</text>
+
+  <!-- === CARD 3: Cost of living Thailand 2026 (left, row 2) === -->
+  <rect x="24" y="236" width="440" height="144" rx="8" fill="#111827" stroke="#F59E0B33" stroke-width="1"/>
+  <rect x="24" y="236" width="5" height="144" rx="4" fill="#F59E0B"/>
+  <!-- Rank badge -->
+  <rect x="36" y="248" width="20" height="18" rx="3" fill="#F59E0B22"/>
+  <text x="46" y="261" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" fill="#F59E0B" text-anchor="middle">3</text>
+  <!-- Keyword -->
+  <text x="62" y="261" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#C9A84C">Cost of living Thailand 2026</text>
+  <!-- Stats -->
+  <text x="36" y="284" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#F59E0B">7,800/mo</text>
+  <text x="110" y="284" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">  ·  $1.25 CPC</text>
+  <!-- Divider -->
+  <line x1="36" y1="294" x2="452" y2="294" stroke="#1F2937" stroke-width="1"/>
+  <!-- Currently ranking -->
+  <text x="36" y="310" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#6B7280">#1 now: </text>
+  <text x="78" y="310" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#A78BFA">Numbeo</text>
+  <!-- Why we win -->
+  <text x="36" y="328" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">Numbeo is data-only, no narrative. Interactive</text>
+  <text x="36" y="343" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">calculator + real expat context beats it.</text>
+
+  <!-- === CARD 4: Thailand visa free 30 days (right, row 2) === -->
+  <rect x="480" y="236" width="440" height="144" rx="8" fill="#111827" stroke="#34D39933" stroke-width="1"/>
+  <rect x="480" y="236" width="5" height="144" rx="4" fill="#34D399"/>
+  <!-- Rank badge -->
+  <rect x="492" y="248" width="20" height="18" rx="3" fill="#34D39922"/>
+  <text x="502" y="261" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">4</text>
+  <!-- Keyword -->
+  <text x="518" y="261" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#C9A84C">Thailand visa free 30 days</text>
+  <!-- Stats -->
+  <text x="492" y="284" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#34D399">4,800/mo</text>
+  <text x="566" y="284" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">  ·  $1.52 CPC</text>
+  <!-- Divider -->
+  <line x1="492" y1="294" x2="908" y2="294" stroke="#1F2937" stroke-width="1"/>
+  <!-- Currently ranking -->
+  <text x="492" y="310" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#6B7280">#1 now: </text>
+  <text x="534" y="310" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#A78BFA">ExpatThai.com</text>
+  <!-- Why we win -->
+  <text x="492" y="328" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">Incumbents have accuracy issues on April</text>
+  <text x="492" y="343" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">2026 changes. Accurate guide wins fast.</text>
+
+  <!-- === CARD 5: Thailand property visa 3M (left, row 3) === -->
+  <rect x="24" y="394" width="440" height="144" rx="8" fill="#111827" stroke="#34D39933" stroke-width="1"/>
+  <rect x="24" y="394" width="5" height="144" rx="4" fill="#34D399"/>
+  <!-- Rank badge -->
+  <rect x="36" y="406" width="20" height="18" rx="3" fill="#34D39922"/>
+  <text x="46" y="419" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">5</text>
+  <!-- Keyword -->
+  <text x="62" y="419" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#C9A84C">Thailand property visa 3M baht</text>
+  <!-- Stats -->
+  <text x="36" y="442" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#34D399">1,050/mo</text>
+  <text x="110" y="442" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">  ·  $1.15 CPC</text>
+  <!-- Divider -->
+  <line x1="36" y1="452" x2="452" y2="452" stroke="#1F2937" stroke-width="1"/>
+  <!-- Currently ranking -->
+  <text x="36" y="468" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#6B7280">#1 now: </text>
+  <text x="78" y="468" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#6B7280">Sparse / no clear leader</text>
+  <!-- Why we win -->
+  <text x="36" y="486" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">New policy, almost zero coverage. First</text>
+  <text x="36" y="501" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">publisher owns this for months.</text>
+
+  <!-- === CARD 6: Thailand visa extension (right, row 3) === -->
+  <rect x="480" y="394" width="440" height="144" rx="8" fill="#111827" stroke="#34D39933" stroke-width="1"/>
+  <rect x="480" y="394" width="5" height="144" rx="4" fill="#34D399"/>
+  <!-- Rank badge -->
+  <rect x="492" y="406" width="20" height="18" rx="3" fill="#34D39922"/>
+  <text x="502" y="419" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="700" fill="#34D399" text-anchor="middle">6</text>
+  <!-- Keyword -->
+  <text x="518" y="419" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#C9A84C">Thailand visa extension</text>
+  <!-- Stats -->
+  <text x="492" y="442" font-family="'Inter', system-ui, sans-serif" font-size="11" font-weight="600" fill="#34D399">1,600/mo</text>
+  <text x="566" y="442" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#6B7280">  ·  $1.25 CPC</text>
+  <!-- Divider -->
+  <line x1="492" y1="452" x2="908" y2="452" stroke="#1F2937" stroke-width="1"/>
+  <!-- Currently ranking -->
+  <text x="492" y="468" font-family="'Inter', system-ui, sans-serif" font-size="10" fill="#6B7280">#1 now: </text>
+  <text x="534" y="468" font-family="'Inter', system-ui, sans-serif" font-size="10" font-weight="600" fill="#7EC8E3">ThaiEmbassy.com</text>
+  <!-- Why we win -->
+  <text x="492" y="486" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">Process unclear in current results. Clear</text>
+  <text x="492" y="501" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#9CA3AF">step-by-step guide ranks fast.</text>
+
+  <!-- Footer -->
+  <text x="24" y="548" font-family="'Inter', system-ui, sans-serif" font-size="11" fill="#374151">Scriptor / OpenClaw Research · March 2026 · Pattern: official sources rank but don't help · commercial sources rank but can't be trusted</text>
+</svg>
