@@ -26,12 +26,12 @@ const REPORTS = [
     tag: 'Market Research',
   },
   {
-    available: false,
+    available: true,
     emoji: '🧠',
-    title: 'HypnoFlow SEO Report',
-    description: 'Search demand, content gaps, and positioning strategy for the hypnotherapy and mindfulness app market.',
-    date: 'Coming Soon',
-    href: null,
+    title: 'HypnoFlow SEO & App Store Research Report',
+    description: 'Full competitive analysis of the self-hypnosis app market. 201K+ monthly search volume identified, 6 goldmine keywords with zero competition, App Store landscape analysis, and 12-month content strategy.',
+    date: 'March 2026',
+    href: '/reports/hypnoflow',
     tag: 'SEO Research',
   },
   {

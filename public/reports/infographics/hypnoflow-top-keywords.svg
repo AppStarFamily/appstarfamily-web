@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0A0F1E"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#C9A84C">Top 20 Keywords — Volume &amp; Opportunity</text>
+  
+  <!-- Bar Chart -->
+  <!-- sleep hypnosis: 90,500 -->
+  <rect x="100" y="480" width="30" height="0" fill="#EF4444"/>
+  <rect x="100" y="80" width="30" height="400" fill="#EF4444"/>
+  <text x="115" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">90.5K</text>
+  <text x="115" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 115 495)">sleep</text>
+  
+  <!-- self hypnosis: 22,200 -->
+  <rect x="140" y="403" width="30" height="77" fill="#F59E0B"/>
+  <text x="155" y="393" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">22.2K</text>
+  <text x="155" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 155 495)">self</text>
+  
+  <!-- weight loss: 22,200 -->
+  <rect x="180" y="403" width="30" height="77" fill="#F59E0B"/>
+  <text x="195" y="393" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">22.2K</text>
+  <text x="195" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 195 495)">weight</text>
+  
+  <!-- anxiety: 18,100 -->
+  <rect x="220" y="420" width="30" height="60" fill="#F59E0B"/>
+  <text x="235" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">18.1K</text>
+  <text x="235" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 235 495)">anxiety</text>
+  
+  <!-- quit smoking: 14,800 -->
+  <rect x="260" y="435" width="30" height="45" fill="#F59E0B"/>
+  <text x="275" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">14.8K</text>
+  <text x="275" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 275 495)">smoking</text>
+  
+  <!-- sleep: 8,100 -->
+  <rect x="300" y="464" width="30" height="16" fill="#F59E0B"/>
+  <text x="315" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">8.1K</text>
+  <text x="315" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 315 495)">hyp-sleep</text>
+  
+  <!-- best hypnosis app: 5,400 -->
+  <rect x="340" y="456" width="30" height="24" fill="#10B981"/>
+  <text x="355" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">5.4K</text>
+  <text x="355" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 355 495)">★ BEST</text>
+  
+  <!-- self anxiety: 5,400 -->
+  <rect x="380" y="456" width="30" height="24" fill="#F59E0B"/>
+  <text x="395" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">5.4K</text>
+  <text x="395" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 395 495)">self-anx</text>
+  
+  <!-- confidence: 3,600 -->
+  <rect x="420" y="468" width="30" height="12" fill="#10B981"/>
+  <text x="435" y="462" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">3.6K</text>
+  <text x="435" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 435 495)">conf</text>
+  
+  <!-- best self: 3,200 -->
+  <rect x="460" y="469" width="30" height="11" fill="#10B981"/>
+  <text x="475" y="463" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">3.2K</text>
+  <text x="475" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 475 495)">★ BEST</text>
+  
+  <!-- stress: 2,900 -->
+  <rect x="500" y="470" width="30" height="10" fill="#F59E0B"/>
+  <text x="515" y="464" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">2.9K</text>
+  <text x="515" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 515 495)">stress</text>
+  
+  <!-- TINNITUS GOLDMINE: 1,300 -->
+  <rect x="540" y="474" width="30" height="6" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="555" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10B981">1.3K</text>
+  <text x="555" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#10B981" font-weight="bold" transform="rotate(-45 555 495)">★ TINNITUS</text>
+  
+  <!-- fear of flying: 880 -->
+  <rect x="580" y="476" width="30" height="4" fill="#10B981"/>
+  <text x="595" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#FFFFFF">880</text>
+  <text x="595" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#94A3B8" transform="rotate(-45 595 495)">flying</text>
+  
+  <!-- TEETH GRINDING GOLDMINE: 880 -->
+  <rect x="620" y="476" width="30" height="4" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="635" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#10B981">880</text>
+  <text x="635" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 635 495)">★ GRIND</text>
+  
+  <!-- HOT FLASHES GOLDMINE: 720 -->
+  <rect x="660" y="477" width="30" height="3" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="675" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#10B981">720</text>
+  <text x="675" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 675 495)">★ HOT</text>
+  
+  <!-- pain: 590 -->
+  <rect x="700" y="477" width="30" height="3" fill="#F59E0B"/>
+  <text x="715" y="472" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#FFFFFF">590</text>
+  <text x="715" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#94A3B8" transform="rotate(-45 715 495)">pain</text>
+  
+  <!-- OVERTHINKING GOLDMINE: 480 -->
+  <rect x="740" y="478" width="30" height="2" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="755" y="468" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#10B981">480</text>
+  <text x="755" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#10B981" font-weight="bold" transform="rotate(-45 755 495)">★ THINK</text>
+  
+  <!-- Axis -->
+  <line x1="80" y1="80" x2="80" y2="480" stroke="#64748B" stroke-width="2"/>
+  <line x1="80" y1="480" x2="780" y2="480" stroke="#64748B" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="70" y="80" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">100K</text>
+  <text x="70" y="180" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">75K</text>
+  <text x="70" y="280" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">50K</text>
+  <text x="70" y="380" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">25K</text>
+  <text x="70" y="480" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">0</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="520" width="600" height="60" fill="#1E293B" rx="5"/>
+  <text x="120" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C9A84C">Opportunity Level:</text>
+  <rect x="280" y="532" width="20" height="20" fill="#10B981"/>
+  <text x="310" y="547" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Goldmine (No AI Overview)</text>
+  <rect x="480" y="532" width="20" height="20" fill="#F59E0B"/>
+  <text x="510" y="547" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Medium Competition</text>
+  <rect x="280" y="557" width="20" height="20" fill="#EF4444"/>
+  <text x="310" y="572" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">High Competition (AI Overview)</text>
+  <text x="480" y="572" font-family="Arial, sans-serif" font-size="11" fill="#C9A84C">★ = Priority Target</text>
+  
+  <!-- Total -->
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">Total Top 20 Volume: 201,570 monthly searches</text>
+  
+  <!-- Footer -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Scriptor · OpenClaw Research · appstarfamily.com</text>
+</svg>
