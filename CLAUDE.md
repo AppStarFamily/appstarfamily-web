@@ -270,9 +270,9 @@ Every SVG infographic must follow these rules:
 
 ---
 
-### The 6 Standard Infographics
+### The 7 Standard Infographics (web reports) or 8 (app reports)
 
-Every report includes these 6 SVGs. Topic-specific infographics may be added but these 6 are always present.
+Every report includes these 7 SVGs. Topic-specific infographics may be added but these 7 are always present. App reports add a mandatory 8th SVG — see Part 4B.
 
 ---
 
@@ -359,6 +359,61 @@ Every report includes these 6 SVGs. Topic-specific infographics may be added but
 **Plot existing competitors as labelled dots**
 **Target position:** Gold star in the top-right quadrant, labelled "THE GAP" or "TARGET POSITION"
 **The quadrant we own:** Top right — Fast + High Credibility — highlighted with subtle gold border
+
+---
+
+## PART 4B — APP REPORTS ADDENDUM
+
+When the report subject is an iOS app, these additional requirements apply on top of the standard gold standard.
+
+---
+
+### Extra Section 2b: App Store Competitive Analysis
+
+Insert between Section 2 (Market Landscape) and Section 3 (Competitor Deep Dive).
+
+**Contains:**
+- Top 5-8 App Store competitors researched via Brave Search (`site:apps.apple.com` queries)
+- For each: app name, developer, rating, review count, monetization model, positioning hook, top weakness
+- Top 5-8 web competitors (separate list — some may overlap)
+- Combined gap analysis: where App Store landscape is weak vs web landscape
+
+---
+
+### Extra SVG 8: App Store Landscape
+
+**Filename:** `[topic]-appstore-landscape.svg`
+**Format:** Table, 6-8 rows (one per competitor)
+**Columns:** App Name | Rating | Reviews | Model | Positioning Hook | Weakness
+**Color coding:** Green row = weak competitor (opportunity) · Amber = medium · Red = strong incumbent
+**Header:** "[Topic] — App Store Landscape"
+**Footer:** Standard Scriptor footer
+
+---
+
+### ASO Keyword Opportunities
+
+Add as a subsection inside Section 5 (Keyword Deep Dive) for app reports.
+
+**Format:** Table — Keyword | Web Volume | In Competitor Title? | In Competitor Subtitle? | ASO Opportunity
+
+---
+
+### App Report Quality Checklist Additions
+
+- [ ] App Store landscape researched via Brave Search
+- [ ] Top 5+ competitors have ratings, review counts, monetization recorded
+- [ ] `[topic]-appstore-landscape.svg` created and saved
+- [ ] ASO keyword opportunities subsection present in Section 5
+- [ ] Combined gap analysis present in Section 2b
+- [ ] Our own app's App Store page fetched and reviewed
+
+---
+
+### Summary
+
+- **Web/content reports:** 13 sections, 7 SVGs
+- **App reports:** 14 sections, 8 SVGs
 
 ---
 
