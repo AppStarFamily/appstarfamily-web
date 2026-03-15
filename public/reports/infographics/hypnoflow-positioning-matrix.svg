@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0A0F1E"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#C9A84C">Strategic Positioning Matrix</text>
+  
+  <!-- Quadrant Labels -->
+  <text x="200" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10B981">HIGH CONTENT SEO</text>
+  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#EF4444">HIGH CONTENT SEO</text>
+  <text x="200" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748B">LOW CONTENT SEO</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748B">LOW CONTENT SEO</text>
+  
+  <!-- Axis Labels -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#38BDF8">← LOW APP FOCUS | HIGH APP FOCUS →</text>
+  <text x="30" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#38BDF8" transform="rotate(-90 30 300)">← LOW CONTENT | HIGH CONTENT →</text>
+  
+  <!-- Grid Lines -->
+  <line x1="100" y1="100" x2="700" y2="100" stroke="#1E293B" stroke-width="1"/>
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#1E293B" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="500" stroke="#1E293B" stroke-width="1"/>
+  <line x1="700" y1="100" x2="700" y2="500" stroke="#1E293B" stroke-width="1"/>
+  <line x1="400" y1="100" x2="400" y2="500" stroke="#334155" stroke-width="2"/>
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Competitors -->
+  <!-- HypnosisDownloads - High content, low app -->
+  <circle cx="180" cy="180" r="18" fill="#EF4444"/>
+  <text x="180" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Hypnosis</text>
+  <text x="180" y="188" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Downloads</text>
+  
+  <!-- Mindset - Medium content, medium app -->
+  <circle cx="350" cy="250" r="14" fill="#F59E0B"/>
+  <text x="350" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Mindset</text>
+  
+  <!-- Reveri - Medium app, low content -->
+  <circle cx="450" cy="380" r="16" fill="#F59E0B"/>
+  <text x="450" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Reveri</text>
+  <text x="450" y="388" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">Stanford</text>
+  
+  <!-- HypnoBox - High app, low content -->
+  <circle cx="620" cy="420" r="18" fill="#EF4444"/>
+  <text x="620" y="415" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">HypnoBox</text>
+  <text x="620" y="428" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">700+ modules</text>
+  
+  <!-- Harmony - High app, low content -->
+  <circle cx="650" cy="350" r="16" fill="#EF4444"/>
+  <text x="650" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Harmony</text>
+  <text x="650" y="358" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">4.8★ rated</text>
+  
+  <!-- Calm/Headspace - High app, low hypnosis content -->
+  <circle cx="680" cy="200" r="15" fill="#64748B"/>
+  <text x="680" y="195" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Calm/</text>
+  <text x="680" y="208" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Headspace</text>
+  
+  <!-- Hypnos Flow Target -->
+  <circle cx="620" cy="180" r="22" fill="#10B981" stroke="#C9A84C" stroke-width="4"/>
+  <text x="620" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#10B981">Hypnos Flow</text>
+  <text x="620" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">TARGET</text>
+  <text x="620" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">Strong App +</text>
+  <text x="620" y="202" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">Strong Content</text>
+  
+  <!-- Opportunity Zone Label -->
+  <rect x="520" y="110" width="160" height="60" fill="#10B981" opacity="0.15" rx="5"/>
+  <rect x="520" y="110" width="160" height="60" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="5,5" rx="5"/>
+  <text x="600" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#10B981">OPPORTUNITY</text>
+  <text x="600" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">Currently unoccupied</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="540" width="600" height="45" fill="#1E293B" rx="5"/>
+  <text x="120" y="560" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">Competitor Types:</text>
+  
+  <circle cx="260" cy="570" r="8" fill="#EF4444"/>
+  <text x="280" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Strong Incumbent</text>
+  
+  <circle cx="400" cy="570" r="8" fill="#F59E0B"/>
+  <text x="420" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Medium Competitor</text>
+  
+  <circle cx="540" cy="570" r="8" fill="#10B981"/>
+  <text x="560" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Target Position</text>
+  
+  <circle cx="660" cy="570" r="8" fill="#64748B"/>
+  <text x="680" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Meditation (not hypnosis)</text>
+  
+  <!-- Footer -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Scriptor · OpenClaw Research · appstarfamily.com</text>
+</svg>

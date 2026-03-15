@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700">
+  <rect width="900" height="700" fill="#0A0F1E"/>
+  
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#C9A84C">Hypnos Flow — Keyword Opportunity Matrix</text>
+  
+  <!-- Table Header -->
+  <rect x="50" y="70" width="800" height="50" fill="#1E293B"/>
+  <text x="150" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">Keyword</text>
+  <text x="350" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">Monthly Volume</text>
+  <text x="500" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">CPC</text>
+  <text x="620" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">AI Overview</text>
+  <text x="750" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">Opportunity</text>
+  
+  <!-- Row 1: sleep hypnosis -->
+  <rect x="50" y="120" width="800" height="40" fill="#0F172A"/>
+  <text x="150" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">sleep hypnosis</text>
+  <text x="350" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">90,500</text>
+  <text x="500" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$1.95</text>
+  <text x="620" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">YES</text>
+  <text x="750" y="145" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B">Hard</text>
+  
+  <!-- Row 2: hypnosis for weight loss -->
+  <rect x="50" y="160" width="800" height="40" fill="#1E293B"/>
+  <text x="150" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis for weight loss</text>
+  <text x="350" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">22,200</text>
+  <text x="500" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$2.85</text>
+  <text x="620" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">YES</text>
+  <text x="750" y="185" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B">Medium</text>
+  
+  <!-- Row 3: self hypnosis -->
+  <rect x="50" y="200" width="800" height="40" fill="#0F172A"/>
+  <text x="150" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">self hypnosis</text>
+  <text x="350" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">22,200</text>
+  <text x="500" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$1.75</text>
+  <text x="620" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">YES</text>
+  <text x="750" y="225" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B">Medium</text>
+  
+  <!-- Row 4: hypnosis for anxiety -->
+  <rect x="50" y="240" width="800" height="40" fill="#1E293B"/>
+  <text x="150" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis for anxiety</text>
+  <text x="350" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F59E0B">18,100</text>
+  <text x="500" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$2.45</text>
+  <text x="620" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">YES</text>
+  <text x="750" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B">Medium</text>
+  
+  <!-- Row 5: hypnosis to quit smoking -->
+  <rect x="50" y="280" width="800" height="40" fill="#0F172A"/>
+  <text x="150" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis to quit smoking</text>
+  <text x="350" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F59E0B">14,800</text>
+  <text x="500" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$3.25</text>
+  <text x="620" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">YES</text>
+  <text x="750" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#F59E0B">Medium</text>
+  
+  <!-- Row 6: best hypnosis app -->
+  <rect x="50" y="320" width="800" height="40" fill="#1E293B"/>
+  <text x="150" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">best hypnosis app</text>
+  <text x="350" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">5,400</text>
+  <text x="500" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$2.95</text>
+  <text x="620" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">NO</text>
+  <text x="750" y="345" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">GOLDMINE</text>
+  
+  <!-- Row 7: hypnosis for tinnitus -->
+  <rect x="50" y="360" width="800" height="40" fill="#0F172A"/>
+  <text x="150" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis for tinnitus</text>
+  <text x="350" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">1,300</text>
+  <text x="500" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$1.65</text>
+  <text x="620" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">NO</text>
+  <text x="750" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">GOLDMINE</text>
+  
+  <!-- Row 8: hypnosis for teeth grinding -->
+  <rect x="50" y="400" width="800" height="40" fill="#1E293B"/>
+  <text x="150" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis for teeth grinding</text>
+  <text x="350" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">880</text>
+  <text x="500" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$1.55</text>
+  <text x="620" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">NO</text>
+  <text x="750" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">GOLDMINE</text>
+  
+  <!-- Row 9: hypnosis for hot flashes -->
+  <rect x="50" y="440" width="800" height="40" fill="#0F172A"/>
+  <text x="150" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis for hot flashes</text>
+  <text x="350" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">720</text>
+  <text x="500" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$1.75</text>
+  <text x="620" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">NO</text>
+  <text x="750" y="465" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">GOLDMINE</text>
+  
+  <!-- Row 10: hypnosis for overthinking -->
+  <rect x="50" y="480" width="800" height="40" fill="#1E293B"/>
+  <text x="150" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">hypnosis for overthinking</text>
+  <text x="350" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">480</text>
+  <text x="500" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">$1.45</text>
+  <text x="620" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#10B981">NO</text>
+  <text x="750" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">GOLDMINE</text>
+  
+  <!-- Legend -->
+  <rect x="50" y="540" width="800" height="100" fill="#1E293B" rx="5"/>
+  <text x="70" y="565" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C9A84C">Legend:</text>
+  <rect x="70" y="580" width="15" height="15" fill="#10B981"/>
+  <text x="95" y="592" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Goldmine: No AI Overview + Low Competition</text>
+  <rect x="70" y="605" width="15" height="15" fill="#F59E0B"/>
+  <text x="95" y="617" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Medium: Winnable with effort</text>
+  <rect x="400" y="605" width="15" height="15" fill="#EF4444"/>
+  <text x="425" y="617" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Hard: AI Overview present + High competition</text>
+  
+  <!-- Footer -->
+  <text x="450" y="665" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Scriptor · OpenClaw Research · appstarfamily.com</text>
+</svg>
