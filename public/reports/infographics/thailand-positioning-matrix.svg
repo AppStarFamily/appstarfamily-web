@@ -1,0 +1,106 @@
+<svg width="900" height="540" viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>text { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }</style>
+    <!-- Gold glow filter for target -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="540" fill="#0B1020" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="34" text-anchor="middle" fill="#C9922A" font-size="16" font-weight="700" letter-spacing="2">COMPETITIVE POSITIONING MATRIX</text>
+  <text x="450" y="54" text-anchor="middle" fill="#5A5E70" font-size="11" letter-spacing="0.5">Thailand Expat Market — Speed vs Credibility</text>
+
+  <!-- Chart area: x=90 y=68, w=750 h=380, center=(465,258) -->
+  <!-- Quadrant backgrounds -->
+  <rect x="90" y="68" width="375" height="190" fill="#0A0F1A" rx="0"/>
+  <rect x="465" y="68" width="375" height="190" fill="#0A1E0D" rx="0"/>
+  <rect x="90" y="258" width="375" height="190" fill="#0A0A0A" rx="0"/>
+  <rect x="465" y="258" width="375" height="190" fill="#1E0D0A" rx="0"/>
+
+  <!-- Chart border -->
+  <rect x="90" y="68" width="750" height="380" fill="none" stroke="#1F2937" stroke-width="1.5" rx="6"/>
+
+  <!-- Center axes -->
+  <line x1="465" y1="68" x2="465" y2="448" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="90" y1="258" x2="840" y2="258" stroke="#2D3748" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- Quadrant labels (subtle) -->
+  <text x="277" y="96" text-anchor="middle" fill="#1F2937" font-size="10" font-weight="700" letter-spacing="1">SLOW · HIGH CREDIBILITY</text>
+  <text x="652" y="96" text-anchor="middle" fill="#34D39922" font-size="10" font-weight="700" letter-spacing="1">FAST · HIGH CREDIBILITY</text>
+  <text x="277" y="286" text-anchor="middle" fill="#1F2937" font-size="10" font-weight="700" letter-spacing="1">SLOW · LOW CREDIBILITY</text>
+  <text x="652" y="286" text-anchor="middle" fill="#EF444422" font-size="10" font-weight="700" letter-spacing="1">FAST · LOW CREDIBILITY</text>
+
+  <!-- ── Bangkok Post: Slow + High Credibility (top-left) ── -->
+  <circle cx="200" cy="130" r="32" fill="#141C35" stroke="#7EC8E3" stroke-width="1.5"/>
+  <text x="200" y="126" text-anchor="middle" fill="#7EC8E3" font-size="9" font-weight="700">Bangkok</text>
+  <text x="200" y="139" text-anchor="middle" fill="#7EC8E3" font-size="9" font-weight="700">Post</text>
+  <text x="200" y="175" text-anchor="middle" fill="#8B8FA8" font-size="10">Slow · High authority</text>
+  <text x="200" y="188" text-anchor="middle" fill="#5A5E70" font-size="9">Paywalled</text>
+
+  <!-- ── ExpatDen: Slow + Medium Credibility (top-left, lower) ── -->
+  <circle cx="320" cy="190" r="26" fill="#141C35" stroke="#5A5E70" stroke-width="1"/>
+  <text x="320" y="186" text-anchor="middle" fill="#8B8FA8" font-size="9" font-weight="600">Expat</text>
+  <text x="320" y="198" text-anchor="middle" fill="#8B8FA8" font-size="9" font-weight="600">Den</text>
+  <text x="320" y="230" text-anchor="middle" fill="#5A5E70" font-size="10">Slow · Reliable</text>
+
+  <!-- ── ASEAN NOW: Slow + Medium Credibility (left side) ── -->
+  <circle cx="165" cy="230" r="22" fill="#141C35" stroke="#5A5E70" stroke-width="1"/>
+  <text x="165" y="226" text-anchor="middle" fill="#8B8FA8" font-size="8" font-weight="600">ASEAN</text>
+  <text x="165" y="237" text-anchor="middle" fill="#8B8FA8" font-size="8" font-weight="600">NOW</text>
+  <text x="165" y="266" text-anchor="middle" fill="#5A5E70" font-size="9">Forum chaos</text>
+
+  <!-- ── Siam Legal / ThaiEmbassy: Slow + High (very top-left) ── -->
+  <circle cx="115" cy="100" r="18" fill="#141C35" stroke="#5A5E70" stroke-width="0.8"/>
+  <text x="115" y="96" text-anchor="middle" fill="#5A5E70" font-size="7" font-weight="600">Official</text>
+  <text x="115" y="107" text-anchor="middle" fill="#5A5E70" font-size="7" font-weight="600">Sources</text>
+
+  <!-- ── The Thaiger: Fast + Low Credibility (bottom-right) ── -->
+  <circle cx="720" cy="360" r="38" fill="#1E0A00" stroke="#EF4444" stroke-width="2"/>
+  <text x="720" y="354" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="700">The</text>
+  <text x="720" y="367" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="700">Thaiger</text>
+  <!-- Warning badge -->
+  <rect x="672" y="398" width="96" height="18" fill="#3B0A0A" rx="9"/>
+  <text x="720" y="411" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">2.3★ Trustpilot</text>
+  <text x="720" y="428" text-anchor="middle" fill="#8B8FA8" font-size="9">Fast · Low trust</text>
+
+  <!-- ── Thai Examiner: Fast + Low-Medium (bottom-right, upper) ── -->
+  <circle cx="560" cy="310" r="24" fill="#141C35" stroke="#5A5E70" stroke-width="1"/>
+  <text x="560" y="306" text-anchor="middle" fill="#8B8FA8" font-size="8" font-weight="600">Thai</text>
+  <text x="560" y="317" text-anchor="middle" fill="#8B8FA8" font-size="8" font-weight="600">Examiner</text>
+  <text x="560" y="345" text-anchor="middle" fill="#5A5E70" font-size="9">Fast · Sensationalist</text>
+
+  <!-- ── TARGET POSITION: Fast + High Credibility (top-right) = THE GAP ── -->
+  <!-- Glow effect circle -->
+  <circle cx="680" cy="120" r="48" fill="#0D2A14" stroke="#C9922A" stroke-width="2.5" filter="url(#glow)"/>
+  <circle cx="680" cy="120" r="48" fill="#0D2A14" stroke="#C9922A" stroke-width="2.5"/>
+  <!-- Star -->
+  <text x="680" y="108" text-anchor="middle" fill="#C9922A" font-size="18">★</text>
+  <text x="680" y="128" text-anchor="middle" fill="#C9922A" font-size="11" font-weight="700">TARGET</text>
+  <text x="680" y="142" text-anchor="middle" fill="#F0C060" font-size="9" font-weight="700">POSITION</text>
+  <!-- Label below -->
+  <rect x="620" y="178" width="120" height="34" fill="#1E1500" rx="6" stroke="#C9922A" stroke-width="1"/>
+  <text x="680" y="192" text-anchor="middle" fill="#C9922A" font-size="10" font-weight="700">⬆ THE GAP</text>
+  <text x="680" y="206" text-anchor="middle" fill="#F0C060" font-size="9">Fast + Credible</text>
+
+  <!-- Arrow from gap to target -->
+  <path d="M 680 175 L 680 170" stroke="#C9922A" stroke-width="1.5" stroke-dasharray="3,2" marker-end="url(#arrow)"/>
+
+  <!-- Axis labels -->
+  <text x="90" y="470" fill="#5A5E70" font-size="10">← Slow to publish</text>
+  <text x="840" y="470" text-anchor="end" fill="#5A5E70" font-size="10">Fast to publish →</text>
+  <text x="465" y="470" text-anchor="middle" fill="#8B8FA8" font-size="11" font-weight="600">PUBLISHING SPEED</text>
+
+  <text x="30" y="258" text-anchor="middle" fill="#8B8FA8" font-size="11" font-weight="600" transform="rotate(-90, 30, 258)">CREDIBILITY</text>
+  <text x="62" y="82" fill="#5A5E70" font-size="10">High ↑</text>
+  <text x="62" y="445" fill="#5A5E70" font-size="10">Low ↓</text>
+
+  <!-- Footer -->
+  <line x1="20" y1="488" x2="880" y2="488" stroke="#1F2937" stroke-width="1"/>
+  <text x="450" y="510" text-anchor="middle" fill="#5A5E70" font-size="10">The Thaiger owns fast + low-credibility. Bangkok Post owns slow + high-credibility. The top-right is unoccupied.</text>
+  <text x="450" y="528" text-anchor="middle" fill="#C9922A" font-size="10" font-weight="600" letter-spacing="0.5">POSITIONING: "Thailand's Most Trusted Expat Resource" — Fast + Authoritative + E-E-A-T Signals</text>
+</svg>

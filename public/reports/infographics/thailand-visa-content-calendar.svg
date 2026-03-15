@@ -1,0 +1,130 @@
+<svg width="900" height="580" viewBox="0 0 900 580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>text { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="#0B1020" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" fill="#C9922A" font-size="16" font-weight="700" letter-spacing="2">CONTENT CALENDAR — PRIORITY ORDER</text>
+  <text x="450" y="56" text-anchor="middle" fill="#5A5E70" font-size="11" letter-spacing="0.5">Thailand Expat Market · March 2026 — Q4 2026</text>
+
+  <!-- Column headers -->
+  <!-- Col 1: Immediate -->
+  <rect x="20" y="70" width="274" height="40" fill="#1E1200" rx="6"/>
+  <rect x="20" y="70" width="274" height="4" fill="#EF4444" rx="2"/>
+  <text x="157" y="87" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="700" letter-spacing="1">🔴 IMMEDIATE</text>
+  <text x="157" y="103" text-anchor="middle" fill="#8B8FA8" font-size="10">March 2026 · Act now</text>
+
+  <!-- Col 2: Q2 -->
+  <rect x="313" y="70" width="274" height="40" fill="#1A1200" rx="6"/>
+  <rect x="313" y="70" width="274" height="4" fill="#F59E0B" rx="2"/>
+  <text x="450" y="87" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700" letter-spacing="1">🟡 Q2 2026</text>
+  <text x="450" y="103" text-anchor="middle" fill="#8B8FA8" font-size="10">Apr – Jun 2026 · Plan now</text>
+
+  <!-- Col 3: Q3-Q4 -->
+  <rect x="606" y="70" width="274" height="40" fill="#0A1A0A" rx="6"/>
+  <rect x="606" y="70" width="274" height="4" fill="#34D399" rx="2"/>
+  <text x="743" y="87" text-anchor="middle" fill="#34D399" font-size="10" font-weight="700" letter-spacing="1">🟢 Q3–Q4 2026</text>
+  <text x="743" y="103" text-anchor="middle" fill="#8B8FA8" font-size="10">Jul – Dec 2026 · Pipeline</text>
+
+  <!-- ── Card 1.1 ── -->
+  <rect x="20" y="122" width="274" height="96" fill="#111827" rx="8" stroke="#EF444433" stroke-width="1"/>
+  <rect x="20" y="122" width="4" height="96" fill="#EF4444" rx="2"/>
+  <rect x="238" y="130" width="46" height="16" fill="#3B0A0A" rx="8"/>
+  <text x="261" y="142" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">HIGH</text>
+  <text x="34" y="146" fill="#E8E0D0" font-size="12" font-weight="700">Visa-Free Reduction</text>
+  <text x="34" y="162" fill="#E8E0D0" font-size="11">60 → 30 Day Change</text>
+  <text x="34" y="181" fill="#8B8FA8" font-size="10">High search volume, time-sensitive</text>
+  <text x="34" y="198" fill="#5A5E70" font-size="10">Target: "Thailand 30 day visa 2026"</text>
+
+  <!-- ── Card 1.2 ── -->
+  <rect x="20" y="228" width="274" height="96" fill="#111827" rx="8" stroke="#EF444433" stroke-width="1"/>
+  <rect x="20" y="228" width="4" height="96" fill="#EF4444" rx="2"/>
+  <rect x="238" y="236" width="46" height="16" fill="#3B0A0A" rx="8"/>
+  <text x="261" y="248" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">HIGH</text>
+  <text x="34" y="252" fill="#E8E0D0" font-size="12" font-weight="700">DTV Visa Complete Guide</text>
+  <text x="34" y="268" fill="#E8E0D0" font-size="11">Digital Nomad Visa 2026</text>
+  <text x="34" y="287" fill="#8B8FA8" font-size="10">Rising search demand, poor coverage</text>
+  <text x="34" y="304" fill="#5A5E70" font-size="10">Target: "DTV visa Thailand 2026"</text>
+
+  <!-- ── Card 1.3 ── -->
+  <rect x="20" y="334" width="274" height="96" fill="#111827" rx="8" stroke="#F59E0B33" stroke-width="1"/>
+  <rect x="20" y="334" width="4" height="96" fill="#F59E0B" rx="2"/>
+  <rect x="232" y="342" width="52" height="16" fill="#2D1A00" rx="8"/>
+  <text x="258" y="354" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="700">MEDIUM</text>
+  <text x="34" y="358" fill="#E8E0D0" font-size="12" font-weight="700">LTR Visa 2026 Update</text>
+  <text x="34" y="374" fill="#E8E0D0" font-size="11">Long-Term Resident Visa</text>
+  <text x="34" y="393" fill="#8B8FA8" font-size="10">5-year rule removed · 4 categories</text>
+  <text x="34" y="410" fill="#5A5E70" font-size="10">Target: "LTR visa requirements 2026"</text>
+
+  <!-- ── Card 2.1 ── -->
+  <rect x="313" y="122" width="274" height="96" fill="#111827" rx="8" stroke="#EF444433" stroke-width="1"/>
+  <rect x="313" y="122" width="4" height="96" fill="#EF4444" rx="2"/>
+  <rect x="531" y="130" width="46" height="16" fill="#3B0A0A" rx="8"/>
+  <text x="554" y="142" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700">HIGH</text>
+  <text x="327" y="146" fill="#E8E0D0" font-size="12" font-weight="700">Property Visa Guide</text>
+  <text x="327" y="162" fill="#E8E0D0" font-size="11">3 Million Baht Property Visa</text>
+  <text x="327" y="181" fill="#8B8FA8" font-size="10">Almost entirely uncovered — first-mover</text>
+  <text x="327" y="198" fill="#5A5E70" font-size="10">Target: "Thailand property visa 3M baht"</text>
+
+  <!-- ── Card 2.2 ── -->
+  <rect x="313" y="228" width="274" height="96" fill="#111827" rx="8" stroke="#F59E0B33" stroke-width="1"/>
+  <rect x="313" y="228" width="4" height="96" fill="#F59E0B" rx="2"/>
+  <rect x="525" y="236" width="52" height="16" fill="#2D1A00" rx="8"/>
+  <text x="551" y="248" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="700">MEDIUM</text>
+  <text x="327" y="252" fill="#E8E0D0" font-size="12" font-weight="700">Cost of Living Comparison</text>
+  <text x="327" y="268" fill="#E8E0D0" font-size="11">Bangkok vs Chiang Mai vs Phuket</text>
+  <text x="327" y="287" fill="#8B8FA8" font-size="10">High evergreen demand · Competitive</text>
+  <text x="327" y="304" fill="#5A5E70" font-size="10">Target: "cost of living Thailand 2026"</text>
+
+  <!-- ── Card 2.3 ── -->
+  <rect x="313" y="334" width="274" height="96" fill="#111827" rx="8" stroke="#F59E0B33" stroke-width="1"/>
+  <rect x="313" y="334" width="4" height="96" fill="#F59E0B" rx="2"/>
+  <rect x="525" y="342" width="52" height="16" fill="#2D1A00" rx="8"/>
+  <text x="551" y="354" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="700">MEDIUM</text>
+  <text x="327" y="358" fill="#E8E0D0" font-size="12" font-weight="700">Healthcare System Guide</text>
+  <text x="327" y="374" fill="#E8E0D0" font-size="11">Public vs Private · Insurance</text>
+  <text x="327" y="393" fill="#8B8FA8" font-size="10">Which visa needs what insurance</text>
+  <text x="327" y="410" fill="#5A5E70" font-size="10">Target: "Thailand expat health insurance"</text>
+
+  <!-- ── Card 3.1 ── -->
+  <rect x="606" y="122" width="274" height="96" fill="#111827" rx="8" stroke="#34D39933" stroke-width="1"/>
+  <rect x="606" y="122" width="4" height="96" fill="#34D399" rx="2"/>
+  <rect x="820" y="130" width="50" height="16" fill="#0A1E0D" rx="8"/>
+  <text x="845" y="142" text-anchor="middle" fill="#34D399" font-size="9" font-weight="700">PLANNED</text>
+  <text x="620" y="146" fill="#E8E0D0" font-size="12" font-weight="700">Digital Nomad Tax Guide</text>
+  <text x="620" y="162" fill="#E8E0D0" font-size="11">Thailand Tax for Remote Workers</text>
+  <text x="620" y="181" fill="#8B8FA8" font-size="10">Complex topic · High authority signal</text>
+  <text x="620" y="198" fill="#5A5E70" font-size="10">Target: "digital nomad tax Thailand"</text>
+
+  <!-- ── Card 3.2 ── -->
+  <rect x="606" y="228" width="274" height="96" fill="#111827" rx="8" stroke="#34D39933" stroke-width="1"/>
+  <rect x="606" y="228" width="4" height="96" fill="#34D399" rx="2"/>
+  <rect x="820" y="236" width="50" height="16" fill="#0A1E0D" rx="8"/>
+  <text x="845" y="248" text-anchor="middle" fill="#34D399" font-size="9" font-weight="700">PLANNED</text>
+  <text x="620" y="252" fill="#E8E0D0" font-size="12" font-weight="700">Banking for Foreigners</text>
+  <text x="620" y="268" fill="#E8E0D0" font-size="11">Opening Accounts · Requirements</text>
+  <text x="620" y="287" fill="#8B8FA8" font-size="10">Consistent expat pain point</text>
+  <text x="620" y="304" fill="#5A5E70" font-size="10">Target: "open bank account Thailand expat"</text>
+
+  <!-- ── Card 3.3 ── -->
+  <rect x="606" y="334" width="274" height="96" fill="#111827" rx="8" stroke="#34D39933" stroke-width="1"/>
+  <rect x="606" y="334" width="4" height="96" fill="#34D399" rx="2"/>
+  <rect x="820" y="342" width="50" height="16" fill="#0A1E0D" rx="8"/>
+  <text x="845" y="354" text-anchor="middle" fill="#34D399" font-size="9" font-weight="700">PLANNED</text>
+  <text x="620" y="358" fill="#E8E0D0" font-size="12" font-weight="700">Property Buying Guide</text>
+  <text x="620" y="374" fill="#E8E0D0" font-size="11">Foreigner Ownership · Condos</text>
+  <text x="620" y="393" fill="#8B8FA8" font-size="10">High affiliate value · Growing demand</text>
+  <text x="620" y="410" fill="#5A5E70" font-size="10">Target: "buy property Thailand foreigner"</text>
+
+  <!-- Column dividers -->
+  <line x1="300" y1="68" x2="300" y2="450" stroke="#1F2937" stroke-width="1" opacity="0.5"/>
+  <line x1="593" y1="68" x2="593" y2="450" stroke="#1F2937" stroke-width="1" opacity="0.5"/>
+
+  <!-- Footer -->
+  <line x1="20" y1="450" x2="880" y2="450" stroke="#1F2937" stroke-width="1"/>
+  <text x="450" y="472" text-anchor="middle" fill="#5A5E70" font-size="10">Visa policy changes create immediate search demand — the red column must be published before competitors update their content.</text>
+  <text x="450" y="490" text-anchor="middle" fill="#C9922A" font-size="10" font-weight="600">9 pieces of content · 3 phases · Clear first-mover opportunities in red + Q2 columns</text>
+</svg>

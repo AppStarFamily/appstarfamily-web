@@ -1,0 +1,110 @@
+<svg width="900" height="556" viewBox="0 0 900 556" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>text { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; }</style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="556" fill="#0B1020" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="36" text-anchor="middle" fill="#C9922A" font-size="16" font-weight="700" letter-spacing="2">THAILAND EXPAT CONTENT MARKET</text>
+  <text x="450" y="56" text-anchor="middle" fill="#5A5E70" font-size="11" letter-spacing="0.5">Competitor Landscape — March 2026 · Compiled by Scriptor / OpenClaw Research</text>
+
+  <!-- Divider -->
+  <line x1="20" y1="66" x2="880" y2="66" stroke="#1F2937" stroke-width="1"/>
+
+  <!-- Column header row -->
+  <rect x="20" y="70" width="860" height="34" fill="#141C35" rx="4"/>
+  <text x="30" y="92" fill="#C9922A" font-size="10" font-weight="700" letter-spacing="1">SITE</text>
+  <text x="175" y="92" fill="#C9922A" font-size="10" font-weight="700" letter-spacing="1">TYPE</text>
+  <text x="292" y="92" fill="#C9922A" font-size="10" font-weight="700" letter-spacing="1">AUTHORITY</text>
+  <text x="406" y="92" fill="#C9922A" font-size="10" font-weight="700" letter-spacing="1">STRENGTHS</text>
+  <text x="628" y="92" fill="#C9922A" font-size="10" font-weight="700" letter-spacing="1">KEY WEAKNESS</text>
+
+  <!-- ── Row 1: The Thaiger (highlighted) ── -->
+  <rect x="20" y="107" width="860" height="58" fill="#1E1200" rx="4"/>
+  <rect x="20" y="107" width="4" height="58" fill="#F59E0B" rx="2"/>
+  <!-- Low trust badge -->
+  <rect x="738" y="116" width="130" height="18" fill="#3B0A0A" rx="9"/>
+  <text x="803" y="129" text-anchor="middle" fill="#EF4444" font-size="9" font-weight="700" letter-spacing="0.5">⚠ LOW TRUST</text>
+
+  <text x="30" y="128" fill="#F0C060" font-size="13" font-weight="700">The Thaiger</text>
+  <text x="30" y="146" fill="#8B8FA8" font-size="10">thethaiger.com</text>
+  <text x="175" y="141" fill="#E8E0D0" font-size="11">News / Guides</text>
+  <text x="292" y="134" fill="#F59E0B" font-size="11" font-weight="600">Medium–High</text>
+  <text x="406" y="128" fill="#E8E0D0" font-size="11">Fast publishing · Social reach</text>
+  <text x="406" y="144" fill="#8B8FA8" font-size="10">281K Facebook · 112K Instagram</text>
+  <text x="628" y="128" fill="#EF4444" font-size="11">Trustpilot 2.3/5 · No E-E-A-T</text>
+  <text x="628" y="144" fill="#EF4444" font-size="10">Reddit consensus: "pure crap"</text>
+
+  <!-- ── Row 2: Bangkok Post ── -->
+  <rect x="20" y="168" width="860" height="52" fill="#0F172A" rx="4"/>
+  <text x="30" y="188" fill="#E8E0D0" font-size="13" font-weight="600">Bangkok Post</text>
+  <text x="30" y="205" fill="#8B8FA8" font-size="10">bangkokpost.com</text>
+  <text x="175" y="198" fill="#E8E0D0" font-size="11">Traditional News</text>
+  <text x="292" y="198" fill="#34D399" font-size="11" font-weight="600">High</text>
+  <text x="406" y="194" fill="#E8E0D0" font-size="11">Established credibility · Journalists</text>
+  <text x="406" y="209" fill="#8B8FA8" font-size="10">Official sources · Trusted brand</text>
+  <text x="628" y="198" fill="#8B8FA8" font-size="11">Paywalled · Slow on expat topics</text>
+
+  <!-- ── Row 3: Thai Examiner ── -->
+  <rect x="20" y="223" width="860" height="52" fill="#0B1020" rx="4"/>
+  <text x="30" y="243" fill="#E8E0D0" font-size="13" font-weight="600">Thai Examiner</text>
+  <text x="30" y="260" fill="#8B8FA8" font-size="10">thaiexaminer.com</text>
+  <text x="175" y="253" fill="#E8E0D0" font-size="11">Expat News</text>
+  <text x="292" y="253" fill="#F59E0B" font-size="11" font-weight="600">Medium</text>
+  <text x="406" y="249" fill="#E8E0D0" font-size="11">Foreigner-focused · Timely</text>
+  <text x="406" y="264" fill="#8B8FA8" font-size="10">Relevant topics · Active updates</text>
+  <text x="628" y="253" fill="#8B8FA8" font-size="11">Smaller reach · Sensationalist tone</text>
+
+  <!-- ── Row 4: ASEAN NOW ── -->
+  <rect x="20" y="278" width="860" height="52" fill="#0F172A" rx="4"/>
+  <text x="30" y="298" fill="#E8E0D0" font-size="13" font-weight="600">ASEAN NOW</text>
+  <text x="30" y="315" fill="#8B8FA8" font-size="10">asean-now.com · sold to Thaiger 2024</text>
+  <text x="175" y="308" fill="#E8E0D0" font-size="11">Forum / Community</text>
+  <text x="292" y="308" fill="#34D399" font-size="11" font-weight="600">High (community)</text>
+  <text x="406" y="304" fill="#E8E0D0" font-size="11">20+ year history · Real-time advice</text>
+  <text x="406" y="319" fill="#8B8FA8" font-size="10">Community trust · Deep archive</text>
+  <text x="628" y="308" fill="#8B8FA8" font-size="11">Toxic community · Thaiger-owned now</text>
+
+  <!-- ── Row 5: ExpatDen ── -->
+  <rect x="20" y="333" width="860" height="52" fill="#0B1020" rx="4"/>
+  <text x="30" y="353" fill="#E8E0D0" font-size="13" font-weight="600">ExpatDen</text>
+  <text x="30" y="370" fill="#8B8FA8" font-size="10">expatden.com</text>
+  <text x="175" y="363" fill="#E8E0D0" font-size="11">Guides / Blog</text>
+  <text x="292" y="363" fill="#F59E0B" font-size="11" font-weight="600">Medium</text>
+  <text x="406" y="359" fill="#E8E0D0" font-size="11">Well-researched long-form content</text>
+  <text x="406" y="374" fill="#8B8FA8" font-size="10">Good depth · Community trusted</text>
+  <text x="628" y="363" fill="#8B8FA8" font-size="11">Slow publishing frequency</text>
+
+  <!-- ── Row 6: Siam Legal ── -->
+  <rect x="20" y="388" width="860" height="52" fill="#0F172A" rx="4"/>
+  <text x="30" y="408" fill="#E8E0D0" font-size="13" font-weight="600">Siam Legal</text>
+  <text x="30" y="425" fill="#8B8FA8" font-size="10">siam-legal.com</text>
+  <text x="175" y="418" fill="#E8E0D0" font-size="11">Legal Services</text>
+  <text x="292" y="418" fill="#34D399" font-size="11" font-weight="600">High</text>
+  <text x="406" y="414" fill="#E8E0D0" font-size="11">Authoritative legal information</text>
+  <text x="406" y="429" fill="#8B8FA8" font-size="10">Primary legal reference resource</text>
+  <text x="628" y="418" fill="#8B8FA8" font-size="11">Service-focused, not content-first</text>
+
+  <!-- ── Row 7: ThaiEmbassy ── -->
+  <rect x="20" y="443" width="860" height="52" fill="#0B1020" rx="4"/>
+  <text x="30" y="463" fill="#E8E0D0" font-size="13" font-weight="600">ThaiEmbassy.com</text>
+  <text x="30" y="480" fill="#8B8FA8" font-size="10">thaiembassy.com</text>
+  <text x="175" y="473" fill="#E8E0D0" font-size="11">Official / Government</text>
+  <text x="292" y="473" fill="#34D399" font-size="11" font-weight="600">Very High</text>
+  <text x="406" y="469" fill="#E8E0D0" font-size="11">Primary source authority</text>
+  <text x="406" y="484" fill="#8B8FA8" font-size="10">Official government citations</text>
+  <text x="628" y="473" fill="#8B8FA8" font-size="11">Dry, bureaucratic, hard to navigate</text>
+
+  <!-- Column dividers -->
+  <line x1="170" y1="70" x2="170" y2="498" stroke="#1F2937" stroke-width="1" opacity="0.6"/>
+  <line x1="287" y1="70" x2="287" y2="498" stroke="#1F2937" stroke-width="1" opacity="0.6"/>
+  <line x1="401" y1="70" x2="401" y2="498" stroke="#1F2937" stroke-width="1" opacity="0.6"/>
+  <line x1="623" y1="70" x2="623" y2="498" stroke="#1F2937" stroke-width="1" opacity="0.6"/>
+
+  <!-- Footer -->
+  <line x1="20" y1="508" x2="880" y2="508" stroke="#1F2937" stroke-width="1"/>
+  <text x="450" y="530" text-anchor="middle" fill="#5A5E70" font-size="10" letter-spacing="0.3">The Thaiger dominates via volume — not quality. Their 2.3/5 Trustpilot and Reddit reputation is the gap to exploit.</text>
+  <text x="450" y="547" text-anchor="middle" fill="#C9922A" font-size="10" font-weight="600" letter-spacing="0.5">STRATEGY: Match Thaiger speed · Beat Thaiger accuracy · Win on E-E-A-T</text>
+</svg>
