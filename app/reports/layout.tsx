@@ -10,7 +10,7 @@ export default function ReportsLayout({ children }: { children: React.ReactNode 
     <div style={{
       maxWidth: '820px',
       margin: '0 auto',
-      padding: '3rem 1.5rem 5rem',
+      padding: '6rem 1.5rem 5rem',
     }}>
       {children}
     </div>
