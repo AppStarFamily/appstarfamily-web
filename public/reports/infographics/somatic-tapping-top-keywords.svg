@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0A0F1E"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#C9A84C">Top 20 Keywords — Volume &amp; Opportunity</text>
+  
+  <!-- Bar Chart -->
+  <!-- EFT tapping: 74,000 -->
+  <rect x="100" y="80" width="30" height="400" fill="#EF4444"/>
+  <text x="115" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">74K</text>
+  <text x="115" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 115 495)">EFT</text>
+  
+  <!-- tapping for anxiety: 18,100 -->
+  <rect x="140" y="302" width="30" height="178" fill="#EF4444"/>
+  <text x="155" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">18K</text>
+  <text x="155" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 155 495)">anxiety</text>
+  
+  <!-- emotional freedom technique: 12,100 -->
+  <rect x="180" y="335" width="30" height="145" fill="#F59E0B"/>
+  <text x="195" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">12K</text>
+  <text x="195" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#94A3B8" transform="rotate(-45 195 495)">emotional</text>
+  
+  <!-- somatic therapy: 8,100 -->
+  <rect x="220" y="356" width="30" height="124" fill="#F59E0B"/>
+  <text x="235" y="348" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">8.1K</text>
+  <text x="235" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#94A3B8" transform="rotate(-45 235 495)">somatic</text>
+  
+  <!-- tapping solution: 6,600 -->
+  <rect x="260" y="364" width="30" height="116" fill="#10B981"/>
+  <text x="275" y="356" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">6.6K</text>
+  <text x="275" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 275 495)">★ BRAND</text>
+  
+  <!-- somatic exercises: 3,600 -->
+  <rect x="300" y="381" width="30" height="99" fill="#10B981"/>
+  <text x="315" y="373" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">3.6K</text>
+  <text x="315" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 315 495)">★ GOLD</text>
+  
+  <!-- tapping for chronic pain: 1,600 -->
+  <rect x="340" y="393" width="30" height="87" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="355" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#10B981">1.6K</text>
+  <text x="355" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#10B981" font-weight="bold" transform="rotate(-45 355 495)">★ PAIN</text>
+  
+  <!-- somatic tapping: 1,300 -->
+  <rect x="380" y="395" width="30" height="85" fill="#10B981"/>
+  <text x="395" y="387" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">1.3K</text>
+  <text x="395" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#94A3B8" transform="rotate(-45 395 495)">somatic</text>
+  
+  <!-- tapping for endometriosis: 880 -->
+  <rect x="420" y="402" width="30" height="78" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="435" y="390" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#10B981">880</text>
+  <text x="435" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#10B981" font-weight="bold" transform="rotate(-45 435 495)">★ ENDO</text>
+  
+  <!-- tapping for athletes: 720 -->
+  <rect x="460" y="404" width="30" height="76" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="475" y="392" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#10B981">720</text>
+  <text x="475" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#10B981" font-weight="bold" transform="rotate(-45 475 495)">★ ATHLETE</text>
+  
+  <!-- biometric tapping: 480 -->
+  <rect x="500" y="408" width="30" height="72" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="515" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="bold" fill="#10B981">480</text>
+  <text x="515" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#10B981" font-weight="bold" transform="rotate(-45 515 495)">★ BIO</text>
+  
+  <!-- AI tapping app: 390 -->
+  <rect x="540" y="410" width="30" height="70" fill="#10B981"/>
+  <text x="555" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#FFFFFF">390</text>
+  <text x="555" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#94A3B8" transform="rotate(-45 555 495)">AI</text>
+  
+  <!-- corporate wellness tapping: 260 -->
+  <rect x="580" y="414" width="30" height="66" fill="#10B981" stroke="#C9A84C" stroke-width="2"/>
+  <text x="595" y="402" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" font-weight="bold" fill="#10B981">260</text>
+  <text x="595" y="495" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#10B981" font-weight="bold" transform="rotate(-45 595 495)">★ B2B</text>
+  
+  <!-- Axis -->
+  <line x1="80" y1="80" x2="80" y2="480" stroke="#64748B" stroke-width="2"/>
+  <line x1="80" y1="480" x2="650" y2="480" stroke="#64748B" stroke-width="2"/>
+  
+  <!-- Y-axis labels -->
+  <text x="70" y="80" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">75K</text>
+  <text x="70" y="180" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">50K</text>
+  <text x="70" y="280" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">25K</text>
+  <text x="70" y="480" text-anchor="end" font-family="Arial, sans-serif" font-size="10" fill="#64748B">0</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="520" width="550" height="60" fill="#1E293B" rx="5"/>
+  <text x="120" y="545" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#C9A84C">Opportunity Level:</text>
+  <rect x="280" y="532" width="20" height="20" fill="#10B981"/>
+  <text x="310" y="547" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Goldmine (No AI Overview)</text>
+  <rect x="480" y="532" width="20" height="20" fill="#F59E0B"/>
+  <text x="510" y="547" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Medium Competition</text>
+  <rect x="280" y="557" width="20" height="20" fill="#EF4444"/>
+  <text x="310" y="572" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">High Competition (AI Overview)</text>
+  <text x="480" y="572" font-family="Arial, sans-serif" font-size="11" fill="#C9A84C">★ = Priority Target</text>
+  
+  <!-- Total -->
+  <text x="400" y="510" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#C9A84C">Total Top 20 Volume: ~145,000 monthly searches</text>
+  
+  <!-- Footer -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Scriptor · OpenClaw Research · appstarfamily.com</text>
+</svg>
