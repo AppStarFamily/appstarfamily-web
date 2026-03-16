@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0A0F1E"/>
+  
+  <!-- Title -->
+  <text x="400" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#C9A84C">Strategic Positioning Matrix</text>
+  
+  <!-- Quadrant Labels -->
+  <text x="200" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10B981">HIGH BIOMETRIC</text>
+  <text x="600" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#EF4444">HIGH BIOMETRIC</text>
+  <text x="200" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748B">LOW BIOMETRIC</text>
+  <text x="600" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748B">LOW BIOMETRIC</text>
+  
+  <!-- Axis Labels -->
+  <text x="400" y="560" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#38BDF8">← LOW TAPPING | HIGH TAPPING →</text>
+  <text x="30" y="300" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#38BDF8" transform="rotate(-90 30 300)">← LOW BIOMETRIC | HIGH BIOMETRIC →</text>
+  
+  <!-- Grid Lines -->
+  <line x1="100" y1="100" x2="700" y2="100" stroke="#1E293B" stroke-width="1"/>
+  <line x1="100" y1="500" x2="700" y2="500" stroke="#1E293B" stroke-width="1"/>
+  <line x1="100" y1="100" x2="100" y2="500" stroke="#1E293B" stroke-width="1"/>
+  <line x1="700" y1="100" x2="700" y2="500" stroke="#1E293B" stroke-width="1"/>
+  <line x1="400" y1="100" x2="400" y2="500" stroke="#334155" stroke-width="2"/>
+  <line x1="100" y1="300" x2="700" y2="300" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Competitors -->
+  <!-- NEUROFIT - High biometric, medium tapping -->
+  <circle cx="350" cy="180" r="16" fill="#F59E0B"/>
+  <text x="350" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">NEUROFIT</text>
+  <text x="350" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">Biometric leader</text>
+  
+  <!-- The Tapping Solution - High tapping, low biometric -->
+  <circle cx="620" cy="420" r="18" fill="#EF4444"/>
+  <text x="620" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Tapping Solution</text>
+  <text x="620" y="430" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">24M sessions</text>
+  
+  <!-- SomaShare - Low tapping, low biometric -->
+  <circle cx="200" cy="380" r="12" fill="#F59E0B"/>
+  <text x="200" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">SomaShare</text>
+  
+  <!-- ZenTap - Medium tapping, low biometric -->
+  <circle cx="450" cy="400" r="10" fill="#F59E0B"/>
+  <text x="450" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">ZenTap</text>
+  
+  <!-- Calm/Headspace - Low tapping, no biometric -->
+  <circle cx="150" cy="450" r="12" fill="#64748B"/>
+  <text x="150" y="445" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#FFFFFF">Calm/Headspace</text>
+  
+  <!-- Target Position - High tapping, high biometric -->
+  <circle cx="650" cy="150" r="20" fill="#10B981" stroke="#C9A84C" stroke-width="4"/>
+  <text x="650" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#10B981">TARGET</text>
+  <text x="650" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">AI + Biometric</text>
+  <text x="650" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Tapping Focus</text>
+  
+  <!-- Opportunity Zone Label -->
+  <rect x="550" y="110" width="160" height="70" fill="#10B981" opacity="0.15" rx="5"/>
+  <rect x="550" y="110" width="160" height="70" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="5,5" rx="5"/>
+  <text x="630" y="135" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#10B981">OPPORTUNITY</text>
+  <text x="630" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#10B981">Unoccupied quadrant</text>
+  <text x="630" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#10B981">First-mover advantage</text>
+  
+  <!-- Legend -->
+  <rect x="100" y="540" width="600" height="45" fill="#1E293B" rx="5"/>
+  <text x="120" y="560" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#C9A84C">Competitor Types:</text>
+  
+  <circle cx="260" cy="570" r="8" fill="#EF4444"/>
+  <text x="280" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Strong Incumbent</text>
+  
+  <circle cx="400" cy="570" r="8" fill="#F59E0B"/>
+  <text x="420" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Medium Competitor</text>
+  
+  <circle cx="540" cy="570" r="8" fill="#10B981"/>
+  <text x="560" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Target Position</text>
+  
+  <circle cx="660" cy="570" r="8" fill="#64748B"/>
+  <text x="680" y="575" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Meditation (not tapping)</text>
+  
+  <!-- Footer -->
+  <text x="400" y="595" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Scriptor · OpenClaw Research · appstarfamily.com</text>
+</svg>

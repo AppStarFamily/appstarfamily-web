@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0A0F1E"/>
+  
+  <!-- Title -->
+  <text x="400" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#C9A84C">ACT NOW — 6-Month Window</text>
+  
+  <!-- Urgency Banner -->
+  <rect x="50" y="70" width="700" height="60" fill="#EF4444" rx="5"/>
+  <text x="400" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">The Tapping Solution dominates, but biometric + AI gap is OPEN</text>
+  
+  <!-- Timeline -->
+  <line x1="100" y1="200" x2="700" y2="200" stroke="#64748B" stroke-width="4"/>
+  
+  <!-- Month 0 (Now) -->
+  <circle cx="100" cy="200" r="15" fill="#10B981" stroke="#C9A84C" stroke-width="3"/>
+  <text x="100" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#10B981">NOW</text>
+  <text x="100" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#FFFFFF">Biometric + AI</text>
+  <text x="100" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#10B981">NO competition</text>
+  
+  <!-- Month 3 -->
+  <circle cx="250" cy="200" r="12" fill="#F59E0B"/>
+  <text x="250" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F59E0B">Month 3</text>
+  <text x="250" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">First content</text>
+  <text x="250" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">published &amp;</text>
+  <text x="250" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">ranking</text>
+  
+  <!-- Month 6 -->
+  <circle cx="400" cy="200" r="12" fill="#F59E0B"/>
+  <text x="400" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#F59E0B">Month 6</text>
+  <text x="400" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Authority</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">established</text>
+  <text x="400" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#EF4444">⚠ Competitors</text>
+  <text x="400" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#EF4444">may respond</text>
+  
+  <!-- Month 12 -->
+  <circle cx="700" cy="200" r="15" fill="#EF4444"/>
+  <text x="700" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#EF4444">Month 12</text>
+  <text x="700" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">Window</text>
+  <text x="700" y="275" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#FFFFFF">CLOSED</text>
+  <text x="700" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#EF4444">Market mature</text>
+  
+  <!-- Action Items Box -->
+  <rect x="50" y="350" width="350" height="200" fill="#1E293B" rx="5" stroke="#10B981" stroke-width="2"/>
+  <text x="225" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#10B981">This Week (Critical)</text>
+  
+  <text x="70" y="410" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✓ Research biometric SDKs (camera HRV)</text>
+  <text x="85" y="428" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">Heart rate variability integration</text>
+  
+  <text x="70" y="455" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✓ Write "Tapping for Chronic Pain" guide</text>
+  <text x="85" y="473" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">Target: 2,000 words, 5+ citations</text>
+  
+  <text x="70" y="500" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">✓ Implement FAQ schema</text>
+  <text x="85" y="518" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">on first article</text>
+  
+  <!-- Impact Box -->
+  <rect x="420" y="350" width="330" height="200" fill="#1E293B" rx="5" stroke="#C9A84C" stroke-width="2"/>
+  <text x="585" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#C9A84C">12-Month Impact</text>
+  
+  <text x="440" y="415" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">• 50,000+ monthly organic visits</text>
+  <text x="440" y="440" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">• Top-3 App Store for "tapping"</text>
+  <text x="440" y="465" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">• 50+ keywords ranking top-10</text>
+  <text x="440" y="490" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">• 10+ featured snippets captured</text>
+  
+  <text x="585" y="525" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#10B981">$1M+ revenue potential</text>
+  
+  <!-- Bottom urgency -->
+  <rect x="50" y="570" width="700" height="25" fill="#10B981" rx="3"/>
+  <text x="400" y="587" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0A0F1E">Move fast. Biometric + AI = differentiation.</text>
+  
+  <!-- Footer -->
+  <text x="400" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#64748B">Scriptor · OpenClaw Research · appstarfamily.com</text>
+</svg>
