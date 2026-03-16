@@ -35,6 +35,15 @@ const REPORTS = [
     tag: 'SEO Research',
   },
   {
+    available: true,
+    emoji: '👆',
+    title: 'Somatic Tapping Market Research Report',
+    description: 'Full analysis of the EFT tapping and somatic therapy market. The Tapping Solution dominates with 24M+ sessions, but biometric + AI integration gap creates opportunity. $4.01B market growing 17.5% CAGR.',
+    date: 'March 2026',
+    href: '/reports/somatic-tapping',
+    tag: 'Market Research',
+  },
+  {
     available: false,
     emoji: '🤰',
     title: 'Hypnobirthing+ Report',
