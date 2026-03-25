@@ -1,82 +1,80 @@
-<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
-  <!-- Background -->
-  <rect width="900" height="500" fill="#0A0F1E"/>
+<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="540" fill="#0A0F1E"/>
 
-  <!-- Title -->
-  <text x="450" y="48" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">ALTERNATIVETO — HIGHEST ROI LINK PLAY FOR LYRICAL</text>
-  <text x="450" y="72" text-anchor="middle" fill="#8892A4" font-size="13">DA 71 · Free · Permanent backlink from each competitor page you add Lyrical to</text>
+  <text x="450" y="46" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">ALTERNATIVETO — HIGHEST ROI LINK PLAY FOR LYRICAL</text>
+  <text x="450" y="68" text-anchor="middle" fill="#8892A4" font-size="13">DA 71 · Free · Permanent backlink from each competitor page · ~15 minutes total</text>
 
   <!-- Strategy callout -->
-  <rect x="40" y="86" width="820" height="44" rx="8" fill="#10B98115" stroke="#10B98133" stroke-width="1"/>
-  <text x="450" y="104" text-anchor="middle" fill="#10B981" font-size="12" font-weight="700">STRATEGY: Visit each competitor's AlternativeTo page → click "Add Alternative" → submit Lyrical</text>
-  <text x="450" y="120" text-anchor="middle" fill="#8892A4" font-size="11">Each submission = one backlink from alternativeto.net (DA 71). Takes 2 minutes per competitor.</text>
+  <rect x="40" y="82" width="820" height="38" rx="8" fill="#10B98115" stroke="#10B98133" stroke-width="1"/>
+  <text x="450" y="98" text-anchor="middle" fill="#10B981" font-size="12" font-weight="700">STRATEGY: Visit each competitor's AlternativeTo page → click "Add Alternative" → submit Lyrical</text>
+  <text x="450" y="114" text-anchor="middle" fill="#8892A4" font-size="11">Each submission = one backlink from alternativeto.net (DA 71). ~2 minutes per competitor.</text>
 
-  <!-- Header row -->
-  <rect x="40" y="140" width="820" height="34" rx="6" fill="#141B2D"/>
-  <text x="200" y="162" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">COMPETITOR APP</text>
-  <text x="390" y="162" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">CATEGORY</text>
-  <text x="560" y="162" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">ACTION</text>
-  <text x="760" y="162" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">BACKLINK DA / STATUS</text>
+  <!-- Header -->
+  <rect x="40" y="130" width="820" height="30" rx="6" fill="#141B2D"/>
+  <text x="200" y="149" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">COMPETITOR APP</text>
+  <text x="430" y="149" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">EXACT ALTERNATIVETO URL</text>
+  <text x="720" y="149" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">ACTION / STATUS</text>
 
   <!-- Row 1: Musixmatch -->
-  <rect x="40" y="174" width="820" height="40" rx="0" fill="#0F1628"/>
-  <rect x="40" y="174" width="4" height="40" fill="#10B981"/>
-  <text x="200" y="198" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Musixmatch</text>
-  <text x="390" y="198" text-anchor="middle" fill="#8892A4" font-size="12">Lyrics / Music ID</text>
-  <text x="560" y="198" text-anchor="middle" fill="#38BDF8" font-size="12">Add Lyrical as alternative</text>
-  <rect x="690" y="184" width="130" height="22" rx="6" fill="#10B98122"/>
-  <text x="755" y="199" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DA 71 · DO NOW</text>
+  <rect x="40" y="160" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="160" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="183" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Musixmatch</text>
+  <text x="430" y="183" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/musixmatch/</text>
+  <rect x="650" y="170" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="184" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
   <!-- Row 2: Genius -->
-  <rect x="40" y="214" width="820" height="40" rx="0" fill="#0A0F1E"/>
-  <rect x="40" y="214" width="4" height="40" fill="#10B981"/>
-  <text x="200" y="238" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Genius</text>
-  <text x="390" y="238" text-anchor="middle" fill="#8892A4" font-size="12">Lyrics / Annotations</text>
-  <text x="560" y="238" text-anchor="middle" fill="#38BDF8" font-size="12">Add Lyrical as alternative</text>
-  <rect x="690" y="224" width="130" height="22" rx="6" fill="#10B98122"/>
-  <text x="755" y="239" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DA 71 · DO NOW</text>
+  <rect x="40" y="198" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="198" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="221" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Genius</text>
+  <text x="430" y="221" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/genius/</text>
+  <rect x="650" y="208" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="222" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
   <!-- Row 3: Shazam -->
-  <rect x="40" y="254" width="820" height="40" rx="0" fill="#0F1628"/>
-  <rect x="40" y="254" width="4" height="40" fill="#10B981"/>
-  <text x="200" y="278" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Shazam</text>
-  <text x="390" y="278" text-anchor="middle" fill="#8892A4" font-size="12">Music ID / Lyrics</text>
-  <text x="560" y="278" text-anchor="middle" fill="#38BDF8" font-size="12">Add Lyrical as alternative</text>
-  <rect x="690" y="264" width="130" height="22" rx="6" fill="#10B98122"/>
-  <text x="755" y="279" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DA 71 · DO NOW</text>
+  <rect x="40" y="236" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="236" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="259" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Shazam</text>
+  <text x="430" y="259" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/shazam/</text>
+  <rect x="650" y="246" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="260" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
   <!-- Row 4: Lyrically -->
-  <rect x="40" y="294" width="820" height="40" rx="0" fill="#0A0F1E"/>
-  <rect x="40" y="294" width="4" height="40" fill="#10B981"/>
-  <text x="200" y="318" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Lyrically</text>
-  <text x="390" y="318" text-anchor="middle" fill="#8892A4" font-size="12">Lyrics App</text>
-  <text x="560" y="318" text-anchor="middle" fill="#38BDF8" font-size="12">Add Lyrical as alternative</text>
-  <rect x="690" y="304" width="130" height="22" rx="6" fill="#10B98122"/>
-  <text x="755" y="319" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DA 71 · DO NOW</text>
+  <rect x="40" y="274" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="274" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="297" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Lyrically</text>
+  <text x="430" y="297" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/lyrically/</text>
+  <rect x="650" y="284" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="298" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
-  <!-- Row 5: Spotify Lyrics -->
-  <rect x="40" y="334" width="820" height="40" rx="0" fill="#0F1628"/>
-  <rect x="40" y="334" width="4" height="40" fill="#10B981"/>
-  <text x="200" y="358" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Spotify (Lyrics feature)</text>
-  <text x="390" y="358" text-anchor="middle" fill="#8892A4" font-size="12">Streaming / Lyrics</text>
-  <text x="560" y="358" text-anchor="middle" fill="#38BDF8" font-size="12">Add Lyrical as alternative</text>
-  <rect x="690" y="344" width="130" height="22" rx="6" fill="#10B98122"/>
-  <text x="755" y="359" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DA 71 · DO NOW</text>
+  <!-- Row 5: Spotify -->
+  <rect x="40" y="312" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="312" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="335" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">Spotify (lyrics feature)</text>
+  <text x="430" y="335" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/spotifylyrics/</text>
+  <rect x="650" y="322" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="336" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
   <!-- Row 6: MiniLyrics -->
-  <rect x="40" y="374" width="820" height="40" rx="0" fill="#0A0F1E"/>
-  <rect x="40" y="374" width="4" height="40" fill="#10B981"/>
-  <text x="200" y="398" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">MiniLyrics</text>
-  <text x="390" y="398" text-anchor="middle" fill="#8892A4" font-size="12">Lyrics Display App</text>
-  <text x="560" y="398" text-anchor="middle" fill="#38BDF8" font-size="12">Add Lyrical as alternative</text>
-  <rect x="690" y="384" width="130" height="22" rx="6" fill="#10B98122"/>
-  <text x="755" y="399" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DA 71 · DO NOW</text>
+  <rect x="40" y="350" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="350" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="373" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">MiniLyrics</text>
+  <text x="430" y="373" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/minilyrics/</text>
+  <rect x="650" y="360" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="374" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
-  <!-- DA note -->
-  <text x="450" y="432" text-anchor="middle" fill="#4B5563" font-size="11">DA scores are indicative estimates. Verify with Ahrefs/Moz before prioritising outreach.</text>
+  <!-- Row 7: QuickLyric -->
+  <rect x="40" y="388" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="388" width="4" height="38" fill="#10B981"/>
+  <text x="200" y="411" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">QuickLyric</text>
+  <text x="430" y="411" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net/software/quicklyric/</text>
+  <rect x="650" y="398" width="180" height="20" rx="5" fill="#10B98122"/>
+  <text x="740" y="412" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">Add Lyrical as alternative · DA 71</text>
 
-  <!-- Footer -->
-  <line x1="40" y1="448" x2="860" y2="448" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-  <text x="450" y="468" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
-  <text x="450" y="486" text-anchor="middle" fill="#374151" font-size="10">6 submissions = 6 permanent backlinks from DA 71 domain. Total time: ~15 minutes.</text>
+  <text x="450" y="446" text-anchor="middle" fill="#4B5563" font-size="11">DA scores are indicative estimates. Verify with Ahrefs/Moz before prioritising outreach.</text>
+
+  <line x1="40" y1="460" x2="860" y2="460" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="478" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
+  <text x="450" y="496" text-anchor="middle" fill="#374151" font-size="10">7 submissions = 7 permanent DA 71 backlinks. Also: K-Pop press (Soompi DA 76, AllKpop DA 78, Japan Today DA 82)</text>
+  <text x="450" y="516" text-anchor="middle" fill="#374151" font-size="10">Music tech outreach: Music Ally (DA 68), Digital Music News (DA 72), Hypebot (DA 65), TouchArcade (DA 71)</text>
 </svg>
