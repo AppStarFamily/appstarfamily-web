@@ -1,88 +1,124 @@
-<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
-  <!-- Background -->
-  <rect width="900" height="500" fill="#0A0F1E"/>
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="620" fill="#0A0F1E"/>
 
-  <!-- Title -->
-  <text x="450" y="52" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">DO THESE FIRST — ALL APPS, FREE, PERMANENT</text>
-  <text x="450" y="78" text-anchor="middle" fill="#8892A4" font-size="13">Submit all 4 apps to each platform · One-time effort · Permanent high-DA backlinks</text>
+  <text x="450" y="46" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">UNIVERSAL PLATFORM SUBMISSIONS — ALL 4 APPS</text>
+  <text x="450" y="68" text-anchor="middle" fill="#8892A4" font-size="13">Free · Permanent · High-DA · Submit once, benefit forever</text>
 
-  <!-- Divider -->
-  <line x1="60" y1="96" x2="840" y2="96" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <!-- Header row -->
+  <rect x="40" y="84" width="820" height="32" rx="6" fill="#141B2D"/>
+  <text x="200" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">PLATFORM</text>
+  <text x="360" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">DA</text>
+  <text x="580" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">EXACT URL</text>
+  <text x="790" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">PRIORITY</text>
 
-  <!-- Card 1: AlternativeTo -->
-  <rect x="60" y="116" width="148" height="220" rx="12" fill="#0F1628" stroke="rgba(201,168,76,0.25)" stroke-width="1.5"/>
-  <rect x="60" y="116" width="148" height="4" rx="2" fill="#10B981"/>
-  <text x="134" y="162" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">AlternativeTo</text>
-  <text x="134" y="185" text-anchor="middle" fill="#C9A84C" font-size="26" font-weight="800">71</text>
-  <text x="134" y="203" text-anchor="middle" fill="#8892A4" font-size="10" letter-spacing="0.08em">DOMAIN AUTHORITY</text>
-  <line x1="80" y1="216" x2="188" y2="216" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="134" y="237" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700" letter-spacing="0.06em">CRITICAL FOR LYRICAL</text>
-  <text x="134" y="255" text-anchor="middle" fill="#8892A4" font-size="10">App discovery</text>
-  <text x="134" y="271" text-anchor="middle" fill="#8892A4" font-size="10">+ comparison</text>
-  <rect x="80" y="284" width="108" height="26" rx="6" fill="#10B98120"/>
-  <text x="134" y="301" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">All 4 apps ✓</text>
+  <!-- Row 1: Crunchbase -->
+  <rect x="40" y="116" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="116" width="4" height="38" fill="#C9A84C"/>
+  <text x="60" y="140" fill="#FFFFFF" font-size="13" font-weight="600">Crunchbase</text>
+  <text x="360" y="140" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">91</text>
+  <text x="580" y="140" text-anchor="middle" fill="#38BDF8" font-size="11">crunchbase.com — create company + app profiles</text>
+  <rect x="740" y="126" width="100" height="20" rx="5" fill="#C9A84C22"/>
+  <text x="790" y="140" text-anchor="middle" fill="#C9A84C" font-size="10" font-weight="700">DAY 1</text>
 
-  <!-- Card 2: Product Hunt -->
-  <rect x="228" y="116" width="148" height="220" rx="12" fill="#0F1628" stroke="rgba(201,168,76,0.25)" stroke-width="1.5"/>
-  <rect x="228" y="116" width="148" height="4" rx="2" fill="#C9A84C"/>
-  <text x="302" y="162" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">Product Hunt</text>
-  <text x="302" y="185" text-anchor="middle" fill="#C9A84C" font-size="26" font-weight="800">91</text>
-  <text x="302" y="203" text-anchor="middle" fill="#8892A4" font-size="10" letter-spacing="0.08em">DOMAIN AUTHORITY</text>
-  <line x1="248" y1="216" x2="356" y2="216" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="302" y="237" text-anchor="middle" fill="#C9A84C" font-size="10" font-weight="700" letter-spacing="0.06em">HIGHEST DA OF FIVE</text>
-  <text x="302" y="255" text-anchor="middle" fill="#8892A4" font-size="10">Launch visibility</text>
-  <text x="302" y="271" text-anchor="middle" fill="#8892A4" font-size="10">+ press coverage</text>
-  <rect x="248" y="284" width="108" height="26" rx="6" fill="#10B98120"/>
-  <text x="302" y="301" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">All 4 apps ✓</text>
+  <!-- Row 2: Product Hunt -->
+  <rect x="40" y="154" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="154" width="4" height="38" fill="#C9A84C"/>
+  <text x="60" y="178" fill="#FFFFFF" font-size="13" font-weight="600">Product Hunt</text>
+  <text x="360" y="178" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">91</text>
+  <text x="580" y="178" text-anchor="middle" fill="#38BDF8" font-size="11">producthunt.com/launch — submit each app separately</text>
+  <rect x="740" y="164" width="100" height="20" rx="5" fill="#C9A84C22"/>
+  <text x="790" y="178" text-anchor="middle" fill="#C9A84C" font-size="10" font-weight="700">DAY 1</text>
 
-  <!-- Card 3: Crunchbase -->
-  <rect x="396" y="116" width="148" height="220" rx="12" fill="#0F1628" stroke="rgba(201,168,76,0.25)" stroke-width="1.5"/>
-  <rect x="396" y="116" width="148" height="4" rx="2" fill="#C9A84C"/>
-  <text x="470" y="162" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">Crunchbase</text>
-  <text x="470" y="185" text-anchor="middle" fill="#C9A84C" font-size="26" font-weight="800">91</text>
-  <text x="470" y="203" text-anchor="middle" fill="#8892A4" font-size="10" letter-spacing="0.08em">DOMAIN AUTHORITY</text>
-  <line x1="416" y1="216" x2="524" y2="216" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="470" y="237" text-anchor="middle" fill="#C9A84C" font-size="10" font-weight="700" letter-spacing="0.06em">HIGHEST DA OF FIVE</text>
-  <text x="470" y="255" text-anchor="middle" fill="#8892A4" font-size="10">Business credibility</text>
-  <text x="470" y="271" text-anchor="middle" fill="#8892A4" font-size="10">+ E-E-A-T signal</text>
-  <rect x="416" y="284" width="108" height="26" rx="6" fill="#10B98120"/>
-  <text x="470" y="301" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">All 4 apps ✓</text>
+  <!-- Row 3: G2 -->
+  <rect x="40" y="192" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="192" width="4" height="38" fill="#10B981"/>
+  <text x="60" y="216" fill="#FFFFFF" font-size="13" font-weight="600">G2</text>
+  <text x="60" y="228" fill="#8892A4" font-size="10">Software reviews — high conversion</text>
+  <text x="360" y="216" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">88</text>
+  <text x="580" y="216" text-anchor="middle" fill="#38BDF8" font-size="11">g2.com/products/submit — "Add Product" → category</text>
+  <rect x="740" y="202" width="100" height="20" rx="5" fill="#10B98122"/>
+  <text x="790" y="216" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DAY 1</text>
 
-  <!-- Card 4: BetaList -->
-  <rect x="564" y="116" width="148" height="220" rx="12" fill="#0F1628" stroke="rgba(201,168,76,0.25)" stroke-width="1.5"/>
-  <rect x="564" y="116" width="148" height="4" rx="2" fill="#F59E0B"/>
-  <text x="638" y="162" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">BetaList</text>
-  <text x="638" y="185" text-anchor="middle" fill="#C9A84C" font-size="26" font-weight="800">74</text>
-  <text x="638" y="203" text-anchor="middle" fill="#8892A4" font-size="10" letter-spacing="0.08em">DOMAIN AUTHORITY</text>
-  <line x1="584" y1="216" x2="692" y2="216" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="638" y="237" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700" letter-spacing="0.06em">EARLY ADOPTERS</text>
-  <text x="638" y="255" text-anchor="middle" fill="#8892A4" font-size="10">Early access users</text>
-  <text x="638" y="271" text-anchor="middle" fill="#8892A4" font-size="10">+ startup credibility</text>
-  <rect x="584" y="284" width="108" height="26" rx="6" fill="#10B98120"/>
-  <text x="638" y="301" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">All 4 apps ✓</text>
+  <!-- Row 4: Capterra -->
+  <rect x="40" y="230" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="230" width="4" height="38" fill="#10B981"/>
+  <text x="60" y="254" fill="#FFFFFF" font-size="13" font-weight="600">Capterra</text>
+  <text x="360" y="254" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">85</text>
+  <text x="580" y="254" text-anchor="middle" fill="#38BDF8" font-size="11">capterra.com — "List Your Product" → select category</text>
+  <rect x="740" y="240" width="100" height="20" rx="5" fill="#10B98122"/>
+  <text x="790" y="254" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DAY 1</text>
 
-  <!-- Card 5: Wellfound -->
-  <rect x="732" y="116" width="148" height="220" rx="12" fill="#0F1628" stroke="rgba(201,168,76,0.25)" stroke-width="1.5"/>
-  <rect x="732" y="116" width="148" height="4" rx="2" fill="#38BDF8"/>
-  <text x="806" y="162" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">Wellfound</text>
-  <text x="806" y="185" text-anchor="middle" fill="#C9A84C" font-size="26" font-weight="800">85</text>
-  <text x="806" y="203" text-anchor="middle" fill="#8892A4" font-size="10" letter-spacing="0.08em">DOMAIN AUTHORITY</text>
-  <line x1="752" y1="216" x2="860" y2="216" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-  <text x="806" y="237" text-anchor="middle" fill="#38BDF8" font-size="10" font-weight="700" letter-spacing="0.06em">STARTUP AUTHORITY</text>
-  <text x="806" y="255" text-anchor="middle" fill="#8892A4" font-size="10">Founder credibility</text>
-  <text x="806" y="271" text-anchor="middle" fill="#8892A4" font-size="10">+ talent signal</text>
-  <rect x="752" y="284" width="108" height="26" rx="6" fill="#10B98120"/>
-  <text x="806" y="301" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">All 4 apps ✓</text>
+  <!-- Row 5: Wellfound -->
+  <rect x="40" y="268" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="268" width="4" height="38" fill="#10B981"/>
+  <text x="60" y="292" fill="#FFFFFF" font-size="13" font-weight="600">Wellfound (AngelList)</text>
+  <text x="360" y="292" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">85</text>
+  <text x="580" y="292" text-anchor="middle" fill="#38BDF8" font-size="11">wellfound.com — company profile + product listings</text>
+  <rect x="740" y="278" width="100" height="20" rx="5" fill="#10B98122"/>
+  <text x="790" y="292" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DAY 1</text>
 
-  <!-- Bottom banner -->
-  <rect x="60" y="356" width="780" height="68" rx="10" fill="#0F1628" stroke="rgba(201,168,76,0.15)" stroke-width="1"/>
-  <text x="450" y="381" text-anchor="middle" fill="#C9A84C" font-size="13" font-weight="700">Combined DA boost across 5 platforms · Est. 30–60 min total setup · Zero ongoing cost</text>
-  <text x="450" y="403" text-anchor="middle" fill="#8892A4" font-size="12">These links are permanent. Submit once, benefit forever. Start here before any outreach.</text>
+  <!-- Row 6: GetApp -->
+  <rect x="40" y="306" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="306" width="4" height="38" fill="#F59E0B"/>
+  <text x="60" y="330" fill="#FFFFFF" font-size="13" font-weight="600">GetApp</text>
+  <text x="60" y="342" fill="#8892A4" font-size="10">Same parent as Capterra — double the coverage, one submission</text>
+  <text x="360" y="330" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">78</text>
+  <text x="580" y="330" text-anchor="middle" fill="#38BDF8" font-size="11">getapp.com — submit alongside Capterra</text>
+  <rect x="740" y="316" width="100" height="20" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="330" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">DAY 2</text>
 
-  <!-- DA note -->
-  <text x="450" y="444" text-anchor="middle" fill="#4B5563" font-size="11">DA scores are indicative estimates. Verify with Ahrefs/Moz before prioritising outreach.</text>
+  <!-- Row 7: AlternativeTo -->
+  <rect x="40" y="344" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="344" width="4" height="38" fill="#F59E0B"/>
+  <text x="60" y="368" fill="#FFFFFF" font-size="13" font-weight="600">AlternativeTo</text>
+  <text x="60" y="380" fill="#8892A4" font-size="10">CRITICAL for Lyrical — add to all competitor pages too</text>
+  <text x="360" y="368" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">71</text>
+  <text x="580" y="368" text-anchor="middle" fill="#38BDF8" font-size="11">alternativeto.net — "Suggest new application"</text>
+  <rect x="740" y="354" width="100" height="20" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="368" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">DAY 2</text>
 
-  <!-- Footer -->
-  <line x1="60" y1="460" x2="840" y2="460" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-  <text x="450" y="480" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
+  <!-- Row 8: Software Advice -->
+  <rect x="40" y="382" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="382" width="4" height="38" fill="#F59E0B"/>
+  <text x="60" y="406" fill="#FFFFFF" font-size="13" font-weight="600">Software Advice</text>
+  <text x="360" y="406" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">76</text>
+  <text x="580" y="406" text-anchor="middle" fill="#38BDF8" font-size="11">softwareadvice.com — "List Your Product" form</text>
+  <rect x="740" y="392" width="100" height="20" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="406" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">DAY 2</text>
+
+  <!-- Row 9: F6S -->
+  <rect x="40" y="420" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="420" width="4" height="38" fill="#F59E0B"/>
+  <text x="60" y="444" fill="#FFFFFF" font-size="13" font-weight="600">F6S</text>
+  <text x="360" y="444" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">72</text>
+  <text x="580" y="444" text-anchor="middle" fill="#38BDF8" font-size="11">f6s.com — create startup profile + apply for programs</text>
+  <rect x="740" y="430" width="100" height="20" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="444" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">DAY 2</text>
+
+  <!-- Row 10: BetaList -->
+  <rect x="40" y="458" width="820" height="38" fill="#0A0F1E"/>
+  <rect x="40" y="458" width="4" height="38" fill="#8892A4"/>
+  <text x="60" y="482" fill="#FFFFFF" font-size="13" font-weight="600">BetaList</text>
+  <text x="360" y="482" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">74</text>
+  <text x="580" y="482" text-anchor="middle" fill="#38BDF8" font-size="11">betalist.com — "Submit a Startup"</text>
+  <rect x="740" y="468" width="100" height="20" rx="5" fill="#8892A422"/>
+  <text x="790" y="482" text-anchor="middle" fill="#8892A4" font-size="10" font-weight="700">WEEK 1</text>
+
+  <!-- Row 11: Launching Next -->
+  <rect x="40" y="496" width="820" height="38" fill="#0F1628"/>
+  <rect x="40" y="496" width="4" height="38" fill="#8892A4"/>
+  <text x="60" y="520" fill="#FFFFFF" font-size="13" font-weight="600">Launching Next</text>
+  <text x="360" y="520" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">58</text>
+  <text x="580" y="520" text-anchor="middle" fill="#38BDF8" font-size="11">launchingnext.com — free submission form</text>
+  <rect x="740" y="506" width="100" height="20" rx="5" fill="#8892A422"/>
+  <text x="790" y="520" text-anchor="middle" fill="#8892A4" font-size="10" font-weight="700">WEEK 1</text>
+
+  <!-- Summary bar -->
+  <rect x="40" y="550" width="820" height="34" rx="8" fill="#0F1628" stroke="rgba(201,168,76,0.2)" stroke-width="1"/>
+  <text x="450" y="572" text-anchor="middle" fill="#C9A84C" font-size="12" font-weight="700">11 platforms · All free · All permanent · Estimated total setup time: 4–5 hours</text>
+
+  <text x="450" y="596" text-anchor="middle" fill="#4B5563" font-size="11">DA scores are indicative estimates. Verify with Ahrefs/Moz before prioritising outreach.</text>
+
+  <line x1="40" y1="606" x2="860" y2="606" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="618" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
 </svg>

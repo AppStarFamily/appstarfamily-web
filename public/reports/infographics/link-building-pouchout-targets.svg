@@ -1,101 +1,118 @@
-<svg viewBox="0 0 900 540" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
-  <!-- Background -->
-  <rect width="900" height="540" fill="#0A0F1E"/>
+<svg viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <rect width="900" height="620" fill="#0A0F1E"/>
 
-  <!-- Title -->
-  <text x="450" y="48" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">POUCHOUT — LINK BUILDING TARGET MATRIX</text>
-  <text x="450" y="72" text-anchor="middle" fill="#8892A4" font-size="13">Nicotine pouch quitting niche · Prioritised by authority + acquisition difficulty</text>
+  <text x="450" y="46" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">POUCHOUT — LINK BUILDING TARGET MATRIX</text>
+  <text x="450" y="68" text-anchor="middle" fill="#8892A4" font-size="13">Nicotine pouch quitting niche · YMYL — authority links carry extra SEO weight here</text>
 
   <!-- Header row -->
-  <rect x="40" y="90" width="820" height="34" rx="6" fill="#141B2D"/>
-  <text x="180" y="112" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">TARGET SITE</text>
-  <text x="360" y="112" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">DA</text>
-  <text x="490" y="112" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">TYPE</text>
-  <text x="640" y="112" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">DIFFICULTY</text>
-  <text x="790" y="112" text-anchor="middle" fill="#4B5563" font-size="11" font-weight="700" letter-spacing="0.08em">PRIORITY</text>
+  <rect x="40" y="84" width="820" height="32" rx="6" fill="#141B2D"/>
+  <text x="175" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">TARGET SITE</text>
+  <text x="355" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">DA</text>
+  <text x="480" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">TYPE</text>
+  <text x="630" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">DIFFICULTY</text>
+  <text x="790" y="104" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="700" letter-spacing="0.08em">PRIORITY</text>
 
   <!-- Row 1: 1177.se -->
-  <rect x="40" y="130" width="820" height="44" rx="0" fill="#0F1628"/>
-  <rect x="40" y="130" width="4" height="44" fill="#10B981"/>
-  <text x="60" y="148" fill="#FFFFFF" font-size="13" font-weight="600">1177.se</text>
-  <text x="60" y="165" fill="#8892A4" font-size="11">Swedish national health portal</text>
-  <text x="360" y="156" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">78</text>
-  <text x="490" y="156" text-anchor="middle" fill="#38BDF8" font-size="12">Gov / Health</text>
-  <text x="640" y="156" text-anchor="middle" fill="#F59E0B" font-size="12" font-weight="600">Medium</text>
-  <rect x="740" y="140" width="100" height="24" rx="6" fill="#10B98122"/>
-  <text x="790" y="156" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DO NOW</text>
+  <rect x="40" y="116" width="820" height="42" fill="#0F1628"/>
+  <rect x="40" y="116" width="4" height="42" fill="#10B981"/>
+  <text x="60" y="133" fill="#FFFFFF" font-size="13" font-weight="600">1177.se (Vårdguiden)</text>
+  <text x="60" y="149" fill="#8892A4" font-size="10">Swedish national health portal · sluta snusa resources</text>
+  <text x="355" y="143" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">78</text>
+  <text x="480" y="143" text-anchor="middle" fill="#38BDF8" font-size="11">Gov / Health</text>
+  <text x="630" y="143" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="600">Medium</text>
+  <rect x="740" y="126" width="100" height="22" rx="5" fill="#10B98122"/>
+  <text x="790" y="141" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DO NOW</text>
 
   <!-- Row 2: Helsenorge.no -->
-  <rect x="40" y="174" width="820" height="44" rx="0" fill="#0A0F1E"/>
-  <rect x="40" y="174" width="4" height="44" fill="#10B981"/>
-  <text x="60" y="192" fill="#FFFFFF" font-size="13" font-weight="600">Helsenorge.no</text>
-  <text x="60" y="209" fill="#8892A4" font-size="11">Norwegian public health authority</text>
-  <text x="360" y="196" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">74</text>
-  <text x="490" y="196" text-anchor="middle" fill="#38BDF8" font-size="12">Gov / Health</text>
-  <text x="640" y="196" text-anchor="middle" fill="#F59E0B" font-size="12" font-weight="600">Medium</text>
-  <rect x="740" y="184" width="100" height="24" rx="6" fill="#10B98122"/>
-  <text x="790" y="200" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DO NOW</text>
+  <rect x="40" y="158" width="820" height="42" fill="#0A0F1E"/>
+  <rect x="40" y="158" width="4" height="42" fill="#10B981"/>
+  <text x="60" y="175" fill="#FFFFFF" font-size="13" font-weight="600">Helsenorge.no</text>
+  <text x="60" y="191" fill="#8892A4" font-size="10">Norwegian public health authority · slutte med snus resources</text>
+  <text x="355" y="185" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">81</text>
+  <text x="480" y="185" text-anchor="middle" fill="#38BDF8" font-size="11">Gov / Health</text>
+  <text x="630" y="185" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="600">Medium</text>
+  <rect x="740" y="168" width="100" height="22" rx="5" fill="#10B98122"/>
+  <text x="790" y="183" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DO NOW</text>
 
-  <!-- Row 3: CDC -->
-  <rect x="40" y="218" width="820" height="44" rx="0" fill="#0F1628"/>
-  <rect x="40" y="218" width="4" height="44" fill="#10B981"/>
-  <text x="60" y="236" fill="#FFFFFF" font-size="13" font-weight="600">CDC.gov</text>
-  <text x="60" y="253" fill="#8892A4" font-size="11">US Centers for Disease Control — tobacco/nicotine resources</text>
-  <text x="360" y="240" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">92</text>
-  <text x="490" y="240" text-anchor="middle" fill="#38BDF8" font-size="12">Government</text>
-  <text x="640" y="240" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="600">Hard</text>
-  <rect x="740" y="228" width="100" height="24" rx="6" fill="#F59E0B22"/>
-  <text x="790" y="244" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">MONTH 2</text>
+  <!-- Row 3: r/QuittingZyn -->
+  <rect x="40" y="200" width="820" height="42" fill="#0F1628"/>
+  <rect x="40" y="200" width="4" height="42" fill="#10B981"/>
+  <text x="60" y="217" fill="#FFFFFF" font-size="13" font-weight="600">r/QuittingZyn</text>
+  <text x="60" y="233" fill="#8892A4" font-size="10">Reddit · 15K members · authentic mention + pinned resource</text>
+  <text x="355" y="227" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">91</text>
+  <text x="480" y="227" text-anchor="middle" fill="#A78BFA" font-size="11">Community</text>
+  <text x="630" y="227" text-anchor="middle" fill="#10B981" font-size="11" font-weight="600">Low</text>
+  <rect x="740" y="210" width="100" height="22" rx="5" fill="#10B98122"/>
+  <text x="790" y="225" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DO NOW</text>
 
-  <!-- Row 4: Smokefree.gov -->
-  <rect x="40" y="262" width="820" height="44" rx="0" fill="#0A0F1E"/>
-  <rect x="40" y="262" width="4" height="44" fill="#10B981"/>
-  <text x="60" y="280" fill="#FFFFFF" font-size="13" font-weight="600">Smokefree.gov</text>
-  <text x="60" y="297" fill="#8892A4" font-size="11">US gov smoking cessation — directly relevant niche</text>
-  <text x="360" y="284" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">82</text>
-  <text x="490" y="284" text-anchor="middle" fill="#38BDF8" font-size="12">Government</text>
-  <text x="640" y="284" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="600">Hard</text>
-  <rect x="740" y="272" width="100" height="24" rx="6" fill="#F59E0B22"/>
-  <text x="790" y="288" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">MONTH 2</text>
+  <!-- Row 4: Choosing Therapy -->
+  <rect x="40" y="242" width="820" height="42" fill="#0A0F1E"/>
+  <rect x="40" y="242" width="4" height="42" fill="#10B981"/>
+  <text x="60" y="259" fill="#FFFFFF" font-size="13" font-weight="600">Choosing Therapy</text>
+  <text x="60" y="275" fill="#8892A4" font-size="10">choosingtherapy.com/contact/ · submit via contact form</text>
+  <text x="355" y="269" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">62</text>
+  <text x="480" y="269" text-anchor="middle" fill="#FB923C" font-size="11">Health Media</text>
+  <text x="630" y="269" text-anchor="middle" fill="#10B981" font-size="11" font-weight="600">Low</text>
+  <rect x="740" y="252" width="100" height="22" rx="5" fill="#10B98122"/>
+  <text x="790" y="267" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">DO NOW</text>
 
-  <!-- Row 5: American Lung Association -->
-  <rect x="40" y="306" width="820" height="44" rx="0" fill="#0F1628"/>
-  <rect x="40" y="306" width="4" height="44" fill="#F59E0B"/>
-  <text x="60" y="324" fill="#FFFFFF" font-size="13" font-weight="600">Lung.org</text>
-  <text x="60" y="341" fill="#8892A4" font-size="11">American Lung Association — cessation tools + app resource pages</text>
-  <text x="360" y="328" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">81</text>
-  <text x="490" y="328" text-anchor="middle" fill="#A78BFA" font-size="12">Non-profit</text>
-  <text x="640" y="328" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="600">Hard</text>
-  <rect x="740" y="316" width="100" height="24" rx="6" fill="#F59E0B22"/>
-  <text x="790" y="332" text-anchor="middle" fill="#F59E0B" font-size="11" font-weight="700">MONTH 2</text>
+  <!-- Row 5: American Cancer Society -->
+  <rect x="40" y="284" width="820" height="42" fill="#0F1628"/>
+  <rect x="40" y="284" width="4" height="42" fill="#F59E0B"/>
+  <text x="60" y="301" fill="#FFFFFF" font-size="13" font-weight="600">American Cancer Society</text>
+  <text x="60" y="317" fill="#8892A4" font-size="10">cancer.org · quit smoking guide · use contact form</text>
+  <text x="355" y="311" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">93</text>
+  <text x="480" y="311" text-anchor="middle" fill="#A78BFA" font-size="11">Non-profit</text>
+  <text x="630" y="311" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="600">Hard</text>
+  <rect x="740" y="294" width="100" height="22" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="309" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">MONTH 1</text>
 
-  <!-- Row 6: Healthline -->
-  <rect x="40" y="350" width="820" height="44" rx="0" fill="#0A0F1E"/>
-  <rect x="40" y="350" width="4" height="44" fill="#F59E0B"/>
-  <text x="60" y="368" fill="#FFFFFF" font-size="13" font-weight="600">Healthline.com</text>
-  <text x="60" y="385" fill="#8892A4" font-size="11">Top health publisher · Guest post + expert quote opportunities</text>
-  <text x="360" y="372" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">93</text>
-  <text x="490" y="372" text-anchor="middle" fill="#FB923C" font-size="12">Health Media</text>
-  <text x="640" y="372" text-anchor="middle" fill="#EF4444" font-size="12" font-weight="600">Hard</text>
-  <rect x="740" y="360" width="100" height="24" rx="6" fill="#EF444422"/>
-  <text x="790" y="376" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="700">LONG TERM</text>
+  <!-- Row 6: American Lung Association -->
+  <rect x="40" y="326" width="820" height="42" fill="#0A0F1E"/>
+  <rect x="40" y="326" width="4" height="42" fill="#F59E0B"/>
+  <text x="60" y="343" fill="#FFFFFF" font-size="13" font-weight="600">American Lung Association</text>
+  <text x="60" y="359" fill="#8892A4" font-size="10">lung.org/quit-smoking · cessation tools + app resource pages</text>
+  <text x="355" y="353" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">88</text>
+  <text x="480" y="353" text-anchor="middle" fill="#A78BFA" font-size="11">Non-profit</text>
+  <text x="630" y="353" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="600">Hard</text>
+  <rect x="740" y="336" width="100" height="22" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="351" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">MONTH 1</text>
 
-  <!-- Row 7: r/QuittingZyn -->
-  <rect x="40" y="394" width="820" height="44" rx="0" fill="#0F1628"/>
-  <rect x="40" y="394" width="4" height="44" fill="#10B981"/>
-  <text x="60" y="412" fill="#FFFFFF" font-size="13" font-weight="600">r/QuittingZyn</text>
-  <text x="60" y="429" fill="#8892A4" font-size="11">Reddit community · Authentic mention + pinned resource opportunity</text>
-  <text x="360" y="416" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="700">91</text>
-  <text x="490" y="416" text-anchor="middle" fill="#A78BFA" font-size="12">Community</text>
-  <text x="640" y="416" text-anchor="middle" fill="#10B981" font-size="12" font-weight="600">Low</text>
-  <rect x="740" y="404" width="100" height="24" rx="6" fill="#10B98122"/>
-  <text x="790" y="420" text-anchor="middle" fill="#10B981" font-size="11" font-weight="700">DO NOW</text>
+  <!-- Row 7: CDC -->
+  <rect x="40" y="368" width="820" height="42" fill="#0F1628"/>
+  <rect x="40" y="368" width="4" height="42" fill="#F59E0B"/>
+  <text x="60" y="385" fill="#FFFFFF" font-size="13" font-weight="600">CDC.gov Tobacco</text>
+  <text x="60" y="401" fill="#8892A4" font-size="10">cdc.gov/tobacco/about/contact.htm · Office on Smoking and Health</text>
+  <text x="355" y="395" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">96</text>
+  <text x="480" y="395" text-anchor="middle" fill="#38BDF8" font-size="11">Government</text>
+  <text x="630" y="395" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="600">Hard</text>
+  <rect x="740" y="378" width="100" height="22" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="393" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">MONTH 2</text>
 
-  <!-- DA note -->
-  <text x="450" y="462" text-anchor="middle" fill="#4B5563" font-size="11">DA scores are indicative estimates. Verify with Ahrefs/Moz before prioritising outreach.</text>
+  <!-- Row 8: Smokefree.gov -->
+  <rect x="40" y="410" width="820" height="42" fill="#0A0F1E"/>
+  <rect x="40" y="410" width="4" height="42" fill="#F59E0B"/>
+  <text x="60" y="427" fill="#FFFFFF" font-size="13" font-weight="600">Smokefree.gov</text>
+  <text x="60" y="443" fill="#8892A4" font-size="10">smokefree.gov/tools-tips/get-extra-help/free-resources · tobaccoinfo@cdc.gov</text>
+  <text x="355" y="437" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">95</text>
+  <text x="480" y="437" text-anchor="middle" fill="#38BDF8" font-size="11">Government</text>
+  <text x="630" y="437" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="600">Hard</text>
+  <rect x="740" y="420" width="100" height="22" rx="5" fill="#F59E0B22"/>
+  <text x="790" y="435" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">MONTH 2</text>
 
-  <!-- Footer -->
-  <line x1="40" y1="478" x2="860" y2="478" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-  <text x="450" y="498" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
-  <text x="450" y="516" text-anchor="middle" fill="#374151" font-size="10">Priority: Green = Do Now · Amber = Month 2 · Red = Long Term</text>
+  <!-- Row 9: Healthline -->
+  <rect x="40" y="452" width="820" height="42" fill="#0F1628"/>
+  <rect x="40" y="452" width="4" height="42" fill="#EF4444"/>
+  <text x="60" y="469" fill="#FFFFFF" font-size="13" font-weight="600">Healthline.com</text>
+  <text x="60" y="485" fill="#8892A4" font-size="10">Top health publisher · editors@healthline.com · guest post + expert quote</text>
+  <text x="355" y="479" text-anchor="middle" fill="#C9A84C" font-size="14" font-weight="800">91</text>
+  <text x="480" y="479" text-anchor="middle" fill="#FB923C" font-size="11">Health Media</text>
+  <text x="630" y="479" text-anchor="middle" fill="#EF4444" font-size="11" font-weight="600">Hard</text>
+  <rect x="740" y="462" width="100" height="22" rx="5" fill="#EF444422"/>
+  <text x="790" y="477" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="700">LONG TERM</text>
+
+  <text x="450" y="516" text-anchor="middle" fill="#4B5563" font-size="11">DA scores are indicative estimates. Verify with Ahrefs/Moz before prioritising outreach.</text>
+  <line x1="40" y1="530" x2="860" y2="530" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="548" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
+  <text x="450" y="564" text-anchor="middle" fill="#374151" font-size="10">Priority: Green = Do Now · Amber = Month 1-2 · Red = Long Term · Also target: VA Tobacco (DA 95), AHA (DA 93), UCSD Smokefree (DA 91)</text>
 </svg>
