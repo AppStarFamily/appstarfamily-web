@@ -1,0 +1,135 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="900" height="500" fill="#0A0F1E"/>
+
+  <!-- Title -->
+  <text x="450" y="48" text-anchor="middle" fill="#C9A84C" font-size="20" font-weight="700" letter-spacing="0.04em">PRIORITY ACTION TIMELINE</text>
+  <text x="450" y="72" text-anchor="middle" fill="#8892A4" font-size="13">4-week rollout across all apps · Start with highest ROI, lowest effort</text>
+
+  <!-- Column 1: Week 1 -->
+  <rect x="40" y="90" width="190" height="340" rx="10" fill="#0F1628" stroke="#10B98133" stroke-width="1.5"/>
+  <rect x="40" y="90" width="190" height="36" rx="10" fill="#10B981"/>
+  <rect x="40" y="112" width="190" height="14" rx="0" fill="#10B981"/>
+  <text x="135" y="114" text-anchor="middle" fill="#0A0F1E" font-size="13" font-weight="800" letter-spacing="0.06em">WEEK 1</text>
+  <text x="135" y="130" text-anchor="middle" fill="#10B98199" font-size="10" font-weight="600">Quick wins · All apps</text>
+
+  <text x="58" y="158" fill="#10B981" font-size="11" font-weight="700">→</text>
+  <text x="72" y="158" fill="#FFFFFF" font-size="12" font-weight="600">AlternativeTo</text>
+  <text x="72" y="174" fill="#8892A4" font-size="11">All 4 apps + Lyrical</text>
+  <text x="72" y="190" fill="#8892A4" font-size="11">competitor pages</text>
+
+  <line x1="58" y1="200" x2="218" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="58" y="218" fill="#10B981" font-size="11" font-weight="700">→</text>
+  <text x="72" y="218" fill="#FFFFFF" font-size="12" font-weight="600">Product Hunt</text>
+  <text x="72" y="234" fill="#8892A4" font-size="11">Submit all 4 apps</text>
+
+  <line x1="58" y1="244" x2="218" y2="244" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="58" y="262" fill="#10B981" font-size="11" font-weight="700">→</text>
+  <text x="72" y="262" fill="#FFFFFF" font-size="12" font-weight="600">Crunchbase</text>
+  <text x="72" y="278" fill="#8892A4" font-size="11">AppStar company</text>
+  <text x="72" y="294" fill="#8892A4" font-size="11">profile + all apps</text>
+
+  <line x1="58" y1="304" x2="218" y2="304" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="58" y="322" fill="#10B981" font-size="11" font-weight="700">→</text>
+  <text x="72" y="322" fill="#FFFFFF" font-size="12" font-weight="600">BetaList + Wellfound</text>
+  <text x="72" y="338" fill="#8892A4" font-size="11">Submit all 4 apps</text>
+
+  <rect x="58" y="392" width="160" height="22" rx="6" fill="#10B98122"/>
+  <text x="138" y="407" text-anchor="middle" fill="#10B981" font-size="10" font-weight="700">EST. 3-4 HRS TOTAL</text>
+
+  <!-- Column 2: Week 2 -->
+  <rect x="250" y="90" width="190" height="340" rx="10" fill="#0F1628" stroke="#F59E0B33" stroke-width="1.5"/>
+  <rect x="250" y="90" width="190" height="36" rx="10" fill="#F59E0B"/>
+  <rect x="250" y="112" width="190" height="14" rx="0" fill="#F59E0B"/>
+  <text x="345" y="114" text-anchor="middle" fill="#0A0F1E" font-size="13" font-weight="800" letter-spacing="0.06em">WEEK 2</text>
+  <text x="345" y="130" text-anchor="middle" fill="#F59E0B99" font-size="10" font-weight="600">Niche directories</text>
+
+  <text x="268" y="158" fill="#F59E0B" font-size="11" font-weight="700">→</text>
+  <text x="282" y="158" fill="#FFFFFF" font-size="12" font-weight="600">PouchOut</text>
+  <text x="282" y="174" fill="#8892A4" font-size="11">1177.se + Helsenorge</text>
+  <text x="282" y="190" fill="#8892A4" font-size="11">+ r/QuittingZyn</text>
+
+  <line x1="268" y1="200" x2="428" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="268" y="218" fill="#F59E0B" font-size="11" font-weight="700">→</text>
+  <text x="282" y="218" fill="#FFFFFF" font-size="12" font-weight="600">Hypnobirthing+</text>
+  <text x="282" y="234" fill="#8892A4" font-size="11">DONA International</text>
+  <text x="282" y="250" fill="#8892A4" font-size="11">+ Evidence Based Birth</text>
+  <text x="282" y="266" fill="#8892A4" font-size="11">+ Lamaze.org</text>
+
+  <line x1="268" y1="276" x2="428" y2="276" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="268" y="294" fill="#F59E0B" font-size="11" font-weight="700">→</text>
+  <text x="282" y="294" fill="#FFFFFF" font-size="12" font-weight="600">Throwback</text>
+  <text x="282" y="310" fill="#8892A4" font-size="11">Photo app directories</text>
+  <text x="282" y="326" fill="#8892A4" font-size="11">+ AlternativeTo pages</text>
+
+  <rect x="268" y="392" width="160" height="22" rx="6" fill="#F59E0B22"/>
+  <text x="348" y="407" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">EST. 4-5 HRS TOTAL</text>
+
+  <!-- Column 3: Week 3 -->
+  <rect x="460" y="90" width="190" height="340" rx="10" fill="#0F1628" stroke="#F59E0B33" stroke-width="1.5"/>
+  <rect x="460" y="90" width="190" height="36" rx="10" fill="#F59E0B99"/>
+  <rect x="460" y="112" width="190" height="14" rx="0" fill="#F59E0B99"/>
+  <text x="555" y="114" text-anchor="middle" fill="#0A0F1E" font-size="13" font-weight="800" letter-spacing="0.06em">WEEK 3</text>
+  <text x="555" y="130" text-anchor="middle" fill="#7a5c00" font-size="10" font-weight="600">Media outreach</text>
+
+  <text x="478" y="158" fill="#F59E0B" font-size="11" font-weight="700">→</text>
+  <text x="492" y="158" fill="#FFFFFF" font-size="12" font-weight="600">K-Pop press outreach</text>
+  <text x="492" y="174" fill="#8892A4" font-size="11">Soompi, Allkpop,</text>
+  <text x="492" y="190" fill="#8892A4" font-size="11">KpopStarz pitches</text>
+
+  <line x1="478" y1="200" x2="638" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="478" y="218" fill="#F59E0B" font-size="11" font-weight="700">→</text>
+  <text x="492" y="218" fill="#FFFFFF" font-size="12" font-weight="600">BabyCenter outreach</text>
+  <text x="492" y="234" fill="#8892A4" font-size="11">Community board posts</text>
+  <text x="492" y="250" fill="#8892A4" font-size="11">+ editorial pitch</text>
+
+  <line x1="478" y1="260" x2="638" y2="260" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="478" y="278" fill="#F59E0B" font-size="11" font-weight="700">→</text>
+  <text x="492" y="278" fill="#FFFFFF" font-size="12" font-weight="600">Photography pubs</text>
+  <text x="492" y="294" fill="#8892A4" font-size="11">PetaPixel, Digital Photo</text>
+  <text x="492" y="310" fill="#8892A4" font-size="11">World pitches</text>
+
+  <rect x="478" y="392" width="160" height="22" rx="6" fill="#F59E0B22"/>
+  <text x="558" y="407" text-anchor="middle" fill="#F59E0B" font-size="10" font-weight="700">EST. 5-6 HRS TOTAL</text>
+
+  <!-- Column 4: Month 2+ -->
+  <rect x="670" y="90" width="190" height="340" rx="10" fill="#0F1628" stroke="#EF444433" stroke-width="1.5"/>
+  <rect x="670" y="90" width="190" height="36" rx="10" fill="#EF444477"/>
+  <rect x="670" y="112" width="190" height="14" rx="0" fill="#EF444477"/>
+  <text x="765" y="114" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="800" letter-spacing="0.06em">MONTH 2+</text>
+  <text x="765" y="130" text-anchor="middle" fill="#EF444488" font-size="10" font-weight="600">Authority plays</text>
+
+  <text x="688" y="158" fill="#EF4444" font-size="11" font-weight="700">→</text>
+  <text x="702" y="158" fill="#FFFFFF" font-size="12" font-weight="600">CDC + Smokefree.gov</text>
+  <text x="702" y="174" fill="#8892A4" font-size="11">Government health link</text>
+  <text x="702" y="190" fill="#8892A4" font-size="11">acquisition (long game)</text>
+
+  <line x1="688" y1="200" x2="848" y2="200" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="688" y="218" fill="#EF4444" font-size="11" font-weight="700">→</text>
+  <text x="702" y="218" fill="#FFFFFF" font-size="12" font-weight="600">Healthline pitches</text>
+  <text x="702" y="234" fill="#8892A4" font-size="11">Expert source + guest</text>
+  <text x="702" y="250" fill="#8892A4" font-size="11">post opportunities</text>
+
+  <line x1="688" y1="260" x2="848" y2="260" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <text x="688" y="278" fill="#EF4444" font-size="11" font-weight="700">→</text>
+  <text x="702" y="278" fill="#FFFFFF" font-size="12" font-weight="600">The Bump / Motherly</text>
+  <text x="702" y="294" fill="#8892A4" font-size="11">App roundup pitches</text>
+  <text x="702" y="310" fill="#8892A4" font-size="11">for Hypnobirthing+</text>
+
+  <rect x="688" y="392" width="160" height="22" rx="6" fill="#EF444422"/>
+  <text x="768" y="407" text-anchor="middle" fill="#EF4444" font-size="10" font-weight="700">ONGOING EFFORT</text>
+
+  <!-- Footer -->
+  <line x1="40" y1="450" x2="860" y2="450" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="450" y="470" text-anchor="middle" fill="#4B5563" font-size="11">Compiled by Scriptor · OpenClaw Research · appstarfamily.com</text>
+  <text x="450" y="488" text-anchor="middle" fill="#374151" font-size="10">Green = immediate wins · Amber = medium effort · Red = authority building (weeks–months)</text>
+</svg>

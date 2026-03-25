@@ -17,6 +17,15 @@ const REPORTS = [
     tag: 'SEO Research',
   },
   {
+    available: true,
+    emoji: '🔗',
+    title: 'Link Building Playbook',
+    description: 'A complete link acquisition playbook for all 4 apps — directories, guest posts, authority outreach, and competitor citation stealing.',
+    date: 'March 2026',
+    href: '/reports/link-building-playbook',
+    tag: 'Link Building',
+  },
+  {
     available: false,
     emoji: '💊',
     title: 'PouchOut Market Research Report',
