@@ -313,21 +313,35 @@ Search operators for finding existing viral content to learn from:
 
 *4-week rollout — start with highest ROI, lowest effort*
 
-| Week | Focus | Apps | Est. Hours |
-|---|---|---|---|
-| Week 1 | Universal directories: Crunchbase, Product Hunt, G2, Capterra, Wellfound, GetApp, Software Advice, F6S, BetaList | All 4 | 4–5 hrs |
-| Week 1 | AlternativeTo competitor citations (7 pages) | Lyrical | 30 min |
-| Week 1 | AlternativeTo competitor citations (5 pages) | Throwback | 20 min |
-| Week 2 | Scandinavian portals + Choosing Therapy + Reddit communities | PouchOut | 2–3 hrs |
-| Week 2 | Doula/midwife org listings: DONA, CAPPA, Lamaze, BirthWorks | Hypnobirthing+ | 2 hrs |
-| Week 2 | Photography directories + AlternativeTo citations | Throwback | 2 hrs |
-| Week 3 | K-Pop press pitches: AllKpop, Soompi, Japan Today | Lyrical | 3 hrs |
-| Week 3 | Pregnancy media pitches: BabyCenter, The Bump, Verywell Family | Hypnobirthing+ | 3 hrs |
-| Week 3 | Photography publication pitches: PetaPixel, Fstoppers, Screen Rant | Throwback | 3 hrs |
-| Month 1 | Non-profit health outreach: ACS, ALA, AHA | PouchOut | 3 hrs |
-| Month 2 | Government health link acquisition: CDC, Smokefree.gov, VA Tobacco | PouchOut | Ongoing |
-| Month 2 | High-DA media pitches: Healthline, Parents.com, Motherly | Multiple | Ongoing |
-| Month 3+ | Award submissions: Apple Design Awards, Webby Awards, Fast Company | All 4 | Periodic |
+<div style={{margin:'1.5rem 0', border:'1px solid rgba(201,146,42,0.2)', borderRadius:'8px', overflow:'hidden', fontSize:'0.85rem', lineHeight:'1.5'}}>
+  <div style={{display:'grid', gridTemplateColumns:'76px 1fr 116px 72px', background:'#141C35', borderBottom:'1px solid rgba(201,146,42,0.25)'}}>
+    <div style={{padding:'10px 14px', fontWeight:700, color:'#C9922A'}}>Phase</div>
+    <div style={{padding:'10px 14px', fontWeight:700, color:'#C9922A'}}>Focus</div>
+    <div style={{padding:'10px 14px', fontWeight:700, color:'#C9922A'}}>Apps</div>
+    <div style={{padding:'10px 14px', fontWeight:700, color:'#C9922A', textAlign:'right'}}>Hours</div>
+  </div>
+  {[
+    ['Week 1', 'Universal directories — Crunchbase, Product Hunt, G2, Capterra, Wellfound, GetApp, Software Advice, F6S, BetaList', 'All 4', '4–5 hrs'],
+    ['Week 1', 'AlternativeTo competitor citations (7 pages for Lyrical, 5 for Throwback)', 'Lyrical + TB', '50 min'],
+    ['Week 2', 'Scandinavian portals + Choosing Therapy + Reddit communities', 'PouchOut', '2–3 hrs'],
+    ['Week 2', 'Doula/midwife org listings — DONA, CAPPA, Lamaze, BirthWorks', 'Hypno+', '2 hrs'],
+    ['Week 2', 'Photography directories + remaining AlternativeTo citations', 'Throwback', '2 hrs'],
+    ['Week 3', 'K-Pop press pitches — AllKpop, Soompi, Japan Today', 'Lyrical', '3 hrs'],
+    ['Week 3', 'Pregnancy media pitches — BabyCenter, The Bump, Verywell Family', 'Hypno+', '3 hrs'],
+    ['Week 3', 'Photography publication pitches — PetaPixel, Fstoppers, Screen Rant', 'Throwback', '3 hrs'],
+    ['Month 1', 'Non-profit health outreach — ACS, ALA, AHA', 'PouchOut', '3 hrs'],
+    ['Month 2', 'Government health link acquisition — CDC, Smokefree.gov, VA Tobacco', 'PouchOut', 'Ongoing'],
+    ['Month 2', 'High-DA media pitches — Healthline, Parents.com, Motherly', 'Multiple', 'Ongoing'],
+    ['Month 3+', 'Award submissions — Apple Design Awards, Webby Awards, Fast Company', 'All 4', 'Periodic'],
+  ].map(([phase, focus, apps, hours], i) => (
+    <div key={i} style={{display:'grid', gridTemplateColumns:'76px 1fr 116px 72px', borderTop: i === 0 ? 'none' : '1px solid rgba(255,255,255,0.06)', background: i % 2 === 0 ? '#0F1629' : '#0A0F1E'}}>
+      <div style={{padding:'10px 14px', color:'#C9922A', fontWeight:600, whiteSpace:'nowrap'}}>{phase}</div>
+      <div style={{padding:'10px 14px', color:'#e2e8f0'}}>{focus}</div>
+      <div style={{padding:'10px 14px', color:'#94a3b8'}}>{apps}</div>
+      <div style={{padding:'10px 14px', color:'#94a3b8', textAlign:'right', whiteSpace:'nowrap'}}>{hours}</div>
+    </div>
+  ))}
+</div>
 
 ---
 
@@ -335,13 +349,26 @@ Search operators for finding existing viral content to learn from:
 
 Free to enter, high-authority backlinks if listed.
 
-| Award | DA | Deadline | Submission URL |
-|---|---|---|---|
-| Apple Design Awards | 100 | Annual (March) | <a href="https://developer.apple.com/design/awards/" target="_blank" rel="noopener noreferrer">developer.apple.com/design/awards</a> |
-| Webby Awards | 88 | Annual (October) | <a href="https://www.webbyawards.com/" target="_blank" rel="noopener noreferrer">webbyawards.com</a> |
-| Fast Company Innovation | 93 | Annual | <a href="https://www.fastcompany.com/awards" target="_blank" rel="noopener noreferrer">fastcompany.com/awards</a> |
-| MedTech Breakthrough | 65 | Annual | <a href="https://medtechbreakthrough.com/" target="_blank" rel="noopener noreferrer">medtechbreakthrough.com</a> |
-| Digital Health Awards | 55 | Annual | <a href="https://www.healthawards.com/" target="_blank" rel="noopener noreferrer">healthawards.com</a> |
+<div style={{display:'flex', flexDirection:'column', gap:'8px', margin:'1.5rem 0'}}>
+  {[
+    {name:'Apple Design Awards', da:100, deadline:'Annual — March', url:'https://developer.apple.com/design/awards/', label:'developer.apple.com/design/awards'},
+    {name:'Fast Company Innovation by Design', da:93, deadline:'Annual', url:'https://www.fastcompany.com/awards', label:'fastcompany.com/awards'},
+    {name:'Webby Awards', da:88, deadline:'Annual — October', url:'https://www.webbyawards.com/', label:'webbyawards.com'},
+    {name:'MedTech Breakthrough Awards', da:65, deadline:'Annual', url:'https://medtechbreakthrough.com/', label:'medtechbreakthrough.com'},
+    {name:'Digital Health Awards', da:55, deadline:'Annual', url:'https://www.healthawards.com/', label:'healthawards.com'},
+  ].map((award, i) => (
+    <a key={i} href={award.url} target="_blank" rel="noopener noreferrer" style={{display:'flex', alignItems:'center', justifyContent:'space-between', gap:'16px', padding:'14px 18px', background:'#0F1629', border:'1px solid rgba(201,146,42,0.18)', borderRadius:'8px', textDecoration:'none', color:'inherit'}}>
+      <div style={{flex:1, minWidth:0}}>
+        <div style={{fontWeight:600, color:'#F0C060', fontSize:'0.9rem'}}>{award.name}</div>
+        <div style={{fontSize:'0.78rem', color:'#94a3b8', marginTop:'3px'}}>{award.deadline}</div>
+      </div>
+      <div style={{display:'flex', alignItems:'center', gap:'12px', flexShrink:0}}>
+        <span style={{fontSize:'0.75rem', color:'#64748b', background:'#141C35', padding:'2px 8px', borderRadius:'4px', fontWeight:600}}>DA {award.da}</span>
+        <span style={{fontSize:'0.78rem', color:'#C9922A'}}>{award.label} →</span>
+      </div>
+    </a>
+  ))}
+</div>
 
 ---
 
