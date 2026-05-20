@@ -15,6 +15,19 @@ export type App = {
 
 export const apps: App[] = [
   {
+    slug: 'lyrical',
+    name: 'Lyrical',
+    tagline: 'Dynamic lyrics that move with your music.',
+    description: 'Lyrical brings your music to life with real-time synced lyrics that pulse and animate as each word plays. Works with Apple Music and Spotify. Beautiful full-screen visuals that turn every song into an experience.',
+    category: 'music',
+    status: 'live',
+    appStoreUrl: 'https://apps.apple.com/us/app/lyrical-dynamic-lyrics/id6759707037',
+    websiteUrl: 'https://lyricalmusic.app',
+    icon: '/images/apps/lyrical.webp',
+    featured: true,
+    markets: ['Global'],
+  },
+  {
     slug: 'pouchout',
     name: 'PouchOut — Quit Zyn',
     tagline: 'Your quit journey, one pouch at a time.',
@@ -90,6 +103,7 @@ export const apps: App[] = [
     category: 'fun',
     status: 'live',
     appStoreUrl: 'https://apps.apple.com/us/app/dog-translator/id6743143735',
+    websiteUrl: 'https://dogtranslator.fun',
     icon: '/images/apps/dog-translator.webp',
     featured: true,
     markets: ['Global'],

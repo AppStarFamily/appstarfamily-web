@@ -418,10 +418,7 @@ export default function FeaturedAppShowcase({ app }: { app: App }) {
             className="font-jakarta font-bold text-white leading-tight mb-3"
             style={{ fontSize: 'clamp(24px, 3.8vw, 40px)' }}
           >
-            PouchOut
-            <span style={{ color: 'rgba(201,146,42,0.55)', fontWeight: 300 }}>
-              {' '}— Quit Zyn
-            </span>
+            {app.name}
           </h3>
 
           {/* Tagline */}
