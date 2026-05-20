@@ -26,6 +26,11 @@ export const apps: App[] = [
     icon: '/images/apps/lyrical.webp',
     featured: true,
     markets: ['Global'],
+    screenshots: [
+      '/images/screenshots/lyrical/1en.webp',
+      '/images/screenshots/lyrical/2en.webp',
+      '/images/screenshots/lyrical/3en.webp',
+    ],
   },
   {
     slug: 'pouchout',
