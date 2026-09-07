@@ -44,9 +44,71 @@ const sections = [
     ],
   },
   {
+    title: 'Cookies and Tracking Technologies',
+    content: [
+      `Our website and apps may use cookies, SDKs, and similar tracking technologies for analytics and performance measurement. Where required by applicable law, including the laws of the European Economic Area and the United Kingdom, we will request your consent before non-essential cookies or tracking technologies are activated, and you may withdraw that consent at any time.`,
+    ],
+  },
+  {
+    title: 'International Data Transfers',
+    content: [
+      `APP STAR FAMILY PTE. LTD. is based in Singapore, and our service providers are located in various countries, including the United States and the European Union. Where we transfer personal data originating from the European Economic Area, the United Kingdom, or Switzerland to a country that has not been recognized as providing an adequate level of data protection, we rely on appropriate safeguards permitted under applicable law, such as the European Commission's Standard Contractual Clauses or an equivalent mechanism.`,
+    ],
+  },
+  {
+    title: 'EU and UK Representative',
+    content: [
+      `For users in the European Economic Area and the United Kingdom, where applicable law requires the appointment of a local representative, contact information for our representative will be published here once designated. In the meantime, EEA and UK users may direct privacy inquiries to info@appstarfamily.net.`,
+    ],
+  },
+  {
+    title: 'Your Rights Under GDPR',
+    intro: `If you are located in the European Economic Area, the United Kingdom, or another jurisdiction with similar data protection law, you may have the following rights regarding your personal data, subject to applicable legal exceptions:`,
+    list: [
+      `The right to access the personal data we hold about you`,
+      `The right to request correction of inaccurate or incomplete data`,
+      `The right to request deletion of your data`,
+      `The right to request restriction of processing in certain circumstances`,
+      `The right to data portability, where technically feasible`,
+      `The right to object to certain processing, including processing based on legitimate interests or for direct marketing`,
+      `The right to withdraw consent at any time where processing is based on consent`,
+      `The right to lodge a complaint with your local data protection supervisory authority`,
+    ],
+  },
+  {
+    title: 'Your Rights Under GDPR (continued)',
+    content: [
+      `To exercise any of these rights, contact us at info@appstarfamily.net. We may need to verify your identity before responding to your request.`,
+    ],
+  },
+  {
+    title: 'California Privacy Rights (CCPA/CPRA)',
+    intro: `If you are a California resident, you may have the following rights under the California Consumer Privacy Act, as amended by the California Privacy Rights Act:`,
+    list: [
+      `The right to know what personal information we have collected, used, and disclosed about you`,
+      `The right to request deletion of your personal information, subject to certain exceptions`,
+      `The right to correct inaccurate personal information`,
+      `The right to opt out of the sale or sharing of your personal information`,
+      `The right to limit the use of sensitive personal information, where applicable`,
+      `The right to non-discrimination for exercising your privacy rights`,
+    ],
+  },
+  {
+    title: 'California Privacy Rights (continued)',
+    content: [
+      `We do not sell personal information for money. To exercise your California privacy rights, or to ask about sharing for advertising purposes, contact us at info@appstarfamily.net.`,
+    ],
+  },
+  {
+    title: 'Children',
+    content: [
+      `Our apps are not directed at children under the age of 13, and we do not knowingly collect personal information from children under 13. In the European Economic Area and the United Kingdom, the age at which a child can consent to data processing without parental authorization may be higher than 13, depending on the specific country. If you believe a child has provided personal information to us without appropriate consent, please contact us at info@appstarfamily.net.`,
+    ],
+  },
+  {
     title: 'Contact',
     content: [
-      'If you have questions about this Privacy Policy, please contact us at info@appstarfamily.net or via @AppStarFamily on Twitter.',
+      'If you have questions about this Privacy Policy, please contact us at info@appstarfamily.net.',
     ],
   },
 ]
@@ -82,7 +144,7 @@ export default function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-sm" style={{ color: '#5A5E70' }}>
-            Last updated: March 10, 2026
+            Last updated: September 6, 2026
           </p>
         </div>
 
