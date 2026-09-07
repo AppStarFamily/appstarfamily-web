@@ -47,6 +47,14 @@ const sections = [
     ],
   },
   {
+    title: 'EU and UK Consumer Rights',
+    content: [
+      `If you are a consumer located in the European Economic Area or the United Kingdom, applicable law may give you a statutory right to withdraw from a purchase of digital content within 14 days without giving a reason, unless you have expressly consented to immediate access to that content and acknowledged that you lose this withdrawal right once performance begins.`,
+      `Where you make a purchase through the Apple App Store, Apple's own purchase flow may present this consent and acknowledgment to you directly, and Apple's refund and cancellation policies may also apply to your purchase.`,
+      `Nothing in these Terms limits any statutory right you have as a consumer under the mandatory law of your country of residence, including any right to a remedy for digital content that is not as described, faulty, or not fit for purpose.`,
+    ],
+  },
+  {
     title: 'Changes to Terms',
     content: [
       'We reserve the right to modify these Terms of Use at any time. Continued use of our services constitutes acceptance of the modified terms.',
@@ -55,7 +63,7 @@ const sections = [
   {
     title: 'Contact',
     content: [
-      'For questions about these Terms, contact us at info@appstarfamily.net or via @AppStarFamily on Twitter.',
+      'For questions about these Terms, contact us at info@appstarfamily.net.',
     ],
   },
 ]
@@ -90,7 +98,7 @@ export default function TermsOfUsePage() {
             Terms of Use
           </h1>
           <p className="text-sm" style={{ color: '#5A5E70' }}>
-            Last updated: March 10, 2026
+            Last updated: September 6, 2026
           </p>
         </div>
 
